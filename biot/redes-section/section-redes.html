@@ -1,0 +1,405 @@
+<style>
+  .net-btnRedes:hover {
+    background: #008650;
+  }
+  .net-boxForm,
+  .net-boxFormPrimary,
+  .net-boxImgForm,
+  .net-containerInput {
+    width: 100%;
+    display: flex;
+  }
+  .net-containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b26b;
+    padding: 60px 12px;
+  }
+  .net-boxImgForm {
+    background-image: url("https://u.cubeupload.com/willlendemayer/imageform.png");
+    height: 624px;
+    max-width: 628px;
+    border-radius: 16px 0 0 16px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 100px;
+    padding-left: 70px;
+  }
+  .net-boxForm {
+    max-width: 1256px;
+  }
+  .net-boxImgForm p {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  input:focus,
+  select:focus {
+    outline: none;
+  }
+
+  .net-containerInput select {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for Chrome and Safari */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M233.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200l192-192c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L256%20338.7%2086.6%20169.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l192%20192z%22%20fill%3D%22%238b979f%22%2F%3E%3C%2Fsvg%3E")
+      no-repeat 95% center; /* Adjust the position of the arrow */
+    background-size: 15px; /* Adjust the size of the arrow */
+    padding: 0 30px; /* Add some padding to prevent text from overlapping with arrow and sides */
+    width: 100%; /* Make the select occupy the full width of its parent */
+    height: 100%; /* Make the select occupy the full height of its parent */
+    border: none; /* Remove border */
+    color: #5c5c5c;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .net-btnRedes {
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .net-boxFormPrimary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 628px;
+    background-color: #fff;
+    border-radius: 0 16px 16px 0;
+  }
+  .net-containerInput {
+    border-radius: 6px;
+    border: 1px solid #8b979f;
+    background: #fff;
+    align-items: center;
+    max-width: 400px;
+    height: 56px;
+  }
+  .net-iconInput {
+    padding: 0 12px;
+  }
+  input {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 40px !important;
+    box-shadow: none !important;
+  }
+  input:focus {
+    box-shadow: 0 0;
+    outline: 0;
+  }
+  .net-formInitial {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .net-Containercheck {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 400px;
+  }
+  .net-Containercheck label {
+    color: #5c5c5c;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .net-btnRedes {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #00b26b;
+    color: #fff;
+    line-height: 120%;
+    border: none;
+  }
+  @media (max-width: 960px) {
+    .net-boxImgForm {
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+    .net-boxForm {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 628px;
+    }
+    .net-boxFormPrimary {
+      padding: 60px 10px;
+      border-radius: 0 0 16px 16px;
+    }
+    .net-boxImgForm {
+      border-radius: 16px 16px 0 0;
+      height: 300px;
+    }
+  }
+</style>
+<div>
+  <div id="conversion-form" class="net-containerForm">
+    <div class="net-boxForm">
+      <div class="net-boxImgForm">
+        <p>Cadastre-se e entraremos em contato!</p>
+      </div>
+
+      <div class="net-boxFormPrimary">
+        <form
+          class="net-formInitial net-smartcapture-content-wrapper net-fuelux"
+          action="https://cl.s11.exct.net/DEManager.aspx"
+          name=""
+          id=""
+          method="post">
+          <input type="hidden" name="_clientID" value="514010866" />
+          <input
+            type="hidden"
+            name="_deExternalKey"
+            value="EA3EE185-BFFC-4276-83EA-E6892D20ADBE" />
+          <input type="hidden" name="_action" value="add" />
+          <input type="hidden" name="_returnXML" value="0" />
+
+          <input
+            type="hidden"
+            name="_successURL"
+            value="https://example.com/Success" />
+          <input
+            type="hidden"
+            name="_errorURL"
+            value="https://example.com/Failed" />
+
+          <div class="net-containerInput">
+            <div class="net-iconInput">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none">
+                <path
+                  d="M5.99219 19.6619V18.6619C5.99219 16.8053 6.72969 15.0249 8.04244 13.7121C9.35519 12.3994 11.1357 11.6619 12.9922 11.6619V11.6619C14.8487 11.6619 16.6292 12.3994 17.9419 13.7121C19.2547 15.0249 19.9922 16.8053 19.9922 18.6619V19.6619M12.9922 11.6619C14.0531 11.6619 15.0705 11.2404 15.8206 10.4903C16.5708 9.74015 16.9922 8.72273 16.9922 7.66187C16.9922 6.601 16.5708 5.58358 15.8206 4.83344C15.0705 4.08329 14.0531 3.66187 12.9922 3.66187C11.9313 3.66187 10.9139 4.08329 10.1638 4.83344C9.41361 5.58358 8.99219 6.601 8.99219 7.66187C8.99219 8.72273 9.41361 9.74015 10.1638 10.4903C10.9139 11.2404 11.9313 11.6619 12.9922 11.6619V11.6619Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="net-text-field-3 net-w-input"
+              maxlength="256"
+              name="nome"
+              data-name="nome"
+              placeholder="Nome"
+              id="nome" />
+          </div>
+
+          <div class="net-containerInput">
+            <div class="net-iconInput">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="21"
+                viewBox="0 0 22 21"
+                fill="none">
+                <path
+                  d="M2.00781 8.66187V17.6619C2.00781 18.1923 2.21853 18.701 2.5936 19.0761C2.96867 19.4512 3.47738 19.6619 4.00781 19.6619H18.0078C18.5382 19.6619 19.047 19.4512 19.422 19.0761C19.7971 18.701 20.0078 18.1923 20.0078 17.6619V8.66187"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M13.8408 19.6619V13.6619C13.8408 13.1314 13.6301 12.6227 13.255 12.2477C12.88 11.8726 12.3713 11.6619 11.8408 11.6619H9.84082C9.31039 11.6619 8.80168 11.8726 8.42661 12.2477C8.05153 12.6227 7.84082 13.1314 7.84082 13.6619V19.6619"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-miterlimit="16" />
+                <path
+                  d="M20.8258 8.02587L19.1318 2.09687C19.096 1.97151 19.0202 1.86125 18.9161 1.78276C18.812 1.70428 18.6852 1.66184 18.5548 1.66187H14.5078L14.9828 7.36587C14.99 7.45758 15.019 7.54626 15.0673 7.62453C15.1157 7.7028 15.182 7.7684 15.2608 7.81587C15.6508 8.04887 16.4128 8.47887 17.0078 8.66187C18.0238 8.97487 19.5078 8.86186 20.3538 8.75786C20.4361 8.74723 20.515 8.71878 20.5851 8.6745C20.6552 8.63021 20.7148 8.57116 20.7598 8.50146C20.8047 8.43176 20.8339 8.3531 20.8453 8.27096C20.8567 8.18881 20.8501 8.10517 20.8258 8.02587Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M13.0079 8.66187C13.5759 8.48687 14.2959 8.08786 14.6979 7.84986C14.7916 7.79409 14.8676 7.71294 14.9171 7.6158C14.9667 7.51865 14.9877 7.40947 14.9779 7.30087L14.5079 1.66187H7.50786L7.03786 7.30087C7.02779 7.40963 7.04875 7.51902 7.09831 7.61636C7.14786 7.71371 7.22399 7.79501 7.31786 7.85087C7.71986 8.08787 8.43986 8.48687 9.00786 8.66187C10.5009 9.12187 11.5149 9.12187 13.0079 8.66187V8.66187Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M2.88386 2.09687L1.18986 8.02687C1.16595 8.10605 1.15956 8.18948 1.17113 8.27138C1.1827 8.35328 1.21196 8.43168 1.25687 8.50113C1.30178 8.57059 1.36126 8.62944 1.4312 8.6736C1.50114 8.71777 1.57985 8.74618 1.66186 8.75687C2.50686 8.86187 3.99186 8.97387 5.00786 8.66187C5.60286 8.47887 6.36587 8.04886 6.75487 7.81686C6.8338 7.7693 6.90022 7.70355 6.94858 7.62509C6.99694 7.54664 7.02584 7.45776 7.03286 7.36587L7.50786 1.66187H3.46087C3.33049 1.66184 3.20364 1.70428 3.09954 1.78276C2.99543 1.86125 2.91972 1.97151 2.88386 2.09687V2.09687Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="net-text-field-3 net-w-input"
+              maxlength="256"
+              name="nome_empresa"
+              data-name="nome_empresa"
+              placeholder="Nome da empresa"
+              id="nome" />
+          </div>
+
+          <div class="net-containerInput">
+            <div class="net-iconInput">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none">
+                <path
+                  d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                  stroke="#8B979F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="#8B979F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <label for=""></label>
+
+            <label for=""></label>
+            <input
+              type="text"
+              class="net-text-field-2 net-w-input"
+              maxlength="256"
+              name="celular"
+              data-name="celular"
+              placeholder="Telefone"
+              id="celular" />
+            <div
+              id="msg-erro-celular"
+              style="color: red; font-size: 11px"></div>
+          </div>
+
+          <div class="net-containerInput">
+            <div class="net-iconInput">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="17"
+                viewBox="0 0 22 17"
+                fill="none">
+                <path
+                  d="M1.69997 2.86865L10.9922 9.16189L19.889 2.86865"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M0.992188 13.6619V3.66187C0.992187 3.13143 1.2029 2.62272 1.57797 2.24765C1.95305 1.87258 2.46175 1.66187 2.99219 1.66187H18.9922C19.5226 1.66187 20.0313 1.87258 20.4064 2.24765C20.7815 2.62272 20.9922 3.13143 20.9922 3.66187V13.6619C20.9922 14.1923 20.7815 14.701 20.4064 15.0761C20.0313 15.4512 19.5226 15.6619 18.9922 15.6619H2.99219C2.46175 15.6619 1.95305 15.4512 1.57797 15.0761C1.2029 14.701 0.992188 14.1923 0.992188 13.6619Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="email"
+              class="net-text-field net-w-input"
+              maxlength="256"
+              name="email"
+              data-name="email"
+              placeholder="Email"
+              id="email" />
+          </div>
+
+          <div class="net-containerInput">
+            <select
+              name="tipo-projeto"
+              id="tipo-projeto"
+              class="net-text-field-2 net-w-select">
+              <option value="" disabled selected>Tipo de projeto</option>
+              <option value="Escola ou universidade">
+                Escola ou universidade
+              </option>
+              <option value="Revenda">Construtora</option>
+              <option value="Integrador">Condomínio</option>
+              <option value="Instalador">Hospital ou clínica</option>
+              <option value="Orgão público">Orgão público</option>
+              <option value="Banco">Banco</option>
+              <option value="orto ou aeroporto">Porto ou aeroporto</option>
+              <option value="Loja ou shopping">Loja ou shopping</option>
+              <option value="Consumidor Final">Consumidor final</option>
+            </select>
+          </div>
+
+          <div
+            class="net-Containercheck"
+            style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              value="true"
+              name="aceite_comunicacoes"
+              data-field-type="Boolean"
+              id="aceite_comunicacoes"
+              data-name="aceite_comunicacoes"
+              class="net-input-chckbox net-w-checkbox-input" />
+
+            <label for="aceite_comunicacoes"
+              >Tenho interesse em receber notícias, novidades e promoções da
+              Intelbras.</label
+            >
+          </div>
+
+          <div
+            class="net-Containercheck"
+            style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              value="true"
+              name="aceite_termos"
+              data-field-type="Boolean"
+              id="aceite_termos"
+              data-name="aceite_termos"
+              class="net-input-chckbox net-w-checkbox-input" />
+
+            <label for="aceite_termos"
+              >Ao informar os meus dados, concordo com os
+              <a
+                href="https://www.intelbras.com/pt-br/politica-de-privacidade/termos"
+                >Termos de uso</a
+              >
+              e
+              <a
+                href="https://www.intelbras.com/pt-br/politica-de-privacidade/politica"
+                >Política de Privacidade</a
+              >.</label
+            >
+          </div>
+
+          <input type="hidden" name="UTM_source" id="UTM_source" />
+          <input type="hidden" name="UTM_medium" id="UTM_medium" />
+          <input type="hidden" name="UTM_term" id="UTM_term" />
+          <input type="hidden" name="UTM_campaign" id="UTM_campaign" />
+
+          <button
+            type="submit"
+            value="Baixar catálogo"
+            data-wait="Please wait..."
+            class="net-submit-button net-w-button net-btnRedes">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4178 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .link-orca:hover,
+    a.link-orca:hover {
+      background-color: #008650;
+    }
+    .bg-white {
+      background-color: transparent !important;
+    }
+    .boxEnd {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .boxEnd a {
+      display: flex;
+      width: 327px;
+      padding: 14px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      border-radius: 10px;
+      background: #00b26b;
+      text-decoration: none;
+      color: #fff;
+      font-family: nunito;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: 62px;
+      transition: 0.3s;
+    }
+    .titles h1,
+    .titles p {
+      color: #8b979f;
+      line-height: normal;
+      margin-bottom: 12px;
+      font-family: nunito;
+      font-style: normal;
+      text-align: center;
+    }
+    .boxEnd a:hover,
+    .boxInformation a:hover,
+    .btnRedes:hover {
+      background: #008650;
+    }
+    .containerProdutos {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 64px 12px;
+    }
+    .titleProducts,
+    .titles {
+      flex-direction: column;
+      display: flex;
+    }
+    .titles {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 54px;
+    }
+    .titles h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .titles p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .boxProducts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 44px;
+    }
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: #fff;
+      max-width: 300px;
+      padding: 24px 34px 64px;
+      border-radius: 16px;
+      border: 2px solid #00b26b;
+      height: 530px;
+    }
+    @media (max-width: 675px) {
+      .product {
+        max-width: 475px;
+        width: 100%;
+        padding: 24px 34px;
+      }
+    }
+    .titleProducts {
+      margin-top: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+    .titleProducts h3 {
+      color: #3e5055;
+      text-align: center;
+      font-family: nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      margin-bottom: 16px;
+    }
+    .titleProducts p {
+      color: #8b979f;
+      text-align: center;
+      font-family: nunito;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      max-width: 225px;
+    }
+    .container-necessidade h2,
+    .container-necessidade h2 span {
+      font-size: 48px;
+      font-style: normal;
+      line-height: normal;
+      font-family: Nunito;
+    }
+    .container-necessidade {
+      padding: 100px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    .container-necessidade h2 {
+      color: #232323;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+    .container-necessidade h2 span {
+      color: #00b26b;
+      font-weight: 600;
+    }
+    .conteudo-necessidade {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 100px;
+      max-width: 1100px;
+    }
+    .necessidades {
+      display: flex;
+      align-items: center;
+      gap: 66px;
+    }
+    @media (max-width: 490px) {
+      .necessidades {
+        gap: 0;
+      }
+      .container-necessidade h2,
+      .container-necessidade h2 span {
+        font-size: 24px;
+      }
+      .necessidades h3 {
+        font-size: 20px;
+        max-width: 150px;
+        min-width: 150px;
+      }
+    }
+    .iconNecessidade,
+    .necessidades img {
+      display: inline-flex;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 10px;
+    }
+    .iconNecessidade {
+      padding: 17px;
+      align-items: center;
+      background: #fff;
+    }
+    .necessidades img {
+      padding: 12px;
+      align-items: center;
+      background: linear-gradient(180deg, rgba(96, 228, 165, 0.3) 0, rgba(96, 228, 165, 0.09) 100%);
+    }
+    .necessidades h3 {
+      color: rgba(15, 15, 15, 0.6);
+      text-align: center;
+      font-family: Nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      max-width: 220px;
+      min-width: 220px;
+    }
+    .description h3,
+    .description p,
+    .title-closed h2 {
+      font-family: nunito;
+      font-style: normal;
+    }
+    .modal-btn {
+      border: none;
+      background-color: transparent;
+    }
+    body.modal-open {
+      overflow: hidden;
+    }
+    .modal {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.2);
+      justify-content: center;
+      align-items: center;
+    }
+    .pic-modal-one {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-pequenos-negocios.png");
+    }
+    .pic-modal-two {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-condominios-verticais.png");
+    }
+    .pic-modal-three {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/condominios-horizontais.png");
+    }
+    .pic-modal-four {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-agronegocio.png");
+    }
+    .pic-modal-five {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-industrias.png");
+    }
+    .pic-modal-six {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-shopping.png");
+    }
+    .pic-modal-seven {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-hoteis.png");
+    }
+    .pic-modal-eight {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/main-provedores.png");
+    }
+    .pic-modal {
+      background-size: cover;
+      max-width: 472px;
+      width: 100%;
+      height: 502px;
+      border-radius: 10px;
+    }
+    .container-modal {
+      padding: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-direction: row;
+      background-color: #fff;
+      max-width: 1100px;
+      width: 100%;
+      height: 600px;
+      border-radius: 8px;
+    }
+    @media (max-width: 1100px) {
+      .conteudo-necessidade {
+        max-width: 500px;
+        justify-content: center;
+      }
+      .container-modal {
+        max-width: 500px;
+        height: Auto;
+      }
+      .pic-modal {
+        width: 338.64px;
+        height: 370.8px;
+        background-size: cover;
+        background-position: center;
+        display: none;
+      }
+      .produto {
+        flex-direction: column;
+        align-items: flex-start !important;
+        row-gap: 12px;
+      }
+      .produtos {
+        row-gap: 52px !important;
+      }
+      .img-produto {
+        display: flex;
+        margin: 0 !important;
+        height: auto !important;
+      }
+    }
+    .produto {
+      max-width: 516px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .produtos {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .title-closed {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+    }
+    .close,
+    .link-orca {
+      display: flex;
+      justify-content: center;
+    }
+    .close {
+      padding: 12.363px;
+      align-items: center;
+      gap: 12.363px;
+      border-radius: 4.945px;
+      background: #f8e3e3;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .fix-modal {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .title-closed h2 {
+      color: #232323;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+    .img-produto {
+      display: flex;
+      max-width: 65px;
+      height: 65px;
+      margin-right: 16px;
+    }
+    .img-produto img {
+      max-width: 70px;
+      height: auto;
+    }
+    .boxInformation a,
+    .link-orca {
+      height: 52px;
+      text-decoration: none;
+    }
+    .description h3 {
+      color: #232323;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 100%;
+    }
+    .description p {
+      color: #8b979f;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .description a,
+    .link-orca {
+      line-height: 120%;
+      font-weight: 600;
+      font-family: nunito;
+      font-style: normal;
+    }
+    .description a {
+      color: #00b26b;
+      font-size: 16px;
+      text-decoration-line: underline;
+    }
+    .link-orca {
+      align-items: center;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 20px;
+      width: 100%;
+      background-color: #00b26b;
+      margin-top: 32px;
+    }
+    .con,
+    .containerInformation {
+      justify-content: center;
+      display: flex;
+    }
+    a.link-orca,
+    a.link-orca:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    .con {
+      align-items: center;
+      padding: 64px 24px;
+      background: #163134;
+    }
+    .containerInformation {
+      max-width: 1184px;
+      align-items: center;
+      gap: 150px;
+    }
+    .boxInformation {
+      max-width: 555px;
+    }
+    .boxInformation h1 {
+      color: #fff;
+      font-family: nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%;
+      margin-bottom: 42px;
+    }
+    .boxInformation p {
+      color: rgba(255, 255, 255, 0.6);
+      font-family: nunito;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      margin-bottom: 42px;
+    }
+    .boxInformation a,
+    .flex-invert .boxInformation h1 {
+      font-weight: 600;
+      font-style: normal;
+      font-family: nunito;
+    }
+    .boxInformation a {
+      color: #fff;
+      font-size: 20px;
+      width: 187px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      border-radius: 10px;
+      background: #00b26b;
+    }
+    .complet {
+      width: 620px;
+      height: 417px;
+      flex-shrink: 0;
+      border-radius: 16px;
+    }
+    @media (max-width: 1150px) {
+      .containerInformation {
+        gap: 100px;
+        gap: 50px;
+      }
+      .complet {
+        width: 435px;
+        height: 297.37px;
+        flex-shrink: 0;
+        border-radius: 16px;
+      }
+    }
+    @media (max-width: 780px) {
+      .containerInformation {
+        flex-wrap: wrap;
+      }
+      .boxInformation {
+        max-width: 435px;
+      }
+      .flex-invert {
+        flex-direction: column-reverse;
+      }
+    }
+    @media (max-width: 500px) {
+      .boxInformation {
+        max-width: 350px;
+      }
+      .complet {
+        width: 350px;
+        height: 239.26px;
+        flex-shrink: 0;
+        border-radius: 16px;
+      }
+    }
+    @media (max-width: 360px) {
+      .complet {
+        width: 90%;
+      }
+    }
+    .boxForm,
+    .boxFormPrimary,
+    .boxImgForm,
+    .containerInput {
+      width: 100%;
+      display: flex;
+    }
+    .con-inv {
+      background-color: #fff;
+    }
+    .flex-invert .boxInformation h1 {
+      color: #3e5055;
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 42px;
+    }
+    .flex-invert .boxInformation p {
+      color: #8b979f;
+      font-family: nunito;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+      margin-bottom: 42px;
+    }
+    .containerForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #00b26b;
+      padding: 60px 12px;
+    }
+    .boxImgForm {
+      background-image: url("https://backend.intelbras.com/sites/default/files/2024-07/image-form.png");
+      height: 624px;
+      max-width: 628px;
+      border-radius: 16px 0 0 16px;
+      background-position: center;
+      background-size: cover;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding-bottom: 100px;
+      padding-left: 70px;
+    }
+    .boxForm {
+      max-width: 1256px;
+    }
+    .boxImgForm p {
+      color: #fff;
+      font-family: nunito;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      max-width: 367px;
+    }
+    .btnRedes,
+    .formInitial h3 {
+      font-family: nunito;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+    }
+    .boxFormPrimary {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 628px;
+      background-color: #fff;
+      border-radius: 0 16px 16px 0;
+    }
+    .containerInput {
+      border-radius: 6px;
+      border: 1px solid #8b979f;
+      background: #fff;
+      align-items: center;
+      max-width: 400px;
+      height: 56px;
+    }
+    .iconInput {
+      padding: 0 12px;
+    }
+    input {
+      border: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: 40px !important;
+      box-shadow: none !important;
+    }
+    input:focus {
+      box-shadow: 0 0;
+      outline: 0;
+    }
+    .formInitial {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .formInitial h3 {
+      color: #3e5055;
+      line-height: normal;
+    }
+    .Containercheck {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      max-width: 400px;
+    }
+    .Containercheck label {
+      color: #5c5c5c;
+      font-family: Nunito;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .btnRedes {
+      display: flex;
+      padding: 14px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      align-self: stretch;
+      border-radius: 8px;
+      background: #00b26b;
+      color: #fff;
+      line-height: 120%;
+      border: none;
+    }
+    @media (max-width: 960px) {
+      .boxImgForm {
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 20px;
+      }
+      .boxForm {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 628px;
+      }
+      .boxFormPrimary {
+        padding: 60px 10px;
+        border-radius: 0 0 16px 16px;
+      }
+      .boxImgForm {
+        border-radius: 16px 16px 0 0;
+        height: 300px;
+      }
+    }
+    .desk-entrar {
+      display: none;
+    }
+    @media (max-width: 450px) {
+      .desk-sair {
+        display: none !important;
+      }
+      .desk-entrar {
+        display: block;
+      }
+    }
+    .product img {
+      max-width: 219.51px;
+      align-self: center;
+    }
+    @media (max-width: 850px) {
+      .close img,
+      .title-closed {
+        align-self: flex-start;
+      }
+      .pic-modal {
+        display: none;
+      }
+      .container-modal {
+        position: fixed;
+        top: 12px;
+        bottom: 12px;
+        overflow: auto;
+        max-height: 100vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/slide-1.png"
+          class="d-block w-100"
+          alt="First slide" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/slide-2.png"
+          class="d-block w-100"
+          alt="Second slide" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/slide-3.png"
+          class="d-block w-100"
+          alt="Third slide" />
+      </div>
+    </div>
+  </div>
+
+  <div class="containerProdutos">
+    <div class="boxEnd">
+      <a href="#conversion-form">Peça um orçamento agora</a>
+
+      <div class="titles">
+        <p>Conheça nossas soluções de redes empresariais.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="45" viewBox="0 0 26 45" fill="none">
+          <path
+            d="M2.64457 10.4537L12.7772 20.5863L22.9098 10.4537C23.5148 9.84877 24.4957 9.84877 25.1006 10.4537C25.7056 11.0587 25.7056 12.0396 25.1006 12.6446L13.8727 23.8726C13.582 24.1632 13.1881 24.3263 12.7772 24.3263C12.3664 24.3263 11.9723 24.1632 11.6818 23.8726L0.453736 12.6446C0.378107 12.569 0.311942 12.4875 0.255228 12.4016C-0.14179 11.8002 -0.0756265 10.9831 0.453736 10.4537C1.05871 9.84877 2.03959 9.84877 2.64457 10.4537Z"
+            fill="#00B26B" />
+          <path
+            d="M2.64457 24.78L12.7772 34.9126L22.9098 24.78C23.5148 24.175 24.4957 24.175 25.1006 24.78C25.7056 25.385 25.7056 26.3659 25.1006 26.9709L13.8727 38.1988C13.582 38.4895 13.1881 38.6526 12.7772 38.6526C12.3664 38.6526 11.9723 38.4895 11.6818 38.1988L0.453736 26.9709C0.378107 26.8952 0.311942 26.8137 0.255228 26.7278C-0.14179 26.1265 -0.0756265 25.3094 0.453736 24.78C1.05871 24.175 2.03959 24.175 2.64457 24.78Z"
+            fill="#00B26B" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="boxProducts">
+      <div class="product">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/product-roteador.png"
+          alt="Roteador Intelbras" />
+        <div class="titleProducts">
+          <h3>Roteador empresarial</h3>
+          <p>Wi-Fi de alta performance para ambientes corporativos, atendendo a diferentes necessidades.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/product-switch.png"
+          alt="Switch Intelbras" />
+        <div class="titleProducts">
+          <h3>Switches</h3>
+          <p>Potencialize sua rede com tecnologia que proporciona alto desempenho e conexão eficiente.</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2024-07/product-radios.png"
+          alt="Antena de rádio Intelbras" />
+        <div class="titleProducts">
+          <h3>Rádios Outdoor</h3>
+          <p>Transmissão de dados sem fio com alta qualidade e praticidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="necessidade">
+    <div class="container-necessidade">
+      <h2>Soluções de redes para <span>pequenos e médios negócios</span></h2>
+      <div class="conteudo-necessidade">
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M50.75 21C50.7509 20.8373 50.7288 20.6753 50.6844 20.5188L47.5453 9.5375C47.3343 8.80887 46.8933 8.16804 46.2881 7.7107C45.6829 7.25336 44.946 7.00405 44.1875 7H11.8125C11.054 7.00405 10.3171 7.25336 9.71188 7.7107C9.10669 8.16804 8.66568 8.80887 8.45469 9.5375L5.31781 20.5188C5.27262 20.6752 5.24979 20.8372 5.25 21V24.5C5.25 25.8584 5.56627 27.1981 6.17376 28.4131C6.78126 29.6281 7.66329 30.685 8.75 31.5V47.25C8.75 47.7141 8.93438 48.1592 9.26256 48.4874C9.59075 48.8156 10.0359 49 10.5 49H45.5C45.9641 49 46.4092 48.8156 46.7374 48.4874C47.0656 48.1592 47.25 47.7141 47.25 47.25V31.5C48.3367 30.685 49.2187 29.6281 49.8262 28.4131C50.4337 27.1981 50.75 25.8584 50.75 24.5V21ZM11.8125 10.5H44.1875L46.6856 19.25H9.32094L11.8125 10.5ZM22.75 22.75H33.25V24.5C33.25 25.8924 32.6969 27.2277 31.7123 28.2123C30.7277 29.1969 29.3924 29.75 28 29.75C26.6076 29.75 25.2723 29.1969 24.2877 28.2123C23.3031 27.2277 22.75 25.8924 22.75 24.5V22.75ZM19.25 22.75V24.5C19.2497 25.4028 19.0166 26.2902 18.5732 27.0767C18.1298 27.8631 17.4911 28.5218 16.7188 28.9894C15.9465 29.4569 15.0666 29.7173 14.1643 29.7456C13.2619 29.7738 12.3675 29.5689 11.5675 29.1506C11.4458 29.0559 11.3119 28.9779 11.1694 28.9187C10.428 28.4441 9.81783 27.7907 9.39506 27.0185C8.97229 26.2464 8.75047 25.3803 8.75 24.5V22.75H19.25ZM43.75 45.5H12.25V33.075C12.8261 33.1911 13.4123 33.2498 14 33.25C15.3584 33.25 16.6981 32.9337 17.9131 32.3262C19.1281 31.7187 20.185 30.8367 21 29.75C21.815 30.8367 22.8719 31.7187 24.0869 32.3262C25.3019 32.9337 26.6416 33.25 28 33.25C29.3584 33.25 30.6981 32.9337 31.9131 32.3262C33.1281 31.7187 34.185 30.8367 35 29.75C35.815 30.8367 36.8719 31.7187 38.0869 32.3262C39.3019 32.9337 40.6416 33.25 42 33.25C42.5877 33.2498 43.1739 33.1911 43.75 33.075V45.5ZM44.8284 28.9187C44.6878 28.978 44.5555 29.0552 44.4347 29.1484C43.6347 29.5672 42.7403 29.7725 41.8378 29.7446C40.9353 29.7167 40.0553 29.4565 39.2827 28.9892C38.5102 28.5219 37.8712 27.8632 37.4275 27.0768C36.9839 26.2904 36.7505 25.4029 36.75 24.5V22.75H47.25V24.5C47.2493 25.3805 47.0271 26.2467 46.604 27.0189C46.1808 27.791 45.5702 28.4444 44.8284 28.9187Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+
+          <h3>Pequenos comércios</h3>
+          <button class="modal-btn" data-model="modal-btn-one">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M52.5 45.5H50.75V15.75C50.75 15.2859 50.5656 14.8408 50.2374 14.5126C49.9092 14.1844 49.4641 14 49 14H40.25V8.75C40.25 8.28587 40.0656 7.84075 39.7374 7.51256C39.4092 7.18437 38.9641 7 38.5 7H17.5C17.0359 7 16.5908 7.18437 16.2626 7.51256C15.9344 7.84075 15.75 8.28587 15.75 8.75V21H7C6.53587 21 6.09075 21.1844 5.76256 21.5126C5.43437 21.8408 5.25 22.2859 5.25 22.75V45.5H3.5C3.03587 45.5 2.59075 45.6844 2.26256 46.0126C1.93437 46.3408 1.75 46.7859 1.75 47.25C1.75 47.7141 1.93437 48.1592 2.26256 48.4874C2.59075 48.8156 3.03587 49 3.5 49H52.5C52.9641 49 53.4092 48.8156 53.7374 48.4874C54.0656 48.1592 54.25 47.7141 54.25 47.25C54.25 46.7859 54.0656 46.3408 53.7374 46.0126C53.4092 45.6844 52.9641 45.5 52.5 45.5ZM8.75 24.5H17.5C17.9641 24.5 18.4092 24.3156 18.7374 23.9874C19.0656 23.6592 19.25 23.2141 19.25 22.75V10.5H36.75V15.75C36.75 16.2141 36.9344 16.6592 37.2626 16.9874C37.5908 17.3156 38.0359 17.5 38.5 17.5H47.25V45.5H33.25V36.75C33.25 36.2859 33.0656 35.8408 32.7374 35.5126C32.4092 35.1844 31.9641 35 31.5 35H24.5C24.0359 35 23.5908 35.1844 23.2626 35.5126C22.9344 35.8408 22.75 36.2859 22.75 36.75V45.5H8.75V24.5ZM29.75 45.5H26.25V38.5H29.75V45.5ZM24.5 15.75C24.5 15.2859 24.6844 14.8408 25.0126 14.5126C25.3408 14.1844 25.7859 14 26.25 14H29.75C30.2141 14 30.6592 14.1844 30.9874 14.5126C31.3156 14.8408 31.5 15.2859 31.5 15.75C31.5 16.2141 31.3156 16.6592 30.9874 16.9874C30.6592 17.3156 30.2141 17.5 29.75 17.5H26.25C25.7859 17.5 25.3408 17.3156 25.0126 16.9874C24.6844 16.6592 24.5 16.2141 24.5 15.75ZM24.5 22.75C24.5 22.2859 24.6844 21.8408 25.0126 21.5126C25.3408 21.1844 25.7859 21 26.25 21H29.75C30.2141 21 30.6592 21.1844 30.9874 21.5126C31.3156 21.8408 31.5 22.2859 31.5 22.75C31.5 23.2141 31.3156 23.6592 30.9874 23.9874C30.6592 24.3156 30.2141 24.5 29.75 24.5H26.25C25.7859 24.5 25.3408 24.3156 25.0126 23.9874C24.6844 23.6592 24.5 23.2141 24.5 22.75ZM36.75 22.75C36.75 22.2859 36.9344 21.8408 37.2626 21.5126C37.5908 21.1844 38.0359 21 38.5 21H42C42.4641 21 42.9092 21.1844 43.2374 21.5126C43.5656 21.8408 43.75 22.2859 43.75 22.75C43.75 23.2141 43.5656 23.6592 43.2374 23.9874C42.9092 24.3156 42.4641 24.5 42 24.5H38.5C38.0359 24.5 37.5908 24.3156 37.2626 23.9874C36.9344 23.6592 36.75 23.2141 36.75 22.75ZM19.25 29.75C19.25 30.2141 19.0656 30.6592 18.7374 30.9874C18.4092 31.3156 17.9641 31.5 17.5 31.5H14C13.5359 31.5 13.0908 31.3156 12.7626 30.9874C12.4344 30.6592 12.25 30.2141 12.25 29.75C12.25 29.2859 12.4344 28.8408 12.7626 28.5126C13.0908 28.1844 13.5359 28 14 28H17.5C17.9641 28 18.4092 28.1844 18.7374 28.5126C19.0656 28.8408 19.25 29.2859 19.25 29.75ZM19.25 36.75C19.25 37.2141 19.0656 37.6592 18.7374 37.9874C18.4092 38.3156 17.9641 38.5 17.5 38.5H14C13.5359 38.5 13.0908 38.3156 12.7626 37.9874C12.4344 37.6592 12.25 37.2141 12.25 36.75C12.25 36.2859 12.4344 35.8408 12.7626 35.5126C13.0908 35.1844 13.5359 35 14 35H17.5C17.9641 35 18.4092 35.1844 18.7374 35.5126C19.0656 35.8408 19.25 36.2859 19.25 36.75ZM24.5 29.75C24.5 29.2859 24.6844 28.8408 25.0126 28.5126C25.3408 28.1844 25.7859 28 26.25 28H29.75C30.2141 28 30.6592 28.1844 30.9874 28.5126C31.3156 28.8408 31.5 29.2859 31.5 29.75C31.5 30.2141 31.3156 30.6592 30.9874 30.9874C30.6592 31.3156 30.2141 31.5 29.75 31.5H26.25C25.7859 31.5 25.3408 31.3156 25.0126 30.9874C24.6844 30.6592 24.5 30.2141 24.5 29.75ZM36.75 29.75C36.75 29.2859 36.9344 28.8408 37.2626 28.5126C37.5908 28.1844 38.0359 28 38.5 28H42C42.4641 28 42.9092 28.1844 43.2374 28.5126C43.5656 28.8408 43.75 29.2859 43.75 29.75C43.75 30.2141 43.5656 30.6592 43.2374 30.9874C42.9092 31.3156 42.4641 31.5 42 31.5H38.5C38.0359 31.5 37.5908 31.3156 37.2626 30.9874C36.9344 30.6592 36.75 30.2141 36.75 29.75ZM36.75 36.75C36.75 36.2859 36.9344 35.8408 37.2626 35.5126C37.5908 35.1844 38.0359 35 38.5 35H42C42.4641 35 42.9092 35.1844 43.2374 35.5126C43.5656 35.8408 43.75 36.2859 43.75 36.75C43.75 37.2141 43.5656 37.6592 43.2374 37.9874C42.9092 38.3156 42.4641 38.5 42 38.5H38.5C38.0359 38.5 37.5908 38.3156 37.2626 37.9874C36.9344 37.6592 36.75 37.2141 36.75 36.75Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+          <h3>Condomínios verticais</h3>
+          <button class="modal-btn" data-model="modal-btn-two">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57" fill="none">
+              <path
+                d="M24.5 52.8977L24.5001 43.2727L24.756 43.5286C24.9205 43.6928 25.1435 43.7849 25.3759 43.7847C25.6083 43.7845 25.8311 43.692 25.9953 43.5275C26.1594 43.363 26.2516 43.1401 26.2514 42.9077C26.2512 42.6753 26.1586 42.4525 25.9942 42.2883L15.2371 31.5345C14.909 31.2066 14.464 31.0224 14.0001 31.0224C13.5362 31.0224 13.0912 31.2066 12.7631 31.5345L2.00604 42.2883C1.842 42.4525 1.7499 42.6751 1.75 42.9072C1.7501 43.1393 1.8424 43.3618 2.00658 43.5259C2.17077 43.6899 2.3934 43.782 2.62549 43.7819C2.85758 43.7818 3.08012 43.6895 3.24416 43.5253L3.5001 43.2727L3.5 52.8977H24.5ZM5.2501 41.5227L14.0001 32.7727L22.7501 41.5227V51.1477H17.5001V45.0227C17.5001 44.7906 17.4079 44.568 17.2438 44.4039C17.0797 44.2398 16.8572 44.1477 16.6251 44.1477H11.3751C11.143 44.1477 10.9205 44.2398 10.7564 44.4039C10.5923 44.568 10.5001 44.7906 10.5001 45.0227V51.1477H5.2501V41.5227ZM15.7501 51.1477H12.2501V45.8977H15.7501V51.1477Z"
+                fill="#00B26B"
+                stroke="#00B26B" />
+              <path
+                d="M52.5 52.8977L52.5001 43.2727L52.756 43.5286C52.9205 43.6928 53.1435 43.7849 53.3759 43.7847C53.6083 43.7845 53.8311 43.692 53.9953 43.5275C54.1594 43.363 54.2516 43.1401 54.2514 42.9077C54.2512 42.6753 54.1586 42.4525 53.9942 42.2883L43.2371 31.5345C42.909 31.2066 42.464 31.0224 42.0001 31.0224C41.5362 31.0224 41.0912 31.2066 40.7631 31.5345L30.006 42.2883C29.842 42.4525 29.7499 42.6751 29.75 42.9072C29.7501 43.1393 29.8424 43.3618 30.0066 43.5259C30.1708 43.6899 30.3934 43.782 30.6255 43.7819C30.8576 43.7818 31.0801 43.6895 31.2442 43.5253L31.5001 43.2727L31.5 52.8977H52.5ZM33.2501 41.5227L42.0001 32.7727L50.7501 41.5227V51.1477H45.5001V45.0227C45.5001 44.7906 45.4079 44.568 45.2438 44.4039C45.0797 44.2398 44.8572 44.1477 44.6251 44.1477H39.3751C39.143 44.1477 38.9205 44.2398 38.7564 44.4039C38.5923 44.568 38.5001 44.7906 38.5001 45.0227V51.1477H33.2501V41.5227ZM43.7501 51.1477H40.2501V45.8977H43.7501V51.1477Z"
+                fill="#00B26B"
+                stroke="#00B26B" />
+              <path
+                d="M24.5 24.8977L24.5001 15.2726L24.756 15.5286C24.9205 15.6927 25.1435 15.7849 25.3759 15.7847C25.6083 15.7845 25.8311 15.6919 25.9953 15.5275C26.1594 15.363 26.2516 15.14 26.2514 14.9076C26.2512 14.6752 26.1586 14.4524 25.9942 14.2882L15.2371 3.5345C14.909 3.20656 14.464 3.02234 14.0001 3.02234C13.5362 3.02234 13.0912 3.20656 12.7631 3.5345L2.00604 14.2882C1.842 14.4524 1.7499 14.6751 1.75 14.9071C1.7501 15.1392 1.8424 15.3618 2.00658 15.5258C2.17077 15.6899 2.3934 15.782 2.62549 15.7819C2.85758 15.7818 3.08012 15.6895 3.24416 15.5253L3.5001 15.2726L3.5 24.8977H24.5ZM5.2501 13.5226L14.0001 4.77262L22.7501 13.5226V23.1476H17.5001V17.0226C17.5001 16.7906 17.4079 16.568 17.2438 16.4039C17.0797 16.2398 16.8572 16.1476 16.6251 16.1476H11.3751C11.143 16.1476 10.9205 16.2398 10.7564 16.4039C10.5923 16.568 10.5001 16.7906 10.5001 17.0226V23.1476H5.2501V13.5226ZM15.7501 23.1476H12.2501V17.8976H15.7501V23.1476Z"
+                fill="#00B26B"
+                stroke="#00B26B" />
+              <path
+                d="M52.5 24.8977L52.5001 15.2726L52.756 15.5286C52.9205 15.6927 53.1435 15.7849 53.3759 15.7847C53.6083 15.7845 53.8311 15.6919 53.9953 15.5275C54.1594 15.363 54.2516 15.14 54.2514 14.9076C54.2512 14.6752 54.1586 14.4524 53.9942 14.2882L43.2371 3.5345C42.909 3.20656 42.464 3.02234 42.0001 3.02234C41.5362 3.02234 41.0912 3.20656 40.7631 3.5345L30.006 14.2882C29.842 14.4524 29.7499 14.6751 29.75 14.9071C29.7501 15.1392 29.8424 15.3618 30.0066 15.5258C30.1708 15.6899 30.3934 15.782 30.6255 15.7819C30.8576 15.7818 31.0801 15.6895 31.2442 15.5253L31.5001 15.2726L31.5 24.8977H52.5ZM33.2501 13.5226L42.0001 4.77262L50.7501 13.5226V23.1476H45.5001V17.0226C45.5001 16.7906 45.4079 16.568 45.2438 16.4039C45.0797 16.2398 44.8572 16.1476 44.6251 16.1476H39.3751C39.143 16.1476 38.9205 16.2398 38.7564 16.4039C38.5923 16.568 38.5001 16.7906 38.5001 17.0226V23.1476H33.2501V13.5226ZM43.7501 23.1476H40.2501V17.8976H43.7501V23.1476Z"
+                fill="#00B26B"
+                stroke="#00B26B" />
+            </svg>
+          </div>
+          <h3>Condomínios horizontais</h3>
+          <button class="modal-btn" data-model="modal-btn-three">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M52.5 36.1834V29.3125C52.5037 28.5591 52.2625 27.8249 51.8127 27.2205C51.3629 26.6161 50.729 26.1741 50.0063 25.9612L49.9603 25.9481L42 23.7803V15.75C42 15.2859 41.8156 14.8408 41.4874 14.5126C41.1593 14.1844 40.7141 14 40.25 14C39.7859 14 39.3408 14.1844 39.0126 14.5126C38.6844 14.8408 38.5 15.2859 38.5 15.75V22.8331L33.25 21.4112V12.25H35C35.4641 12.25 35.9093 12.0656 36.2374 11.7374C36.5656 11.4092 36.75 10.9641 36.75 10.5C36.75 10.0359 36.5656 9.59075 36.2374 9.26256C35.9093 8.93437 35.4641 8.75 35 8.75H8.75001C8.28588 8.75 7.84076 8.93437 7.51257 9.26256C7.18438 9.59075 7.00001 10.0359 7.00001 10.5C7.00001 10.9641 7.18438 11.4092 7.51257 11.7374C7.84076 12.0656 8.28588 12.25 8.75001 12.25H10.5V19.25H8.75001C8.28588 19.25 7.84076 19.4344 7.51257 19.7626C7.18438 20.0908 7.00001 20.5359 7.00001 21C7.00001 21.4641 7.18438 21.9092 7.51257 22.2374C7.84076 22.5656 8.28588 22.75 8.75001 22.75H14.875C18.8189 22.7541 22.6 24.3225 25.3887 27.1113C28.1775 29.9 29.746 33.6811 29.75 37.625V40.25C29.75 40.7141 29.9344 41.1592 30.2626 41.4874C30.5908 41.8156 31.0359 42 31.5 42H38.5503C38.6844 43.2161 39.1001 44.3843 39.7643 45.4118C40.4285 46.4393 41.3229 47.2979 42.3767 47.9195C43.4305 48.5412 44.6147 48.9087 45.8353 48.993C47.0559 49.0773 48.2793 48.876 49.4086 48.4052C50.5378 47.9343 51.5418 47.2068 52.341 46.2803C53.1401 45.3539 53.7124 44.254 54.0124 43.0678C54.3124 41.8817 54.332 40.642 54.0694 39.447C53.8069 38.252 53.2696 37.1346 52.5 36.1834ZM14.875 19.25H14V12.25H29.75V26.8559C28.049 24.5019 25.8138 22.585 23.2279 21.2628C20.642 19.9405 17.7793 19.2507 14.875 19.25ZM33.25 25.0359L49 29.3125V33.7094C47.0321 33.0128 44.8681 33.1262 42.9837 34.0245C41.0993 34.9228 39.6486 36.5326 38.9506 38.5H33.25V25.0359ZM46.375 45.5C45.5097 45.5 44.6639 45.2434 43.9444 44.7627C43.2249 44.2819 42.6642 43.5987 42.333 42.7992C42.0019 41.9998 41.9153 41.1201 42.0841 40.2715C42.2529 39.4228 42.6696 38.6433 43.2814 38.0314C43.8933 37.4196 44.6728 37.0029 45.5215 36.8341C46.3702 36.6653 47.2498 36.7519 48.0492 37.083C48.8487 37.4142 49.532 37.9749 50.0127 38.6944C50.4934 39.4138 50.75 40.2597 50.75 41.125C50.75 42.2853 50.2891 43.3981 49.4686 44.2186C48.6481 45.0391 47.5353 45.5 46.375 45.5ZM14.875 26.25C12.6252 26.25 10.426 26.9171 8.55539 28.167C6.68478 29.4169 5.22682 31.1935 4.36588 33.272C3.50493 35.3505 3.27967 37.6376 3.71857 39.8442C4.15748 42.0507 5.24084 44.0775 6.83167 45.6683C8.42249 47.2592 10.4493 48.3425 12.6559 48.7814C14.8624 49.2203 17.1495 48.9951 19.228 48.1341C21.3065 47.2732 23.0831 45.8152 24.333 43.9446C25.5829 42.074 26.25 39.8748 26.25 37.625C26.2465 34.6092 25.047 31.718 22.9145 29.5855C20.782 27.453 17.8908 26.2535 14.875 26.25ZM14.875 45.5C13.3175 45.5 11.7949 45.0381 10.4999 44.1728C9.20485 43.3075 8.19549 42.0776 7.59945 40.6386C7.00341 39.1997 6.84746 37.6163 7.15132 36.0887C7.45518 34.5611 8.2052 33.1579 9.30654 32.0565C10.4079 30.9552 11.8111 30.2052 13.3387 29.9013C14.8663 29.5975 16.4497 29.7534 17.8886 30.3494C19.3276 30.9455 20.5575 31.9548 21.4228 33.2499C22.2881 34.5449 22.75 36.0675 22.75 37.625C22.75 39.7136 21.9203 41.7166 20.4435 43.1935C18.9666 44.6703 16.9636 45.5 14.875 45.5ZM17.5 37.625C17.5 38.1442 17.3461 38.6517 17.0576 39.0834C16.7692 39.515 16.3592 39.8515 15.8795 40.0502C15.3999 40.2489 14.8721 40.3008 14.3629 40.1996C13.8537 40.0983 13.386 39.8483 13.0188 39.4812C12.6517 39.114 12.4017 38.6463 12.3004 38.1371C12.1992 37.6279 12.2511 37.1001 12.4498 36.6205C12.6485 36.1408 12.985 35.7308 13.4166 35.4424C13.8483 35.154 14.3558 35 14.875 35C15.5712 35 16.2389 35.2766 16.7312 35.7688C17.2234 36.2611 17.5 36.9288 17.5 37.625Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+          <h3>Agronegócios</h3>
+          <button class="modal-btn" data-model="modal-btn-four">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M25.375 38.5C25.375 38.9641 25.1906 39.4092 24.8624 39.7374C24.5342 40.0656 24.0891 40.25 23.625 40.25H17.5C17.0359 40.25 16.5908 40.0656 16.2626 39.7374C15.9344 39.4092 15.75 38.9641 15.75 38.5C15.75 38.0359 15.9344 37.5908 16.2626 37.2626C16.5908 36.9344 17.0359 36.75 17.5 36.75H23.625C24.0891 36.75 24.5342 36.9344 24.8624 37.2626C25.1906 37.5908 25.375 38.0359 25.375 38.5ZM38.5 36.75H32.375C31.9109 36.75 31.4658 36.9344 31.1376 37.2626C30.8094 37.5908 30.625 38.0359 30.625 38.5C30.625 38.9641 30.8094 39.4092 31.1376 39.7374C31.4658 40.0656 31.9109 40.25 32.375 40.25H38.5C38.9641 40.25 39.4092 40.0656 39.7374 39.7374C40.0656 39.4092 40.25 38.9641 40.25 38.5C40.25 38.0359 40.0656 37.5908 39.7374 37.2626C39.4092 36.9344 38.9641 36.75 38.5 36.75ZM52.5 47.25C52.5 47.7141 52.3156 48.1592 51.9874 48.4874C51.6592 48.8156 51.2141 49 50.75 49H5.25C4.78587 49 4.34075 48.8156 4.01256 48.4874C3.68437 48.1592 3.5 47.7141 3.5 47.25C3.5 46.7859 3.68437 46.3408 4.01256 46.0126C4.34075 45.6844 4.78587 45.5 5.25 45.5H7V19.25C7 18.925 7.0905 18.6064 7.26136 18.33C7.43222 18.0535 7.67669 17.8301 7.96738 17.6848C8.25806 17.5394 8.58348 17.4779 8.90716 17.5071C9.23084 17.5363 9.54 17.655 9.8 17.85L21 26.25V19.25C21 18.925 21.0905 18.6064 21.2614 18.33C21.4322 18.0535 21.6767 17.8301 21.9674 17.6848C22.2581 17.5394 22.5835 17.4779 22.9072 17.5071C23.2308 17.5363 23.54 17.655 23.8 17.85L32.2744 24.2047L34.8031 6.50562C34.9256 5.67296 35.3426 4.91181 35.9783 4.36033C36.6141 3.80885 37.4265 3.5036 38.2681 3.5H42.2319C43.0735 3.5036 43.8859 3.80885 44.5217 4.36033C45.1574 4.91181 45.5744 5.67296 45.6969 6.50562L48.9781 29.5028C48.9781 29.5028 48.9956 29.6734 48.9956 29.75V45.5H50.7456C50.9758 45.4994 51.2038 45.5443 51.4167 45.632C51.6295 45.7196 51.8229 45.8485 51.9859 46.011C52.1489 46.1736 52.2782 46.3667 52.3664 46.5793C52.4546 46.7919 52.5 47.0198 52.5 47.25ZM35.4681 26.6L37.3341 28H45.2331L42.2319 7H38.2681L35.4681 26.6ZM10.5 45.5H45.5V31.5H36.75C36.3714 31.5 36.0029 31.3772 35.7 31.15L32.55 28.7875L24.5 22.75V29.75C24.5 30.075 24.4095 30.3936 24.2386 30.67C24.0678 30.9465 23.8233 31.1699 23.5326 31.3152C23.2419 31.4606 22.9165 31.5221 22.5928 31.4929C22.2692 31.4637 21.96 31.345 21.7 31.15L10.5 22.75V45.5Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+          <h3>Indústrias</h3>
+          <button class="modal-btn" data-model="modal-btn-five">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M47.25 8.75H8.75C7.82174 8.75 6.9315 9.11875 6.27513 9.77513C5.61875 10.4315 5.25 11.3217 5.25 12.25V43.75C5.25 44.6783 5.61875 45.5685 6.27513 46.2249C6.9315 46.8813 7.82174 47.25 8.75 47.25H47.25C48.1783 47.25 49.0685 46.8813 49.7249 46.2249C50.3813 45.5685 50.75 44.6783 50.75 43.75V12.25C50.75 11.3217 50.3813 10.4315 49.7249 9.77513C49.0685 9.11875 48.1783 8.75 47.25 8.75ZM47.25 12.25V15.75H8.75V12.25H47.25ZM47.25 43.75H8.75V19.25H47.25V43.75ZM38.5 24.5C38.5 27.2848 37.3938 29.9555 35.4246 31.9246C33.4555 33.8938 30.7848 35 28 35C25.2152 35 22.5445 33.8938 20.5754 31.9246C18.6062 29.9555 17.5 27.2848 17.5 24.5C17.5 24.0359 17.6844 23.5908 18.0126 23.2626C18.3408 22.9344 18.7859 22.75 19.25 22.75C19.7141 22.75 20.1592 22.9344 20.4874 23.2626C20.8156 23.5908 21 24.0359 21 24.5C21 26.3565 21.7375 28.137 23.0503 29.4497C24.363 30.7625 26.1435 31.5 28 31.5C29.8565 31.5 31.637 30.7625 32.9497 29.4497C34.2625 28.137 35 26.3565 35 24.5C35 24.0359 35.1844 23.5908 35.5126 23.2626C35.8408 22.9344 36.2859 22.75 36.75 22.75C37.2141 22.75 37.6592 22.9344 37.9874 23.2626C38.3156 23.5908 38.5 24.0359 38.5 24.5Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+          <h3>Shoppings</h3>
+          <button class="modal-btn" data-model="modal-btn-six">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M54.25 45.5H50.75V21C51.2141 21 51.6592 20.8156 51.9874 20.4874C52.3156 20.1592 52.5 19.7141 52.5 19.25C52.5 18.7859 52.3156 18.3408 51.9874 18.0126C51.6592 17.6844 51.2141 17.5 50.75 17.5H40.25V10.5C40.7141 10.5 41.1592 10.3156 41.4874 9.98744C41.8156 9.65925 42 9.21413 42 8.75C42 8.28587 41.8156 7.84075 41.4874 7.51256C41.1592 7.18437 40.7141 7 40.25 7H8.75C8.28587 7 7.84075 7.18437 7.51256 7.51256C7.18437 7.84075 7 8.28587 7 8.75C7 9.21413 7.18437 9.65925 7.51256 9.98744C7.84075 10.3156 8.28587 10.5 8.75 10.5V45.5H5.25C4.78587 45.5 4.34075 45.6844 4.01256 46.0126C3.68437 46.3408 3.5 46.7859 3.5 47.25C3.5 47.7141 3.68437 48.1592 4.01256 48.4874C4.34075 48.8156 4.78587 49 5.25 49H54.25C54.7141 49 55.1592 48.8156 55.4874 48.4874C55.8156 48.1592 56 47.7141 56 47.25C56 46.7859 55.8156 46.3408 55.4874 46.0126C55.1592 45.6844 54.7141 45.5 54.25 45.5ZM47.25 21V45.5H40.25V21H47.25ZM12.25 10.5H36.75V45.5H31.5V35C31.5 34.5359 31.3156 34.0908 30.9874 33.7626C30.6592 33.4344 30.2141 33.25 29.75 33.25H19.25C18.7859 33.25 18.3408 33.4344 18.0126 33.7626C17.6844 34.0908 17.5 34.5359 17.5 35V45.5H12.25V10.5ZM28 45.5H21V36.75H28V45.5ZM15.75 17.5C15.75 17.0359 15.9344 16.5908 16.2626 16.2626C16.5908 15.9344 17.0359 15.75 17.5 15.75H21C21.4641 15.75 21.9092 15.9344 22.2374 16.2626C22.5656 16.5908 22.75 17.0359 22.75 17.5C22.75 17.9641 22.5656 18.4092 22.2374 18.7374C21.9092 19.0656 21.4641 19.25 21 19.25H17.5C17.0359 19.25 16.5908 19.0656 16.2626 18.7374C15.9344 18.4092 15.75 17.9641 15.75 17.5ZM26.25 17.5C26.25 17.0359 26.4344 16.5908 26.7626 16.2626C27.0908 15.9344 27.5359 15.75 28 15.75H31.5C31.9641 15.75 32.4092 15.9344 32.7374 16.2626C33.0656 16.5908 33.25 17.0359 33.25 17.5C33.25 17.9641 33.0656 18.4092 32.7374 18.7374C32.4092 19.0656 31.9641 19.25 31.5 19.25H28C27.5359 19.25 27.0908 19.0656 26.7626 18.7374C26.4344 18.4092 26.25 17.9641 26.25 17.5ZM15.75 26.25C15.75 25.7859 15.9344 25.3408 16.2626 25.0126C16.5908 24.6844 17.0359 24.5 17.5 24.5H21C21.4641 24.5 21.9092 24.6844 22.2374 25.0126C22.5656 25.3408 22.75 25.7859 22.75 26.25C22.75 26.7141 22.5656 27.1592 22.2374 27.4874C21.9092 27.8156 21.4641 28 21 28H17.5C17.0359 28 16.5908 27.8156 16.2626 27.4874C15.9344 27.1592 15.75 26.7141 15.75 26.25ZM26.25 26.25C26.25 25.7859 26.4344 25.3408 26.7626 25.0126C27.0908 24.6844 27.5359 24.5 28 24.5H31.5C31.9641 24.5 32.4092 24.6844 32.7374 25.0126C33.0656 25.3408 33.25 25.7859 33.25 26.25C33.25 26.7141 33.0656 27.1592 32.7374 27.4874C32.4092 27.8156 31.9641 28 31.5 28H28C27.5359 28 27.0908 27.8156 26.7626 27.4874C26.4344 27.1592 26.25 26.7141 26.25 26.25Z"
+                fill="#00B26B" />
+            </svg>
+          </div>
+          <h3>Hotéis</h3>
+          <button class="modal-btn" data-model="modal-btn-seven">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+        <div class="necessidades modal-btn-abrir">
+          <div class="iconNecessidade">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <path
+                d="M36.3564 16.45C37.2028 16.45 37.8877 15.7651 37.8877 14.9187V11.8562C37.8877 11.0098 37.2028 10.325 36.3564 10.325C35.5116 10.325 34.8252 11.0098 34.8252 11.8562V14.9187C34.8252 15.3419 34.9972 15.7247 35.2739 16.0028C35.552 16.2795 35.9332 16.45 36.3564 16.45Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M42.4814 19.5125C43.3278 19.5125 44.0127 18.8276 44.0127 17.9812V8.7937C44.0127 7.9473 43.3278 7.26245 42.4814 7.26245C41.6366 7.26245 40.9502 7.9473 40.9502 8.7937V17.9812C40.9502 18.4044 41.1222 18.7872 41.3989 19.0653C41.677 19.342 42.0582 19.5125 42.4814 19.5125Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M48.6064 22.575C49.4528 22.575 50.1377 21.8901 50.1377 21.0437V5.7312C50.1377 4.8848 49.4528 4.19995 48.6064 4.19995C47.7616 4.19995 47.0752 4.8848 47.0752 5.7312V21.0437C47.0752 21.4669 47.2472 21.8497 47.5239 22.1278C47.802 22.4045 48.1832 22.575 48.6064 22.575Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M21.0439 16.45C21.4671 16.45 21.8484 16.2795 22.1266 16.0028C22.4032 15.7247 22.5752 15.3419 22.5752 14.9187V11.8562C22.5752 11.0098 21.8888 10.325 21.0439 10.325C20.1975 10.325 19.5127 11.0098 19.5127 11.8562V14.9187C19.5127 15.7651 20.1975 16.45 21.0439 16.45Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M14.9189 19.5125C15.3421 19.5125 15.7234 19.342 16.0016 19.0653C16.2782 18.7872 16.4502 18.4044 16.4502 17.9812V8.7937C16.4502 7.9473 15.7638 7.26245 14.9189 7.26245C14.0725 7.26245 13.3877 7.9473 13.3877 8.7937V17.9812C13.3877 18.8276 14.0725 19.5125 14.9189 19.5125Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M8.79395 22.575C9.21714 22.575 9.59843 22.4045 9.87663 22.1278C10.1532 21.8497 10.3252 21.4669 10.3252 21.0437V5.7312C10.3252 4.8848 9.63881 4.19995 8.79395 4.19995C7.94755 4.19995 7.2627 4.8848 7.2627 5.7312V21.0437C7.2627 21.8901 7.94755 22.575 8.79395 22.575Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M50.1377 31.7625H35.1314C35.1314 30.071 34.9852 29.925 33.2939 29.925H30.5377V10.325C30.5377 8.63369 30.3915 7.26245 28.7002 7.26245C27.0089 7.26245 26.8627 8.63369 26.8627 10.325V29.925H24.1064C22.4152 29.925 22.2689 30.071 22.2689 31.7625H7.2627C5.57143 31.7625 4.2002 33.1335 4.2002 34.825V50.1375C4.2002 51.8289 5.57143 53.2 7.2627 53.2H50.1377C51.829 53.2 53.2002 51.8289 53.2002 50.1375V34.825C53.2002 33.1335 51.829 31.7625 50.1377 31.7625ZM50.1377 50.1375H7.2627V34.825H50.1377V50.1375Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M16.4502 45.7351C18.1416 45.7351 19.5127 44.364 19.5127 42.6726C19.5127 40.9812 18.1416 39.6101 16.4502 39.6101C14.7588 39.6101 13.3877 40.9812 13.3877 42.6726C13.3877 44.364 14.7588 45.7351 16.4502 45.7351Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+              <path
+                d="M25.6377 45.7351C27.3291 45.7351 28.7002 44.364 28.7002 42.6726C28.7002 40.9812 27.3291 39.6101 25.6377 39.6101C23.9463 39.6101 22.5752 40.9812 22.5752 42.6726C22.5752 44.364 23.9463 45.7351 25.6377 45.7351Z"
+                fill="#00B26B"
+                stroke="#00B26B"
+                stroke-width="0.002" />
+            </svg>
+          </div>
+          <h3>Provedores</h3>
+          <button class="modal-btn" data-model="modal-btn-eight">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path
+                d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                fill="#00b26b" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-one" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-one"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">pequenos comércios</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/p-ap360.png"
+                  alt="Access point AP 360" />
+              </div>
+              <div class="description">
+                <h3>AP 360</h3>
+                <p>
+                  O AP 360 é um access point corporativo que oferece uma conexão Wi-Fi de amplo alcance e estabilidade
+                  para pequenas...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-empresarial-wi-fi-4-de-longo-alcance-ap-360">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/remp-sf500hi-poe.png"
+                  alt="SF 500 Hi-PoE" />
+              </div>
+              <div class="description">
+                <h3>SF 500 Hi-PoE</h3>
+                <p>
+                  Transmite dados e energia elétrica em longas distâncias para alimentar câmeras de redes, telefones e
+                  Access Points...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-5-portas-fast-ethernet-com-4-portas-poe-sf-500-hi-poe">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  class="img-prod"
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/roteador-r30005g.png"
+                  alt="Roteador R300 5G" />
+              </div>
+              <div class="description">
+                <h3>Roteador R3005G</h3>
+                <p>
+                  O R3005G é um Roteador de acesso que conta com 5 portas Gigabit Ethernet e 1 porta USB com destaque...
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/roteador-de-acesso-5-portas-gigabit-ethernet-r3005g">
+                    Ver produto
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-two" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-two"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Condomínios verticais</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/kit-cftv-ip-wom-5a-mimo.png"
+                  alt="Kit CFTV IP - WOM 5A MiMo" />
+              </div>
+              <div class="description">
+                <h3>Kit CFTV IP – WOM 5A MiMo</h3>
+                <p>Composto por dois Rádios banda larga já configurados que podem ser instalados em elevadores...</p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-l3-de-24-portas-gigabit-e-4-sfp-s3028g-b">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img src="https://backend.intelbras.com/sites/default/files/2024-07/s3054g-b-2.png" alt="S3054G-B" />
+              </div>
+              <div class="description">
+                <h3>S3054G-B</h3>
+                <p>Switch de acesso de alta performance para redes corporativas, com funcionalidades de camada 3...</p>
+                <a class="link-product" href=""> Ver produto </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img src="https://backend.intelbras.com/sites/default/files/2024-07/ap-3000-ax.png" alt="AP 3000 AX" />
+              </div>
+              <div class="description">
+                <h3>AP 3000 AX</h3>
+                <p>
+                  O AP 3000 AX é o novo roteador empresarial com tecnologia Wi-Fi 6 ideal para ambientes com alta
+                  densidade de usuários...
+                </p>
+                <a class="link-product" href="https://www.intelbras.com/pt-br/roteador-access-point-ax-ap-3000-ax">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-three" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-three"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Condomínios horizontais</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/kit-cftv-ip-wom-5a-mimo.png"
+                  alt="Kit CFTV IP - WOM 5A MiMo" />
+              </div>
+              <div class="description">
+                <h3>Kit CFTV IP – WOM 5A MiMo</h3>
+                <p>
+                  Composto por dois Rádios banda larga já configurados que podem ser instalados em elevadores e realizam
+                  a...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/kit-conexao-sem-fio-para-cftv-ip-wom-5a-mimo-kit-conexao-wom-5a-mimo">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img src="https://backend.intelbras.com/sites/default/files/2024-07/ap-3000-ax.png" alt="AP 3000 AX" />
+              </div>
+              <div class="description">
+                <h3>AP 3000 AX</h3>
+                <p>
+                  O AP 3000 AX é o novo roteador empresarial com tecnologia Wi-Fi 6 ideal para ambientes com alta
+                  densidade de usuários.
+                </p>
+                <a class="link-product" href="https://www.intelbras.com/pt-br/roteador-access-point-ax-ap-3000-ax">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/ap-1250-ac-max.png"
+                  alt="AP 1250 AC Max" />
+              </div>
+              <div class="description">
+                <h3>AP 1250 AC Max</h3>
+                <p>
+                  O AP 1250 AC Max é um roteador empresarial, que oferece conexão Wi-Fi de alta performance para
+                  empresas, hotéis e...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-empresarial-wi-fi-5-de-longo-alcance-ap-1250-ac-max">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-four" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-four"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Agronegócios</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/apc-5a-90-giga.png"
+                  alt="APC 5A-90 Giga" />
+              </div>
+              <div class="description">
+                <h3>APC 5A-90 Giga</h3>
+                <p>
+                  Projetado para suportar múltiplos dispositivos simultaneamente, ele concentra em um único ponto as...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/basestation-5-ghz-com-antena-setorial-de-90o-integrada-apc-5a-90-giga-v3">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/ap-3000-ax-outdoor.png"
+                  alt="AP 3000 AX Outdoor" />
+              </div>
+              <div class="description">
+                <h3>AP 3000 AX Outdoor</h3>
+                <p>
+                  O AP 3000 AX Outdoor é o novo roteador empresarial com tecnologia Wi-Fi 6, ideal para ambientes
+                  externos com alta...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-access-point-ax-outdoor-ap-3000-ax-outdoor">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/sg-1002-poe-l2.png"
+                  alt="SG 1002 PoE L2+" />
+              </div>
+              <div class="description">
+                <h3>SG 1002 PoE L2+</h3>
+                <p>
+                  O SG 1002 PoE L2+ é ideal para projetos que necessitam de transmissão, alimentação e redução de custos
+                  em...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-8-portas-gigabit-e-2-portas-sfp-sg-1002-poe-l2">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-five" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-five"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Indústrias</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-07/sg-5204-mr.png" alt="SG 5204 MR" />
+              </div>
+              <div class="description">
+                <h3>SG 5204 MR</h3>
+                <p>
+                  Possibilita maior controle sobre a rede, ideal para aplicações que exigem alta densidade de portas...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-48p-giga-sg-5204-mr-l2">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-07/ap-1250-ac-outdoor_0.png"  alt="AP 1250 AC Outdoor" />
+              </div>
+              <div class="description">
+                <h3>AP 1250 AC Outdoor</h3>
+                <p>
+                  Wi-Fi profissional de amplo alcance e de alta potência para ambientes externos, que oferece maior
+                  proteção contra água...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-empresarial-wi-fi-5-outdoor-ap-1250-ac-outdoor">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/ap-1250-ac-max.png"
+                  alt="AP 1250 AC Max" />
+              </div>
+              <div class="description">
+                <h3>AP 1250 AC Max</h3>
+                <p>
+                  O AP 1250 AC Max é um roteador empresarial, que oferece conexão Wi-Fi de alta performance para
+                  empresas, hotéis e...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-empresarial-wi-fi-5-de-longo-alcance-ap-1250-ac-max">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-six" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-six"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Shoppings</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img src="https://backend.intelbras.com/sites/default/files/2024-07/ap-3000-ax.png" alt="AP 3000 AX" />
+              </div>
+              <div class="description">
+                <h3>AP 3000 AX</h3>
+                <p>
+                  O AP 3000 AX é o novo roteador empresarial com tecnologia Wi-Fi 6 ideal para ambientes com alta
+                  densidade de usuários...
+                </p>
+                <a class="link-product" href="https://www.intelbras.com/pt-br/roteador-access-point-ax-ap-3000-ax">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-07/sg-5204-mr.png" alt="SG 5204 MR" />
+              </div>
+              <div class="description">
+                <h3>SG 5204 MR</h3>
+                <p>
+                  Possibilita maior controle sobre a rede, ideal para aplicações que exigem alta densidade de portas...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-48p-giga-sg-5204-mr-l2">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/sf-900-hi-poe.png"  alt="SF 900 Hi-PoE" />
+              </div>
+              <div class="description">
+                <h3>SF 900 Hi-PoE</h3>
+                <p>
+                  Ideal para aplicações CFTV e soluções IP, ele transmite dados e energia e proporciona economia para
+                  estruturas com...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-9-portas-fast-ethernet-8-portas-poe-sf-900-hi-poe">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-seven" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-seven"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Hotéis</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/ap-1350-ac-s.png" alt="AP 1350 AC-S" />
+              </div>
+              <div class="description">
+                <h3>AP 1350 AC-S</h3>
+                <p>
+                  Access Point corporativo de longo alcance que oferece velocidade de até 1350Mbps e conexão de alto
+                  desempenho...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/roteador-empresarial-wi-fi-5-de-alta-velocidade-ap-1350-ac-s">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/kit-cftv-ip-wom-5a-mimo.png"
+                  alt="Kit CFTV IP - WOM 5A MiMo" />
+              </div>
+              <div class="description">
+                <h3>Kit CFTV IP – WOM 5A MiMo</h3>
+                <p>
+                  Composto por dois Rádios banda larga já configurados que podem ser instalados em elevadores e realizam
+                  a...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/kit-conexao-sem-fio-para-cftv-ip-wom-5a-mimo-kit-conexao-wom-5a-mimo">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-07/sg-2404d-poe-max.png" alt="SG 2404D PoE Max" />
+              </div>
+              <div class="description">
+                <h3>SG 2404D PoE Max</h3>
+                <p>
+                  Além de funções avançadas de gerenciamento, suas portas PoE fornecem alimentação e conectividade
+                  através do...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-24-portas-gigabit-4-mini-gbic-sg-2404d-poe-max">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-eight" class="modal">
+    <div class="container-modal">
+      <div class="pic-modal pic-modal-eight"></div>
+      <div class="conteudo-modal">
+        <div class="fix-modal">
+          <div class="title-closed">
+            <h2>
+              Produtos para
+              <span style="color: #00b26b; font-weight: bold">Provedores</span>
+            </h2>
+            <button class="close">
+              <img
+                src="https://backend.intelbras.com/sites/default/files/2024-07/button-close.png"
+                alt="Botão fechar"
+                width="35px" />
+            </button>
+          </div>
+          <div class="produtos">
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/wom-ac-max.png" alt="WOM AC MAX" />
+              </div>
+              <div class="description">
+                <h3>WOM AC MAX</h3>
+                <p>
+                  O WOM AC MAX possui antena de 20 dBi capaz de realizar enlaces sem fio de até 15 km de distância...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/cpe-5-ghz-com-antena-de-20-dbi-mimo-2x2-wom-ac-max">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/styles/medium/public/2024-07/sg-2404d-poe-max.png" alt="SG 2404D PoE Max" />
+              </div>
+              <div class="description">
+                <h3>SG 2404D PoE Max</h3>
+                <p>
+                  Produto ideal para projetos que buscam alta potência PoE, menos custo de infraestrutura e mais
+                  eficiência na gestão de...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-gerenciavel-24-portas-gigabit-4-mini-gbic-sg-2404d-poe-max">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+
+            <div class="produto">
+              <div class="img-produto">
+                <img
+                  src="https://backend.intelbras.com/sites/default/files/2024-07/s1005g-p.png" alt="S1005G-P" />
+              </div>
+              <div class="description">
+                <h3>S1005G-P</h3>
+                <p>
+                  O Switch 1005G-P conta com 5 portas Gigabit Ethernet, sendo 4 portas PoE+ e 1 porta Uplink. Desempenha
+                  alta capacidade...
+                </p>
+                <a
+                  class="link-product"
+                  href="https://www.intelbras.com/pt-br/switch-5-portas-gigabit-ethernet-com-4-portas-poe-s1005g-p">
+                  Ver produto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link-orca"
+          href="https://homolog-novosite.apps.intelbras.com.br/pt-br/redes-empresariais#conversion-form"
+          >Peça um orçamento agora</a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div id="conversion-form" class="containerForm">
+    <div class="boxForm">
+      <div class="boxImgForm">
+        <p>Preencha o formulário e receba um orçamento personalizado.</p>
+      </div>
+
+      <div class="boxFormPrimary">
+        <form
+          class="formInitial smartcapture-content-wrapper fuelux"
+          action="https://cl.s11.exct.net/DEManager.aspx"
+          name="form_empresariais"
+          id="form_empresariais"
+          method="post">
+          <h3>Solicite uma proposta</h3>
+
+          <input type="hidden" name="_clientID" value="514010866" />
+          <input type="hidden" name="_deExternalKey" value="EA3EE185-BFFC-4276-83EA-E6892D20ADBE" />
+          <input type="hidden" name="_action" value="add" />
+          <input type="hidden" name="_returnXML" value="0" />
+
+          <input
+            type="hidden"
+            name="_successURL"
+            value="https://cloud.intelbras-info.com/orcamento-solucoes-de-incendio-sucesso" />
+          <input type="hidden" name="_errorURL" value="https://example.com/Failed" />
+
+          <div class="containerInput">
+            <div class="iconInput">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path
+                  d="M5.99219 19.6619V18.6619C5.99219 16.8053 6.72969 15.0249 8.04244 13.7121C9.35519 12.3994 11.1357 11.6619 12.9922 11.6619V11.6619C14.8487 11.6619 16.6292 12.3994 17.9419 13.7121C19.2547 15.0249 19.9922 16.8053 19.9922 18.6619V19.6619M12.9922 11.6619C14.0531 11.6619 15.0705 11.2404 15.8206 10.4903C16.5708 9.74015 16.9922 8.72273 16.9922 7.66187C16.9922 6.601 16.5708 5.58358 15.8206 4.83344C15.0705 4.08329 14.0531 3.66187 12.9922 3.66187C11.9313 3.66187 10.9139 4.08329 10.1638 4.83344C9.41361 5.58358 8.99219 6.601 8.99219 7.66187C8.99219 8.72273 9.41361 9.74015 10.1638 10.4903C10.9139 11.2404 11.9313 11.6619 12.9922 11.6619V11.6619Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="text-field-3 w-input"
+              maxlength="256"
+              name="nome"
+              data-name="nome"
+              placeholder="Nome"
+              id="nome" />
+          </div>
+
+          <div class="containerInput">
+            <div class="iconInput">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                <path
+                  d="M2.00781 8.66187V17.6619C2.00781 18.1923 2.21853 18.701 2.5936 19.0761C2.96867 19.4512 3.47738 19.6619 4.00781 19.6619H18.0078C18.5382 19.6619 19.047 19.4512 19.422 19.0761C19.7971 18.701 20.0078 18.1923 20.0078 17.6619V8.66187"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M13.8408 19.6619V13.6619C13.8408 13.1314 13.6301 12.6227 13.255 12.2477C12.88 11.8726 12.3713 11.6619 11.8408 11.6619H9.84082C9.31039 11.6619 8.80168 11.8726 8.42661 12.2477C8.05153 12.6227 7.84082 13.1314 7.84082 13.6619V19.6619"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-miterlimit="16" />
+                <path
+                  d="M20.8258 8.02587L19.1318 2.09687C19.096 1.97151 19.0202 1.86125 18.9161 1.78276C18.812 1.70428 18.6852 1.66184 18.5548 1.66187H14.5078L14.9828 7.36587C14.99 7.45758 15.019 7.54626 15.0673 7.62453C15.1157 7.7028 15.182 7.7684 15.2608 7.81587C15.6508 8.04887 16.4128 8.47887 17.0078 8.66187C18.0238 8.97487 19.5078 8.86186 20.3538 8.75786C20.4361 8.74723 20.515 8.71878 20.5851 8.6745C20.6552 8.63021 20.7148 8.57116 20.7598 8.50146C20.8047 8.43176 20.8339 8.3531 20.8453 8.27096C20.8567 8.18881 20.8501 8.10517 20.8258 8.02587Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M13.0079 8.66187C13.5759 8.48687 14.2959 8.08786 14.6979 7.84986C14.7916 7.79409 14.8676 7.71294 14.9171 7.6158C14.9667 7.51865 14.9877 7.40947 14.9779 7.30087L14.5079 1.66187H7.50786L7.03786 7.30087C7.02779 7.40963 7.04875 7.51902 7.09831 7.61636C7.14786 7.71371 7.22399 7.79501 7.31786 7.85087C7.71986 8.08787 8.43986 8.48687 9.00786 8.66187C10.5009 9.12187 11.5149 9.12187 13.0079 8.66187V8.66187Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M2.88386 2.09687L1.18986 8.02687C1.16595 8.10605 1.15956 8.18948 1.17113 8.27138C1.1827 8.35328 1.21196 8.43168 1.25687 8.50113C1.30178 8.57059 1.36126 8.62944 1.4312 8.6736C1.50114 8.71777 1.57985 8.74618 1.66186 8.75687C2.50686 8.86187 3.99186 8.97387 5.00786 8.66187C5.60286 8.47887 6.36587 8.04886 6.75487 7.81686C6.8338 7.7693 6.90022 7.70355 6.94858 7.62509C6.99694 7.54664 7.02584 7.45776 7.03286 7.36587L7.50786 1.66187H3.46087C3.33049 1.66184 3.20364 1.70428 3.09954 1.78276C2.99543 1.86125 2.91972 1.97151 2.88386 2.09687V2.09687Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="text-field-3 w-input"
+              maxlength="256"
+              name="nome_empresa"
+              data-name="nome_empresa"
+              placeholder="Nome da empresa"
+              id="nome" />
+          </div>
+
+          <div class="containerInput">
+            <div class="iconInput">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path
+                  d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                  stroke="#8B979F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                  stroke="#8B979F"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="text-field-3 w-input"
+              maxlength="256"
+              name="estado"
+              data-name="estado"
+              placeholder="Estado"
+              id="nome" />
+          </div>
+
+          <div class="containerInput">
+            <div class="iconInput">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path
+                  d="M19.1102 14.3639L14.9922 15.1619C12.2102 13.7659 10.4922 12.1619 9.49218 9.66187L10.2622 5.53187L8.80718 1.66187H5.05618C3.92818 1.66187 3.04018 2.59387 3.20918 3.70887C3.62918 6.49187 4.86918 11.5389 8.49218 15.1619C12.2972 18.9669 17.7782 20.6179 20.7942 21.2749C21.9592 21.5279 22.9922 20.6199 22.9922 19.4269V15.8429L19.1102 14.3639V14.3639Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="text"
+              class="text-field-2 w-input"
+              maxlength="256"
+              name="celular"
+              data-name="celular"
+              placeholder="Telefone"
+              id="celular" />
+            <div id="msg-erro-celular" style="color: red; font-size: 11px"></div>
+          </div>
+
+          <div class="containerInput">
+            <div class="iconInput">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                <path
+                  d="M1.69997 2.86865L10.9922 9.16189L19.889 2.86865"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M0.992188 13.6619V3.66187C0.992187 3.13143 1.2029 2.62272 1.57797 2.24765C1.95305 1.87258 2.46175 1.66187 2.99219 1.66187H18.9922C19.5226 1.66187 20.0313 1.87258 20.4064 2.24765C20.7815 2.62272 20.9922 3.13143 20.9922 3.66187V13.6619C20.9922 14.1923 20.7815 14.701 20.4064 15.0761C20.0313 15.4512 19.5226 15.6619 18.9922 15.6619H2.99219C2.46175 15.6619 1.95305 15.4512 1.57797 15.0761C1.2029 14.701 0.992188 14.1923 0.992188 13.6619Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <label for=""></label>
+            <input
+              type="email"
+              class="text-field w-input"
+              maxlength="256"
+              name="email"
+              data-name="email"
+              placeholder="Email"
+              id="email" />
+          </div>
+
+          <div class="Containercheck" style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              value="true"
+              name="aceite_comunicacoes"
+              data-field-type="Boolean"
+              id="aceite_comunicacoes"
+              data-name="aceite_comunicacoes"
+              class="input-chckbox w-checkbox-input" />
+
+            <label for="aceite_comunicacoes"
+              >Tenho interesse em receber notícias, novidades e promoções da Intelbras.</label
+            >
+          </div>
+
+          <div class="Containercheck" style="display: flex; align-items: center">
+            <input
+              type="checkbox"
+              value="true"
+              name="aceite_termos"
+              data-field-type="Boolean"
+              id="aceite_termos"
+              data-name="aceite_termos"
+              class="input-chckbox w-checkbox-input" />
+
+            <label for="aceite_termos"
+              >Ao informar os meus dados, concordo com os
+              <a href="https://www.intelbras.com/pt-br/politica-de-privacidade/termos">Termos de uso</a>
+              e
+              <a href="https://www.intelbras.com/pt-br/politica-de-privacidade/politica">Política de Privacidade</a
+              >.</label
+            >
+          </div>
+
+          <input type="hidden" name="UTM_source" id="UTM_source" />
+          <input type="hidden" name="UTM_medium" id="UTM_medium" />
+          <input type="hidden" name="UTM_term" id="UTM_term" />
+          <input type="hidden" name="UTM_campaign" id="UTM_campaign" />
+
+          <button
+            type="submit"
+            value="Baixar catálogo"
+            data-wait="Please wait..."
+            class="submit-button w-button btnRedes">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+  (() => {
+    var bt = (e, E) => () => (E || e((E = { exports: {} }).exports, E), E.exports);
+    var Wt = bt(() => {
+      "use strict";
+      window.tram = (function (e) {
+        function E(t, n) {
+          var r = new l.Bare();
+          return r.init(t, n);
+        }
+        function p(t) {
+          return t.replace(/[A-Z]/g, function (n) {
+            return "-" + n.toLowerCase();
+          });
+        }
+        function M(t) {
+          var n = parseInt(t.slice(1), 16),
+            r = (n >> 16) & 255,
+            o = (n >> 8) & 255,
+            i = 255 & n;
+          return [r, o, i];
+        }
+        function R(t, n, r) {
+          return "#" + ((1 << 24) | (t << 16) | (n << 8) | r).toString(16).slice(1);
+        }
+        function k() {}
+        function C(t, n) {
+          Q("Type warning: Expected: [" + t + "] Got: [" + typeof n + "] " + n);
+        }
+        function _(t, n, r) {
+          Q("Units do not match [" + t + "]: " + n + ", " + r);
+        }
+        function U(t, n, r) {
+          if ((n !== void 0 && (r = n), t === void 0)) return r;
+          var o = r;
+          return (
+            Rt.test(t) || !Ct.test(t) ? (o = parseInt(t, 10)) : Ct.test(t) && (o = 1e3 * parseFloat(t)),
+            0 > o && (o = 0),
+            o === o ? o : r
+          );
+        }
+        function Q(t) {
+          it.debug && window && window.console.warn(t);
+        }
+        function nt(t) {
+          for (var n = -1, r = t ? t.length : 0, o = []; ++n < r; ) {
+            var i = t[n];
+            i && o.push(i);
+          }
+          return o;
+        }
+        var B = (function (t, n, r) {
+            function o(F) {
+              return typeof F == "object";
+            }
+            function i(F) {
+              return typeof F == "function";
+            }
+            function a() {}
+            function g(F, j) {
+              function d() {
+                var st = new T();
+                return i(st.init) && st.init.apply(st, arguments), st;
+              }
+              function T() {}
+              j === r && ((j = F), (F = Object)), (d.Bare = T);
+              var D,
+                rt = (a[t] = F[t]),
+                gt = (T[t] = d[t] = new a());
+              return (
+                (gt.constructor = d),
+                (d.mixin = function (st) {
+                  return (T[t] = d[t] = g(d, st)[t]), d;
+                }),
+                (d.open = function (st) {
+                  if (((D = {}), i(st) ? (D = st.call(d, gt, rt, d, F)) : o(st) && (D = st), o(D)))
+                    for (var zt in D) n.call(D, zt) && (gt[zt] = D[zt]);
+                  return i(gt.init) || (gt.init = F), d;
+                }),
+                d.open(j)
+              );
+            }
+            return g;
+          })("prototype", {}.hasOwnProperty),
+          H = {
+            ease: [
+              "ease",
+              function (t, n, r, o) {
+                var i = (t /= o) * t,
+                  a = i * t;
+                return n + r * (-2.75 * a * i + 11 * i * i + -15.5 * a + 8 * i + 0.25 * t);
+              },
+            ],
+            "ease-in": [
+              "ease-in",
+              function (t, n, r, o) {
+                var i = (t /= o) * t,
+                  a = i * t;
+                return n + r * (-1 * a * i + 3 * i * i + -3 * a + 2 * i);
+              },
+            ],
+            "ease-out": [
+              "ease-out",
+              function (t, n, r, o) {
+                var i = (t /= o) * t,
+                  a = i * t;
+                return n + r * (0.3 * a * i + -1.6 * i * i + 2.2 * a + -1.8 * i + 1.9 * t);
+              },
+            ],
+            "ease-in-out": [
+              "ease-in-out",
+              function (t, n, r, o) {
+                var i = (t /= o) * t,
+                  a = i * t;
+                return n + r * (2 * a * i + -5 * i * i + 2 * a + 2 * i);
+              },
+            ],
+            linear: [
+              "linear",
+              function (t, n, r, o) {
+                return (r * t) / o + n;
+              },
+            ],
+            "ease-in-quad": [
+              "cubic-bezier(0.550, 0.085, 0.680, 0.530)",
+              function (t, n, r, o) {
+                return r * (t /= o) * t + n;
+              },
+            ],
+            "ease-out-quad": [
+              "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+              function (t, n, r, o) {
+                return -r * (t /= o) * (t - 2) + n;
+              },
+            ],
+            "ease-in-out-quad": [
+              "cubic-bezier(0.455, 0.030, 0.515, 0.955)",
+              function (t, n, r, o) {
+                return (t /= o / 2) < 1 ? (r / 2) * t * t + n : (-r / 2) * (--t * (t - 2) - 1) + n;
+              },
+            ],
+            "ease-in-cubic": [
+              "cubic-bezier(0.550, 0.055, 0.675, 0.190)",
+              function (t, n, r, o) {
+                return r * (t /= o) * t * t + n;
+              },
+            ],
+            "ease-out-cubic": [
+              "cubic-bezier(0.215, 0.610, 0.355, 1)",
+              function (t, n, r, o) {
+                return r * ((t = t / o - 1) * t * t + 1) + n;
+              },
+            ],
+            "ease-in-out-cubic": [
+              "cubic-bezier(0.645, 0.045, 0.355, 1)",
+              function (t, n, r, o) {
+                return (t /= o / 2) < 1 ? (r / 2) * t * t * t + n : (r / 2) * ((t -= 2) * t * t + 2) + n;
+              },
+            ],
+            "ease-in-quart": [
+              "cubic-bezier(0.895, 0.030, 0.685, 0.220)",
+              function (t, n, r, o) {
+                return r * (t /= o) * t * t * t + n;
+              },
+            ],
+            "ease-out-quart": [
+              "cubic-bezier(0.165, 0.840, 0.440, 1)",
+              function (t, n, r, o) {
+                return -r * ((t = t / o - 1) * t * t * t - 1) + n;
+              },
+            ],
+            "ease-in-out-quart": [
+              "cubic-bezier(0.770, 0, 0.175, 1)",
+              function (t, n, r, o) {
+                return (t /= o / 2) < 1 ? (r / 2) * t * t * t * t + n : (-r / 2) * ((t -= 2) * t * t * t - 2) + n;
+              },
+            ],
+            "ease-in-quint": [
+              "cubic-bezier(0.755, 0.050, 0.855, 0.060)",
+              function (t, n, r, o) {
+                return r * (t /= o) * t * t * t * t + n;
+              },
+            ],
+            "ease-out-quint": [
+              "cubic-bezier(0.230, 1, 0.320, 1)",
+              function (t, n, r, o) {
+                return r * ((t = t / o - 1) * t * t * t * t + 1) + n;
+              },
+            ],
+            "ease-in-out-quint": [
+              "cubic-bezier(0.860, 0, 0.070, 1)",
+              function (t, n, r, o) {
+                return (t /= o / 2) < 1
+                  ? (r / 2) * t * t * t * t * t + n
+                  : (r / 2) * ((t -= 2) * t * t * t * t + 2) + n;
+              },
+            ],
+            "ease-in-sine": [
+              "cubic-bezier(0.470, 0, 0.745, 0.715)",
+              function (t, n, r, o) {
+                return -r * Math.cos((t / o) * (Math.PI / 2)) + r + n;
+              },
+            ],
+            "ease-out-sine": [
+              "cubic-bezier(0.390, 0.575, 0.565, 1)",
+              function (t, n, r, o) {
+                return r * Math.sin((t / o) * (Math.PI / 2)) + n;
+              },
+            ],
+            "ease-in-out-sine": [
+              "cubic-bezier(0.445, 0.050, 0.550, 0.950)",
+              function (t, n, r, o) {
+                return (-r / 2) * (Math.cos((Math.PI * t) / o) - 1) + n;
+              },
+            ],
+            "ease-in-expo": [
+              "cubic-bezier(0.950, 0.050, 0.795, 0.035)",
+              function (t, n, r, o) {
+                return t === 0 ? n : r * Math.pow(2, 10 * (t / o - 1)) + n;
+              },
+            ],
+            "ease-out-expo": [
+              "cubic-bezier(0.190, 1, 0.220, 1)",
+              function (t, n, r, o) {
+                return t === o ? n + r : r * (-Math.pow(2, (-10 * t) / o) + 1) + n;
+              },
+            ],
+            "ease-in-out-expo": [
+              "cubic-bezier(1, 0, 0, 1)",
+              function (t, n, r, o) {
+                return t === 0
+                  ? n
+                  : t === o
+                  ? n + r
+                  : (t /= o / 2) < 1
+                  ? (r / 2) * Math.pow(2, 10 * (t - 1)) + n
+                  : (r / 2) * (-Math.pow(2, -10 * --t) + 2) + n;
+              },
+            ],
+            "ease-in-circ": [
+              "cubic-bezier(0.600, 0.040, 0.980, 0.335)",
+              function (t, n, r, o) {
+                return -r * (Math.sqrt(1 - (t /= o) * t) - 1) + n;
+              },
+            ],
+            "ease-out-circ": [
+              "cubic-bezier(0.075, 0.820, 0.165, 1)",
+              function (t, n, r, o) {
+                return r * Math.sqrt(1 - (t = t / o - 1) * t) + n;
+              },
+            ],
+            "ease-in-out-circ": [
+              "cubic-bezier(0.785, 0.135, 0.150, 0.860)",
+              function (t, n, r, o) {
+                return (t /= o / 2) < 1
+                  ? (-r / 2) * (Math.sqrt(1 - t * t) - 1) + n
+                  : (r / 2) * (Math.sqrt(1 - (t -= 2) * t) + 1) + n;
+              },
+            ],
+            "ease-in-back": [
+              "cubic-bezier(0.600, -0.280, 0.735, 0.045)",
+              function (t, n, r, o, i) {
+                return i === void 0 && (i = 1.70158), r * (t /= o) * t * ((i + 1) * t - i) + n;
+              },
+            ],
+            "ease-out-back": [
+              "cubic-bezier(0.175, 0.885, 0.320, 1.275)",
+              function (t, n, r, o, i) {
+                return i === void 0 && (i = 1.70158), r * ((t = t / o - 1) * t * ((i + 1) * t + i) + 1) + n;
+              },
+            ],
+            "ease-in-out-back": [
+              "cubic-bezier(0.680, -0.550, 0.265, 1.550)",
+              function (t, n, r, o, i) {
+                return (
+                  i === void 0 && (i = 1.70158),
+                  (t /= o / 2) < 1
+                    ? (r / 2) * t * t * (((i *= 1.525) + 1) * t - i) + n
+                    : (r / 2) * ((t -= 2) * t * (((i *= 1.525) + 1) * t + i) + 2) + n
+                );
+              },
+            ],
+          },
+          W = {
+            "ease-in-back": "cubic-bezier(0.600, 0, 0.735, 0.045)",
+            "ease-out-back": "cubic-bezier(0.175, 0.885, 0.320, 1)",
+            "ease-in-out-back": "cubic-bezier(0.680, 0, 0.265, 1)",
+          },
+          V = document,
+          Y = window,
+          X = "bkwld-tram",
+          P = /[\-\.0-9]/g,
+          S = /[A-Z]/,
+          v = "number",
+          G = /^(rgb|#)/,
+          q = /(em|cm|mm|in|pt|pc|px)$/,
+          K = /(em|cm|mm|in|pt|pc|px|%)$/,
+          at = /(deg|rad|turn)$/,
+          ft = "unitless",
+          lt = /(all|none) 0s ease 0s/,
+          Lt = /^(width|height)$/,
+          mt = " ",
+          b = V.createElement("a"),
+          s = ["Webkit", "Moz", "O", "ms"],
+          c = ["-webkit-", "-moz-", "-o-", "-ms-"],
+          w = function (t) {
+            if (t in b.style) return { dom: t, css: t };
+            var n,
+              r,
+              o = "",
+              i = t.split("-");
+            for (n = 0; n < i.length; n++) o += i[n].charAt(0).toUpperCase() + i[n].slice(1);
+            for (n = 0; n < s.length; n++) if (((r = s[n] + o), r in b.style)) return { dom: r, css: c[n] + t };
+          },
+          h = (E.support = {
+            bind: Function.prototype.bind,
+            transform: w("transform"),
+            transition: w("transition"),
+            backface: w("backface-visibility"),
+            timing: w("transition-timing-function"),
+          });
+        if (h.transition) {
+          var z = h.timing.dom;
+          if (((b.style[z] = H["ease-in-back"][0]), !b.style[z])) for (var O in W) H[O][0] = W[O];
+        }
+        var u = (E.frame = (function () {
+            var t =
+              Y.requestAnimationFrame ||
+              Y.webkitRequestAnimationFrame ||
+              Y.mozRequestAnimationFrame ||
+              Y.oRequestAnimationFrame ||
+              Y.msRequestAnimationFrame;
+            return t && h.bind
+              ? t.bind(Y)
+              : function (n) {
+                  Y.setTimeout(n, 16);
+                };
+          })()),
+          m = (E.now = (function () {
+            var t = Y.performance,
+              n = t && (t.now || t.webkitNow || t.msNow || t.mozNow);
+            return n && h.bind
+              ? n.bind(t)
+              : Date.now ||
+                  function () {
+                    return +new Date();
+                  };
+          })()),
+          y = B(function (t) {
+            function n(x, $) {
+              var et = nt(("" + x).split(mt)),
+                Z = et[0];
+              $ = $ || {};
+              var ut = qt[Z];
+              if (!ut) return Q("Unsupported property: " + Z);
+              if (!$.weak || !this.props[Z]) {
+                var ht = ut[0],
+                  ct = this.props[Z];
+                return ct || (ct = this.props[Z] = new ht.Bare()), ct.init(this.$el, et, ut, $), ct;
+              }
+            }
+            function r(x, $, et) {
+              if (x) {
+                var Z = typeof x;
+                if (
+                  ($ || (this.timer && this.timer.destroy(), (this.queue = []), (this.active = !1)), Z == "number" && $)
+                )
+                  return (
+                    (this.timer = new tt({
+                      duration: x,
+                      context: this,
+                      complete: a,
+                    })),
+                    void (this.active = !0)
+                  );
+                if (Z == "string" && $) {
+                  switch (x) {
+                    case "hide":
+                      d.call(this);
+                      break;
+                    case "stop":
+                      g.call(this);
+                      break;
+                    case "redraw":
+                      T.call(this);
+                      break;
+                    default:
+                      n.call(this, x, et && et[1]);
+                  }
+                  return a.call(this);
+                }
+                if (Z == "function") return void x.call(this, this);
+                if (Z == "object") {
+                  var ut = 0;
+                  gt.call(
+                    this,
+                    x,
+                    function (ot, ye) {
+                      ot.span > ut && (ut = ot.span), ot.stop(), ot.animate(ye);
+                    },
+                    function (ot) {
+                      "wait" in ot && (ut = U(ot.wait, 0));
+                    }
+                  ),
+                    rt.call(this),
+                    ut > 0 &&
+                      ((this.timer = new tt({ duration: ut, context: this })),
+                      (this.active = !0),
+                      $ && (this.timer.complete = a));
+                  var ht = this,
+                    ct = !1,
+                    Dt = {};
+                  u(function () {
+                    gt.call(ht, x, function (ot) {
+                      ot.active && ((ct = !0), (Dt[ot.name] = ot.nextStyle));
+                    }),
+                      ct && ht.$el.css(Dt);
+                  });
+                }
+              }
+            }
+            function o(x) {
+              (x = U(x, 0)),
+                this.active
+                  ? this.queue.push({ options: x })
+                  : ((this.timer = new tt({
+                      duration: x,
+                      context: this,
+                      complete: a,
+                    })),
+                    (this.active = !0));
+            }
+            function i(x) {
+              return this.active
+                ? (this.queue.push({ options: x, args: arguments }), void (this.timer.complete = a))
+                : Q("No active transition timer. Use start() or wait() before then().");
+            }
+            function a() {
+              if ((this.timer && this.timer.destroy(), (this.active = !1), this.queue.length)) {
+                var x = this.queue.shift();
+                r.call(this, x.options, !0, x.args);
+              }
+            }
+            function g(x) {
+              this.timer && this.timer.destroy(), (this.queue = []), (this.active = !1);
+              var $;
+              typeof x == "string" ? (($ = {}), ($[x] = 1)) : ($ = typeof x == "object" && x != null ? x : this.props),
+                gt.call(this, $, st),
+                rt.call(this);
+            }
+            function F(x) {
+              g.call(this, x), gt.call(this, x, zt, ge);
+            }
+            function j(x) {
+              typeof x != "string" && (x = "block"), (this.el.style.display = x);
+            }
+            function d() {
+              g.call(this), (this.el.style.display = "none");
+            }
+            function T() {
+              this.el.offsetHeight;
+            }
+            function D() {
+              g.call(this), e.removeData(this.el, X), (this.$el = this.el = null);
+            }
+            function rt() {
+              var x,
+                $,
+                et = [];
+              this.upstream && et.push(this.upstream);
+              for (x in this.props) ($ = this.props[x]), $.active && et.push($.string);
+              (et = et.join(",")), this.style !== et && ((this.style = et), (this.el.style[h.transition.dom] = et));
+            }
+            function gt(x, $, et) {
+              var Z,
+                ut,
+                ht,
+                ct,
+                Dt = $ !== st,
+                ot = {};
+              for (Z in x)
+                (ht = x[Z]),
+                  Z in wt
+                    ? (ot.transform || (ot.transform = {}), (ot.transform[Z] = ht))
+                    : (S.test(Z) && (Z = p(Z)), Z in qt ? (ot[Z] = ht) : (ct || (ct = {}), (ct[Z] = ht)));
+              for (Z in ot) {
+                if (((ht = ot[Z]), (ut = this.props[Z]), !ut)) {
+                  if (!Dt) continue;
+                  ut = n.call(this, Z);
+                }
+                $.call(this, ut, ht);
+              }
+              et && ct && et.call(this, ct);
+            }
+            function st(x) {
+              x.stop();
+            }
+            function zt(x, $) {
+              x.set($);
+            }
+            function ge(x) {
+              this.$el.css(x);
+            }
+            function dt(x, $) {
+              t[x] = function () {
+                return this.children ? be.call(this, $, arguments) : (this.el && $.apply(this, arguments), this);
+              };
+            }
+            function be(x, $) {
+              var et,
+                Z = this.children.length;
+              for (et = 0; Z > et; et++) x.apply(this.children[et], $);
+              return this;
+            }
+            (t.init = function (x) {
+              if (
+                ((this.$el = e(x)),
+                (this.el = this.$el[0]),
+                (this.props = {}),
+                (this.queue = []),
+                (this.style = ""),
+                (this.active = !1),
+                it.keepInherited && !it.fallback)
+              ) {
+                var $ = Ot(this.el, "transition");
+                $ && !lt.test($) && (this.upstream = $);
+              }
+              h.backface && it.hideBackface && Et(this.el, h.backface.css, "hidden");
+            }),
+              dt("add", n),
+              dt("start", r),
+              dt("wait", o),
+              dt("then", i),
+              dt("next", a),
+              dt("stop", g),
+              dt("set", F),
+              dt("show", j),
+              dt("hide", d),
+              dt("redraw", T),
+              dt("destroy", D);
+          }),
+          l = B(y, function (t) {
+            function n(r, o) {
+              var i = e.data(r, X) || e.data(r, X, new y.Bare());
+              return i.el || i.init(r), o ? i.start(o) : i;
+            }
+            t.init = function (r, o) {
+              var i = e(r);
+              if (!i.length) return this;
+              if (i.length === 1) return n(i[0], o);
+              var a = [];
+              return (
+                i.each(function (g, F) {
+                  a.push(n(F, o));
+                }),
+                (this.children = a),
+                this
+              );
+            };
+          }),
+          f = B(function (t) {
+            function n() {
+              var a = this.get();
+              this.update("auto");
+              var g = this.get();
+              return this.update(a), g;
+            }
+            function r(a, g, F) {
+              return g !== void 0 && (F = g), a in H ? a : F;
+            }
+            function o(a) {
+              var g = /rgba?\((\d+),\s*(\d+),\s*(\d+)/.exec(a);
+              return (g ? R(g[1], g[2], g[3]) : a).replace(/#(\w)(\w)(\w)$/, "#$1$1$2$2$3$3");
+            }
+            var i = { duration: 500, ease: "ease", delay: 0 };
+            (t.init = function (a, g, F, j) {
+              (this.$el = a), (this.el = a[0]);
+              var d = g[0];
+              F[2] && (d = F[2]),
+                Tt[d] && (d = Tt[d]),
+                (this.name = d),
+                (this.type = F[1]),
+                (this.duration = U(g[1], this.duration, i.duration)),
+                (this.ease = r(g[2], this.ease, i.ease)),
+                (this.delay = U(g[3], this.delay, i.delay)),
+                (this.span = this.duration + this.delay),
+                (this.active = !1),
+                (this.nextStyle = null),
+                (this.auto = Lt.test(this.name)),
+                (this.unit = j.unit || this.unit || it.defaultUnit),
+                (this.angle = j.angle || this.angle || it.defaultAngle),
+                it.fallback || j.fallback
+                  ? (this.animate = this.fallback)
+                  : ((this.animate = this.transition),
+                    (this.string =
+                      this.name +
+                      mt +
+                      this.duration +
+                      "ms" +
+                      (this.ease != "ease" ? mt + H[this.ease][0] : "") +
+                      (this.delay ? mt + this.delay + "ms" : "")));
+            }),
+              (t.set = function (a) {
+                (a = this.convert(a, this.type)), this.update(a), this.redraw();
+              }),
+              (t.transition = function (a) {
+                (this.active = !0),
+                  (a = this.convert(a, this.type)),
+                  this.auto &&
+                    (this.el.style[this.name] == "auto" && (this.update(this.get()), this.redraw()),
+                    a == "auto" && (a = n.call(this))),
+                  (this.nextStyle = a);
+              }),
+              (t.fallback = function (a) {
+                var g = this.el.style[this.name] || this.convert(this.get(), this.type);
+                (a = this.convert(a, this.type)),
+                  this.auto &&
+                    (g == "auto" && (g = this.convert(this.get(), this.type)), a == "auto" && (a = n.call(this))),
+                  (this.tween = new L({
+                    from: g,
+                    to: a,
+                    duration: this.duration,
+                    delay: this.delay,
+                    ease: this.ease,
+                    update: this.update,
+                    context: this,
+                  }));
+              }),
+              (t.get = function () {
+                return Ot(this.el, this.name);
+              }),
+              (t.update = function (a) {
+                Et(this.el, this.name, a);
+              }),
+              (t.stop = function () {
+                (this.active || this.nextStyle) &&
+                  ((this.active = !1), (this.nextStyle = null), Et(this.el, this.name, this.get()));
+                var a = this.tween;
+                a && a.context && a.destroy();
+              }),
+              (t.convert = function (a, g) {
+                if (a == "auto" && this.auto) return a;
+                var F,
+                  j = typeof a == "number",
+                  d = typeof a == "string";
+                switch (g) {
+                  case v:
+                    if (j) return a;
+                    if (d && a.replace(P, "") === "") return +a;
+                    F = "number(unitless)";
+                    break;
+                  case G:
+                    if (d) {
+                      if (a === "" && this.original) return this.original;
+                      if (g.test(a)) return a.charAt(0) == "#" && a.length == 7 ? a : o(a);
+                    }
+                    F = "hex or rgb string";
+                    break;
+                  case q:
+                    if (j) return a + this.unit;
+                    if (d && g.test(a)) return a;
+                    F = "number(px) or string(unit)";
+                    break;
+                  case K:
+                    if (j) return a + this.unit;
+                    if (d && g.test(a)) return a;
+                    F = "number(px) or string(unit or %)";
+                    break;
+                  case at:
+                    if (j) return a + this.angle;
+                    if (d && g.test(a)) return a;
+                    F = "number(deg) or string(angle)";
+                    break;
+                  case ft:
+                    if (j || (d && K.test(a))) return a;
+                    F = "number(unitless) or string(unit or %)";
+                }
+                return C(F, a), a;
+              }),
+              (t.redraw = function () {
+                this.el.offsetHeight;
+              });
+          }),
+          A = B(f, function (t, n) {
+            t.init = function () {
+              n.init.apply(this, arguments), this.original || (this.original = this.convert(this.get(), G));
+            };
+          }),
+          I = B(f, function (t, n) {
+            (t.init = function () {
+              n.init.apply(this, arguments), (this.animate = this.fallback);
+            }),
+              (t.get = function () {
+                return this.$el[this.name]();
+              }),
+              (t.update = function (r) {
+                this.$el[this.name](r);
+              });
+          }),
+          N = B(f, function (t, n) {
+            function r(o, i) {
+              var a, g, F, j, d;
+              for (a in o) (j = wt[a]), (F = j[0]), (g = j[1] || a), (d = this.convert(o[a], F)), i.call(this, g, d, F);
+            }
+            (t.init = function () {
+              n.init.apply(this, arguments),
+                this.current ||
+                  ((this.current = {}),
+                  wt.perspective &&
+                    it.perspective &&
+                    ((this.current.perspective = it.perspective),
+                    Et(this.el, this.name, this.style(this.current)),
+                    this.redraw()));
+            }),
+              (t.set = function (o) {
+                r.call(this, o, function (i, a) {
+                  this.current[i] = a;
+                }),
+                  Et(this.el, this.name, this.style(this.current)),
+                  this.redraw();
+              }),
+              (t.transition = function (o) {
+                var i = this.values(o);
+                this.tween = new St({
+                  current: this.current,
+                  values: i,
+                  duration: this.duration,
+                  delay: this.delay,
+                  ease: this.ease,
+                });
+                var a,
+                  g = {};
+                for (a in this.current) g[a] = a in i ? i[a] : this.current[a];
+                (this.active = !0), (this.nextStyle = this.style(g));
+              }),
+              (t.fallback = function (o) {
+                var i = this.values(o);
+                this.tween = new St({
+                  current: this.current,
+                  values: i,
+                  duration: this.duration,
+                  delay: this.delay,
+                  ease: this.ease,
+                  update: this.update,
+                  context: this,
+                });
+              }),
+              (t.update = function () {
+                Et(this.el, this.name, this.style(this.current));
+              }),
+              (t.style = function (o) {
+                var i,
+                  a = "";
+                for (i in o) a += i + "(" + o[i] + ") ";
+                return a;
+              }),
+              (t.values = function (o) {
+                var i,
+                  a = {};
+                return (
+                  r.call(this, o, function (g, F, j) {
+                    (a[g] = F),
+                      this.current[g] === void 0 &&
+                        ((i = 0), ~g.indexOf("scale") && (i = 1), (this.current[g] = this.convert(i, j)));
+                  }),
+                  a
+                );
+              });
+          }),
+          L = B(function (t) {
+            function n(d) {
+              F.push(d) === 1 && u(r);
+            }
+            function r() {
+              var d,
+                T,
+                D,
+                rt = F.length;
+              if (rt) for (u(r), T = m(), d = rt; d--; ) (D = F[d]), D && D.render(T);
+            }
+            function o(d) {
+              var T,
+                D = e.inArray(d, F);
+              D >= 0 && ((T = F.slice(D + 1)), (F.length = D), T.length && (F = F.concat(T)));
+            }
+            function i(d) {
+              return Math.round(d * j) / j;
+            }
+            function a(d, T, D) {
+              return R(d[0] + D * (T[0] - d[0]), d[1] + D * (T[1] - d[1]), d[2] + D * (T[2] - d[2]));
+            }
+            var g = { ease: H.ease[1], from: 0, to: 1 };
+            (t.init = function (d) {
+              (this.duration = d.duration || 0), (this.delay = d.delay || 0);
+              var T = d.ease || g.ease;
+              H[T] && (T = H[T][1]),
+                typeof T != "function" && (T = g.ease),
+                (this.ease = T),
+                (this.update = d.update || k),
+                (this.complete = d.complete || k),
+                (this.context = d.context || this),
+                (this.name = d.name);
+              var D = d.from,
+                rt = d.to;
+              D === void 0 && (D = g.from),
+                rt === void 0 && (rt = g.to),
+                (this.unit = d.unit || ""),
+                typeof D == "number" && typeof rt == "number"
+                  ? ((this.begin = D), (this.change = rt - D))
+                  : this.format(rt, D),
+                (this.value = this.begin + this.unit),
+                (this.start = m()),
+                d.autoplay !== !1 && this.play();
+            }),
+              (t.play = function () {
+                this.active || (this.start || (this.start = m()), (this.active = !0), n(this));
+              }),
+              (t.stop = function () {
+                this.active && ((this.active = !1), o(this));
+              }),
+              (t.render = function (d) {
+                var T,
+                  D = d - this.start;
+                if (this.delay) {
+                  if (D <= this.delay) return;
+                  D -= this.delay;
+                }
+                if (D < this.duration) {
+                  var rt = this.ease(D, 0, 1, this.duration);
+                  return (
+                    (T = this.startRGB ? a(this.startRGB, this.endRGB, rt) : i(this.begin + rt * this.change)),
+                    (this.value = T + this.unit),
+                    void this.update.call(this.context, this.value)
+                  );
+                }
+                (T = this.endHex || this.begin + this.change),
+                  (this.value = T + this.unit),
+                  this.update.call(this.context, this.value),
+                  this.complete.call(this.context),
+                  this.destroy();
+              }),
+              (t.format = function (d, T) {
+                if (((T += ""), (d += ""), d.charAt(0) == "#"))
+                  return (
+                    (this.startRGB = M(T)),
+                    (this.endRGB = M(d)),
+                    (this.endHex = d),
+                    (this.begin = 0),
+                    void (this.change = 1)
+                  );
+                if (!this.unit) {
+                  var D = T.replace(P, ""),
+                    rt = d.replace(P, "");
+                  D !== rt && _("tween", T, d), (this.unit = D);
+                }
+                (T = parseFloat(T)), (d = parseFloat(d)), (this.begin = this.value = T), (this.change = d - T);
+              }),
+              (t.destroy = function () {
+                this.stop(), (this.context = null), (this.ease = this.update = this.complete = k);
+              });
+            var F = [],
+              j = 1e3;
+          }),
+          tt = B(L, function (t) {
+            (t.init = function (n) {
+              (this.duration = n.duration || 0),
+                (this.complete = n.complete || k),
+                (this.context = n.context),
+                this.play();
+            }),
+              (t.render = function (n) {
+                var r = n - this.start;
+                r < this.duration || (this.complete.call(this.context), this.destroy());
+              });
+          }),
+          St = B(L, function (t, n) {
+            (t.init = function (r) {
+              (this.context = r.context), (this.update = r.update), (this.tweens = []), (this.current = r.current);
+              var o, i;
+              for (o in r.values)
+                (i = r.values[o]),
+                  this.current[o] !== i &&
+                    this.tweens.push(
+                      new L({
+                        name: o,
+                        from: this.current[o],
+                        to: i,
+                        duration: r.duration,
+                        delay: r.delay,
+                        ease: r.ease,
+                        autoplay: !1,
+                      })
+                    );
+              this.play();
+            }),
+              (t.render = function (r) {
+                var o,
+                  i,
+                  a = this.tweens.length,
+                  g = !1;
+                for (o = a; o--; )
+                  (i = this.tweens[o]), i.context && (i.render(r), (this.current[i.name] = i.value), (g = !0));
+                return g ? void (this.update && this.update.call(this.context)) : this.destroy();
+              }),
+              (t.destroy = function () {
+                if ((n.destroy.call(this), this.tweens)) {
+                  var r,
+                    o = this.tweens.length;
+                  for (r = o; r--; ) this.tweens[r].destroy();
+                  (this.tweens = null), (this.current = null);
+                }
+              });
+          }),
+          it = (E.config = {
+            debug: !1,
+            defaultUnit: "px",
+            defaultAngle: "deg",
+            keepInherited: !1,
+            hideBackface: !1,
+            perspective: "",
+            fallback: !h.transition,
+            agentTests: [],
+          });
+        (E.fallback = function (t) {
+          if (!h.transition) return (it.fallback = !0);
+          it.agentTests.push("(" + t + ")");
+          var n = new RegExp(it.agentTests.join("|"), "i");
+          it.fallback = n.test(navigator.userAgent);
+        }),
+          E.fallback("6.0.[2-5] Safari"),
+          (E.tween = function (t) {
+            return new L(t);
+          }),
+          (E.delay = function (t, n, r) {
+            return new tt({ complete: n, duration: t, context: r });
+          }),
+          (e.fn.tram = function (t) {
+            return E.call(null, this, t);
+          });
+        var Et = e.style,
+          Ot = e.css,
+          Tt = { transform: h.transform && h.transform.css },
+          qt = {
+            color: [A, G],
+            background: [A, G, "background-color"],
+            "outline-color": [A, G],
+            "border-color": [A, G],
+            "border-top-color": [A, G],
+            "border-right-color": [A, G],
+            "border-bottom-color": [A, G],
+            "border-left-color": [A, G],
+            "border-width": [f, q],
+            "border-top-width": [f, q],
+            "border-right-width": [f, q],
+            "border-bottom-width": [f, q],
+            "border-left-width": [f, q],
+            "border-spacing": [f, q],
+            "letter-spacing": [f, q],
+            margin: [f, q],
+            "margin-top": [f, q],
+            "margin-right": [f, q],
+            "margin-bottom": [f, q],
+            "margin-left": [f, q],
+            padding: [f, q],
+            "padding-top": [f, q],
+            "padding-right": [f, q],
+            "padding-bottom": [f, q],
+            "padding-left": [f, q],
+            "outline-width": [f, q],
+            opacity: [f, v],
+            top: [f, K],
+            right: [f, K],
+            bottom: [f, K],
+            left: [f, K],
+            "font-size": [f, K],
+            "text-indent": [f, K],
+            "word-spacing": [f, K],
+            width: [f, K],
+            "min-width": [f, K],
+            "max-width": [f, K],
+            height: [f, K],
+            "min-height": [f, K],
+            "max-height": [f, K],
+            "line-height": [f, ft],
+            "scroll-top": [I, v, "scrollTop"],
+            "scroll-left": [I, v, "scrollLeft"],
+          },
+          wt = {};
+        h.transform &&
+          ((qt.transform = [N]),
+          (wt = {
+            x: [K, "translateX"],
+            y: [K, "translateY"],
+            rotate: [at],
+            rotateX: [at],
+            rotateY: [at],
+            scale: [v],
+            scaleX: [v],
+            scaleY: [v],
+            skew: [at],
+            skewX: [at],
+            skewY: [at],
+          })),
+          h.transform &&
+            h.backface &&
+            ((wt.z = [K, "translateZ"]), (wt.rotateZ = [at]), (wt.scaleZ = [v]), (wt.perspective = [q]));
+        var Rt = /ms/,
+          Ct = /s|\./;
+        return (e.tram = E);
+      })(window.jQuery);
+    });
+    var Vt = bt((De, Kt) => {
+      "use strict";
+      var Ee = window.$,
+        xe = Wt() && Ee.tram;
+      Kt.exports = (function () {
+        var e = {};
+        e.VERSION = "1.6.0-Webflow";
+        var E = {},
+          p = Array.prototype,
+          M = Object.prototype,
+          R = Function.prototype,
+          k = p.push,
+          C = p.slice,
+          _ = p.concat,
+          U = M.toString,
+          Q = M.hasOwnProperty,
+          nt = p.forEach,
+          B = p.map,
+          H = p.reduce,
+          W = p.reduceRight,
+          V = p.filter,
+          Y = p.every,
+          X = p.some,
+          P = p.indexOf,
+          S = p.lastIndexOf,
+          v = Array.isArray,
+          G = Object.keys,
+          q = R.bind,
+          K =
+            (e.each =
+            e.forEach =
+              function (s, c, w) {
+                if (s == null) return s;
+                if (nt && s.forEach === nt) s.forEach(c, w);
+                else if (s.length === +s.length) {
+                  for (var h = 0, z = s.length; h < z; h++) if (c.call(w, s[h], h, s) === E) return;
+                } else
+                  for (var O = e.keys(s), h = 0, z = O.length; h < z; h++)
+                    if (c.call(w, s[O[h]], O[h], s) === E) return;
+                return s;
+              });
+        (e.map = e.collect =
+          function (s, c, w) {
+            var h = [];
+            return s == null
+              ? h
+              : B && s.map === B
+              ? s.map(c, w)
+              : (K(s, function (z, O, u) {
+                  h.push(c.call(w, z, O, u));
+                }),
+                h);
+          }),
+          (e.find = e.detect =
+            function (s, c, w) {
+              var h;
+              return (
+                at(s, function (z, O, u) {
+                  if (c.call(w, z, O, u)) return (h = z), !0;
+                }),
+                h
+              );
+            }),
+          (e.filter = e.select =
+            function (s, c, w) {
+              var h = [];
+              return s == null
+                ? h
+                : V && s.filter === V
+                ? s.filter(c, w)
+                : (K(s, function (z, O, u) {
+                    c.call(w, z, O, u) && h.push(z);
+                  }),
+                  h);
+            });
+        var at =
+          (e.some =
+          e.any =
+            function (s, c, w) {
+              c || (c = e.identity);
+              var h = !1;
+              return s == null
+                ? h
+                : X && s.some === X
+                ? s.some(c, w)
+                : (K(s, function (z, O, u) {
+                    if (h || (h = c.call(w, z, O, u))) return E;
+                  }),
+                  !!h);
+            });
+        (e.contains = e.include =
+          function (s, c) {
+            return s == null
+              ? !1
+              : P && s.indexOf === P
+              ? s.indexOf(c) != -1
+              : at(s, function (w) {
+                  return w === c;
+                });
+          }),
+          (e.delay = function (s, c) {
+            var w = C.call(arguments, 2);
+            return setTimeout(function () {
+              return s.apply(null, w);
+            }, c);
+          }),
+          (e.defer = function (s) {
+            return e.delay.apply(e, [s, 1].concat(C.call(arguments, 1)));
+          }),
+          (e.throttle = function (s) {
+            var c, w, h;
+            return function () {
+              c ||
+                ((c = !0),
+                (w = arguments),
+                (h = this),
+                xe.frame(function () {
+                  (c = !1), s.apply(h, w);
+                }));
+            };
+          }),
+          (e.debounce = function (s, c, w) {
+            var h,
+              z,
+              O,
+              u,
+              m,
+              y = function () {
+                var l = e.now() - u;
+                l < c ? (h = setTimeout(y, c - l)) : ((h = null), w || ((m = s.apply(O, z)), (O = z = null)));
+              };
+            return function () {
+              (O = this), (z = arguments), (u = e.now());
+              var l = w && !h;
+              return h || (h = setTimeout(y, c)), l && ((m = s.apply(O, z)), (O = z = null)), m;
+            };
+          }),
+          (e.defaults = function (s) {
+            if (!e.isObject(s)) return s;
+            for (var c = 1, w = arguments.length; c < w; c++) {
+              var h = arguments[c];
+              for (var z in h) s[z] === void 0 && (s[z] = h[z]);
+            }
+            return s;
+          }),
+          (e.keys = function (s) {
+            if (!e.isObject(s)) return [];
+            if (G) return G(s);
+            var c = [];
+            for (var w in s) e.has(s, w) && c.push(w);
+            return c;
+          }),
+          (e.has = function (s, c) {
+            return Q.call(s, c);
+          }),
+          (e.isObject = function (s) {
+            return s === Object(s);
+          }),
+          (e.now =
+            Date.now ||
+            function () {
+              return new Date().getTime();
+            }),
+          (e.templateSettings = {
+            evaluate: /<%([\s\S]+?)%>/g,
+            interpolate: /<%=([\s\S]+?)%>/g,
+            escape: /<%-([\s\S]+?)%>/g,
+          });
+        var ft = /(.)^/,
+          lt = {
+            "'": "'",
+            "\\": "\\",
+            "\r": "r",
+            "\n": "n",
+            "\u2028": "u2028",
+            "\u2029": "u2029",
+          },
+          Lt = /\\|'|\r|\n|\u2028|\u2029/g,
+          mt = function (s) {
+            return "\\" + lt[s];
+          },
+          b = /^\s*(\w|\$)+\s*$/;
+        return (
+          (e.template = function (s, c, w) {
+            !c && w && (c = w), (c = e.defaults({}, c, e.templateSettings));
+            var h = RegExp(
+                [(c.escape || ft).source, (c.interpolate || ft).source, (c.evaluate || ft).source].join("|") + "|$",
+                "g"
+              ),
+              z = 0,
+              O = "__p+='";
+            s.replace(h, function (l, f, A, I, N) {
+              return (
+                (O += s.slice(z, N).replace(Lt, mt)),
+                (z = N + l.length),
+                f
+                  ? (O +=
+                      `'+
+    ((__t=(` +
+                      f +
+                      `))==null?'':_.escape(__t))+
+    '`)
+                  : A
+                  ? (O +=
+                      `'+
+    ((__t=(` +
+                      A +
+                      `))==null?'':__t)+
+    '`)
+                  : I &&
+                    (O +=
+                      `';
+    ` +
+                      I +
+                      `
+    __p+='`),
+                l
+              );
+            }),
+              (O += `';
+    `);
+            var u = c.variable;
+            if (u) {
+              if (!b.test(u)) throw new Error("variable is not a bare identifier: " + u);
+            } else
+              (O =
+                `with(obj||{}){
+    ` +
+                O +
+                `}
+    `),
+                (u = "obj");
+            O =
+              `var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+    ` +
+              O +
+              `return __p;
+    `;
+            var m;
+            try {
+              m = new Function(c.variable || "obj", "_", O);
+            } catch (l) {
+              throw ((l.source = O), l);
+            }
+            var y = function (l) {
+              return m.call(this, l, e);
+            };
+            return (
+              (y.source =
+                "function(" +
+                u +
+                `){
+    ` +
+                O +
+                "}"),
+              y
+            );
+          }),
+          e
+        );
+      })();
+    });
+    var kt = bt((Ie, ee) => {
+      "use strict";
+      var J = {},
+        At = {},
+        Ft = [],
+        Ut = window.Webflow || [],
+        xt = window.jQuery,
+        pt = xt(window),
+        ke = xt(document),
+        yt = xt.isFunction,
+        vt = (J._ = Vt()),
+        Gt = (J.tram = Wt() && xt.tram),
+        Pt = !1,
+        Bt = !1;
+      Gt.config.hideBackface = !1;
+      Gt.config.keepInherited = !0;
+      J.define = function (e, E, p) {
+        At[e] && Jt(At[e]);
+        var M = (At[e] = E(xt, vt, p) || {});
+        return Zt(M), M;
+      };
+      J.require = function (e) {
+        return At[e];
+      };
+      function Zt(e) {
+        J.env() && (yt(e.design) && pt.on("__wf_design", e.design), yt(e.preview) && pt.on("__wf_preview", e.preview)),
+          yt(e.destroy) && pt.on("__wf_destroy", e.destroy),
+          e.ready && yt(e.ready) && _e(e);
+      }
+      function _e(e) {
+        if (Pt) {
+          e.ready();
+          return;
+        }
+        vt.contains(Ft, e.ready) || Ft.push(e.ready);
+      }
+      function Jt(e) {
+        yt(e.design) && pt.off("__wf_design", e.design),
+          yt(e.preview) && pt.off("__wf_preview", e.preview),
+          yt(e.destroy) && pt.off("__wf_destroy", e.destroy),
+          e.ready && yt(e.ready) && Le(e);
+      }
+      function Le(e) {
+        Ft = vt.filter(Ft, function (E) {
+          return E !== e.ready;
+        });
+      }
+      J.push = function (e) {
+        if (Pt) {
+          yt(e) && e();
+          return;
+        }
+        Ut.push(e);
+      };
+      J.env = function (e) {
+        var E = window.__wf_design,
+          p = typeof E === "undefined";
+        if (!e) return p;
+        if (e === "design") return p && E;
+        if (e === "preview") return p && !E;
+        if (e === "slug") return p && window.__wf_slug;
+        if (e === "editor") return window.WebflowEditor;
+        if (e === "test") return window.__wf_test;
+        if (e === "frame") return window !== window.top;
+      };
+      var It = navigator.userAgent.toLowerCase(),
+        Qt = (J.env.touch =
+          "ontouchstart" in window || (window.DocumentTouch && document instanceof window.DocumentTouch)),
+        Se = (J.env.chrome =
+          /chrome/.test(It) && /Google/.test(navigator.vendor) && parseInt(It.match(/chrome\/(\d+)\./)[1], 10)),
+        Ae = (J.env.ios = /(ipod|iphone|ipad)/.test(It));
+      J.env.safari = /safari/.test(It) && !Se && !Ae;
+      var $t;
+      Qt &&
+        ke.on("touchstart mousedown", function (e) {
+          $t = e.target;
+        });
+      J.validClick = Qt
+        ? function (e) {
+            return e === $t || xt.contains(e, $t);
+          }
+        : function () {
+            return !0;
+          };
+      var jt = "resize.webflow orientationchange.webflow load.webflow",
+        Fe = "scroll.webflow " + jt;
+      J.resize = Ht(pt, jt);
+      J.scroll = Ht(pt, Fe);
+      J.redraw = Ht();
+      function Ht(e, E) {
+        var p = [],
+          M = {};
+        return (
+          (M.up = vt.throttle(function (R) {
+            vt.each(p, function (k) {
+              k(R);
+            });
+          })),
+          e && E && e.on(E, M.up),
+          (M.on = function (R) {
+            typeof R == "function" && (vt.contains(p, R) || p.push(R));
+          }),
+          (M.off = function (R) {
+            if (!arguments.length) {
+              p = [];
+              return;
+            }
+            p = vt.filter(p, function (k) {
+              return k !== R;
+            });
+          }),
+          M
+        );
+      }
+      J.location = function (e) {
+        window.location = e;
+      };
+      J.env() && (J.location = function () {});
+      J.ready = function () {
+        (Pt = !0), Bt ? Me() : vt.each(Ft, Yt), vt.each(Ut, Yt), J.resize.up();
+      };
+      function Yt(e) {
+        yt(e) && e();
+      }
+      function Me() {
+        (Bt = !1), vt.each(At, Zt);
+      }
+      var _t;
+      J.load = function (e) {
+        _t.then(e);
+      };
+      function te() {
+        _t && (_t.reject(), pt.off("load", _t.resolve)), (_t = new xt.Deferred()), pt.on("load", _t.resolve);
+      }
+      J.destroy = function (e) {
+        (e = e || {}),
+          (Bt = !0),
+          pt.triggerHandler("__wf_destroy"),
+          e.domready != null && (Pt = e.domready),
+          vt.each(At, Jt),
+          J.resize.off(),
+          J.scroll.off(),
+          J.redraw.off(),
+          (Ft = []),
+          (Ut = []),
+          _t.state() === "pending" && te();
+      };
+      xt(J.ready);
+      te();
+      ee.exports = window.Webflow = J;
+    });
+    var re = bt((Pe, ie) => {
+      "use strict";
+      var ne = kt();
+      ne.define(
+        "brand",
+        (ie.exports = function (e) {
+          var E = {},
+            p = document,
+            M = e("html"),
+            R = e("body"),
+            k = ".w-webflow-badge",
+            C = window.location,
+            _ = /PhantomJS/i.test(navigator.userAgent),
+            U = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange",
+            Q;
+          E.ready = function () {
+            var W = M.attr("data-wf-status"),
+              V = M.attr("data-wf-domain") || "";
+            /\.webflow\.io$/i.test(V) && C.hostname !== V && (W = !0),
+              W && !_ && ((Q = Q || B()), H(), setTimeout(H, 500), e(p).off(U, nt).on(U, nt));
+          };
+          function nt() {
+            var W =
+              p.fullScreen ||
+              p.mozFullScreen ||
+              p.webkitIsFullScreen ||
+              p.msFullscreenElement ||
+              !!p.webkitFullscreenElement;
+            e(Q).attr("style", W ? "display: none !important;" : "");
+          }
+          function B() {
+            var W = e('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"),
+              V = e("<img>")
+                .attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg")
+                .attr("alt", "")
+                .css({ marginRight: "4px", width: "26px" }),
+              Y = e("<img>")
+                .attr("src", "https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg")
+                .attr("alt", "Made in Webflow");
+            return W.append(V, Y), W[0];
+          }
+          function H() {
+            var W = R.children(k),
+              V = W.length && W.get(0) === Q,
+              Y = ne.env("editor");
+            if (V) {
+              Y && W.remove();
+              return;
+            }
+            W.length && W.remove(), Y || R.append(Q);
+          }
+          return E;
+        })
+      );
+    });
+    var ae = bt((Ne, oe) => {
+      "use strict";
+      var Oe = kt();
+      Oe.define(
+        "focus-visible",
+        (oe.exports = function () {
+          function e(p) {
+            var M = !0,
+              R = !1,
+              k = null,
+              C = {
+                text: !0,
+                search: !0,
+                url: !0,
+                tel: !0,
+                email: !0,
+                password: !0,
+                number: !0,
+                date: !0,
+                month: !0,
+                week: !0,
+                time: !0,
+                datetime: !0,
+                "datetime-local": !0,
+              };
+            function _(v) {
+              return !!(
+                v &&
+                v !== document &&
+                v.nodeName !== "HTML" &&
+                v.nodeName !== "BODY" &&
+                "classList" in v &&
+                "contains" in v.classList
+              );
+            }
+            function U(v) {
+              var G = v.type,
+                q = v.tagName;
+              return !!(
+                (q === "INPUT" && C[G] && !v.readOnly) ||
+                (q === "TEXTAREA" && !v.readOnly) ||
+                v.isContentEditable
+              );
+            }
+            function Q(v) {
+              v.getAttribute("data-wf-focus-visible") || v.setAttribute("data-wf-focus-visible", "true");
+            }
+            function nt(v) {
+              v.getAttribute("data-wf-focus-visible") && v.removeAttribute("data-wf-focus-visible");
+            }
+            function B(v) {
+              v.metaKey || v.altKey || v.ctrlKey || (_(p.activeElement) && Q(p.activeElement), (M = !0));
+            }
+            function H() {
+              M = !1;
+            }
+            function W(v) {
+              _(v.target) && (M || U(v.target)) && Q(v.target);
+            }
+            function V(v) {
+              _(v.target) &&
+                v.target.hasAttribute("data-wf-focus-visible") &&
+                ((R = !0),
+                window.clearTimeout(k),
+                (k = window.setTimeout(function () {
+                  R = !1;
+                }, 100)),
+                nt(v.target));
+            }
+            function Y() {
+              document.visibilityState === "hidden" && (R && (M = !0), X());
+            }
+            function X() {
+              document.addEventListener("mousemove", S),
+                document.addEventListener("mousedown", S),
+                document.addEventListener("mouseup", S),
+                document.addEventListener("pointermove", S),
+                document.addEventListener("pointerdown", S),
+                document.addEventListener("pointerup", S),
+                document.addEventListener("touchmove", S),
+                document.addEventListener("touchstart", S),
+                document.addEventListener("touchend", S);
+            }
+            function P() {
+              document.removeEventListener("mousemove", S),
+                document.removeEventListener("mousedown", S),
+                document.removeEventListener("mouseup", S),
+                document.removeEventListener("pointermove", S),
+                document.removeEventListener("pointerdown", S),
+                document.removeEventListener("pointerup", S),
+                document.removeEventListener("touchmove", S),
+                document.removeEventListener("touchstart", S),
+                document.removeEventListener("touchend", S);
+            }
+            function S(v) {
+              (v.target.nodeName && v.target.nodeName.toLowerCase() === "html") || ((M = !1), P());
+            }
+            document.addEventListener("keydown", B, !0),
+              document.addEventListener("mousedown", H, !0),
+              document.addEventListener("pointerdown", H, !0),
+              document.addEventListener("touchstart", H, !0),
+              document.addEventListener("visibilitychange", Y, !0),
+              X(),
+              p.addEventListener("focus", W, !0),
+              p.addEventListener("blur", V, !0);
+          }
+          function E() {
+            if (typeof document < "u")
+              try {
+                document.querySelector(":focus-visible");
+              } catch {
+                e(document);
+              }
+          }
+          return { ready: E };
+        })
+      );
+    });
+    var ce = bt((Re, ue) => {
+      "use strict";
+      var se = kt();
+      se.define(
+        "focus",
+        (ue.exports = function () {
+          var e = [],
+            E = !1;
+          function p(C) {
+            E && (C.preventDefault(), C.stopPropagation(), C.stopImmediatePropagation(), e.unshift(C));
+          }
+          function M(C) {
+            var _ = C.target,
+              U = _.tagName;
+            return (
+              (/^a$/i.test(U) && _.href != null) ||
+              (/^(button|textarea)$/i.test(U) && _.disabled !== !0) ||
+              (/^input$/i.test(U) && /^(button|reset|submit|radio|checkbox)$/i.test(_.type) && !_.disabled) ||
+              (!/^(button|input|textarea|select|a)$/i.test(U) && !Number.isNaN(Number.parseFloat(_.tabIndex))) ||
+              /^audio$/i.test(U) ||
+              (/^video$/i.test(U) && _.controls === !0)
+            );
+          }
+          function R(C) {
+            M(C) &&
+              ((E = !0),
+              setTimeout(() => {
+                for (E = !1, C.target.focus(); e.length > 0; ) {
+                  var _ = e.pop();
+                  _.target.dispatchEvent(new MouseEvent(_.type, _));
+                }
+              }, 0));
+          }
+          function k() {
+            typeof document < "u" &&
+              document.body.hasAttribute("data-wf-focus-within") &&
+              se.env.safari &&
+              (document.addEventListener("mousedown", R, !0),
+              document.addEventListener("mouseup", p, !0),
+              document.addEventListener("click", p, !0));
+          }
+          return { ready: k };
+        })
+      );
+    });
+    var le = bt((We, fe) => {
+      "use strict";
+      var Mt = kt();
+      Mt.define(
+        "links",
+        (fe.exports = function (e, E) {
+          var p = {},
+            M = e(window),
+            R,
+            k = Mt.env(),
+            C = window.location,
+            _ = document.createElement("a"),
+            U = "w--current",
+            Q = /index\.(html|php)$/,
+            nt = /\/$/,
+            B,
+            H;
+          p.ready = p.design = p.preview = W;
+          function W() {
+            (R = k && Mt.env("design")), (H = Mt.env("slug") || C.pathname || ""), Mt.scroll.off(Y), (B = []);
+            for (var P = document.links, S = 0; S < P.length; ++S) V(P[S]);
+            B.length && (Mt.scroll.on(Y), Y());
+          }
+          function V(P) {
+            var S = (R && P.getAttribute("href-disabled")) || P.getAttribute("href");
+            if (((_.href = S), !(S.indexOf(":") >= 0))) {
+              var v = e(P);
+              if (_.hash.length > 1 && _.host + _.pathname === C.host + C.pathname) {
+                if (!/^#[a-zA-Z0-9\-\_]+$/.test(_.hash)) return;
+                var G = e(_.hash);
+                G.length && B.push({ link: v, sec: G, active: !1 });
+                return;
+              }
+              if (!(S === "#" || S === "")) {
+                var q = _.href === C.href || S === H || (Q.test(S) && nt.test(H));
+                X(v, U, q);
+              }
+            }
+          }
+          function Y() {
+            var P = M.scrollTop(),
+              S = M.height();
+            E.each(B, function (v) {
+              var G = v.link,
+                q = v.sec,
+                K = q.offset().top,
+                at = q.outerHeight(),
+                ft = S * 0.5,
+                lt = q.is(":visible") && K + at - ft >= P && K + ft <= P + S;
+              v.active !== lt && ((v.active = lt), X(G, U, lt));
+            });
+          }
+          function X(P, S, v) {
+            var G = P.hasClass(S);
+            (v && G) || (!v && !G) || (v ? P.addClass(S) : P.removeClass(S));
+          }
+          return p;
+        })
+      );
+    });
+    var he = bt(($e, de) => {
+      "use strict";
+      var Nt = kt();
+      Nt.define(
+        "scroll",
+        (de.exports = function (e) {
+          var E = {
+              WF_CLICK_EMPTY: "click.wf-empty-link",
+              WF_CLICK_SCROLL: "click.wf-scroll",
+            },
+            p = window.location,
+            M = V() ? null : window.history,
+            R = e(window),
+            k = e(document),
+            C = e(document.body),
+            _ =
+              window.requestAnimationFrame ||
+              window.mozRequestAnimationFrame ||
+              window.webkitRequestAnimationFrame ||
+              function (b) {
+                window.setTimeout(b, 15);
+              },
+            U = Nt.env("editor") ? ".w-editor-body" : "body",
+            Q = "header, " + U + " > .header, " + U + " > .w-nav:not([data-no-scroll])",
+            nt = 'a[href="#"]',
+            B = 'a[href*="#"]:not(.w-tab-link):not(' + nt + ")",
+            H = '.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}',
+            W = document.createElement("style");
+          W.appendChild(document.createTextNode(H));
+          function V() {
+            try {
+              return !!window.frameElement;
+            } catch {
+              return !0;
+            }
+          }
+          var Y = /^#[a-zA-Z0-9][\w:.-]*$/;
+          function X(b) {
+            return Y.test(b.hash) && b.host + b.pathname === p.host + p.pathname;
+          }
+          let P = typeof window.matchMedia == "function" && window.matchMedia("(prefers-reduced-motion: reduce)");
+          function S() {
+            return document.body.getAttribute("data-wf-scroll-motion") === "none" || P.matches;
+          }
+          function v(b, s) {
+            var c;
+            switch (s) {
+              case "add":
+                (c = b.attr("tabindex")), c ? b.attr("data-wf-tabindex-swap", c) : b.attr("tabindex", "-1");
+                break;
+              case "remove":
+                (c = b.attr("data-wf-tabindex-swap")),
+                  c ? (b.attr("tabindex", c), b.removeAttr("data-wf-tabindex-swap")) : b.removeAttr("tabindex");
+                break;
+            }
+            b.toggleClass("wf-force-outline-none", s === "add");
+          }
+          function G(b) {
+            var s = b.currentTarget;
+            if (!(Nt.env("design") || (window.$.mobile && /(?:^|\s)ui-link(?:$|\s)/.test(s.className)))) {
+              var c = X(s) ? s.hash : "";
+              if (c !== "") {
+                var w = e(c);
+                w.length &&
+                  (b && (b.preventDefault(), b.stopPropagation()),
+                  q(c, b),
+                  window.setTimeout(
+                    function () {
+                      K(w, function () {
+                        v(w, "add"), w.get(0).focus({ preventScroll: !0 }), v(w, "remove");
+                      });
+                    },
+                    b ? 0 : 300
+                  ));
+              }
+            }
+          }
+          function q(b) {
+            if (p.hash !== b && M && M.pushState && !(Nt.env.chrome && p.protocol === "file:")) {
+              var s = M.state && M.state.hash;
+              s !== b && M.pushState({ hash: b }, "", b);
+            }
+          }
+          function K(b, s) {
+            var c = R.scrollTop(),
+              w = at(b);
+            if (c !== w) {
+              var h = ft(b, c, w),
+                z = Date.now(),
+                O = function () {
+                  var u = Date.now() - z;
+                  window.scroll(0, lt(c, w, u, h)), u <= h ? _(O) : typeof s == "function" && s();
+                };
+              _(O);
+            }
+          }
+          function at(b) {
+            var s = e(Q),
+              c = s.css("position") === "fixed" ? s.outerHeight() : 0,
+              w = b.offset().top - c;
+            if (b.data("scroll") === "mid") {
+              var h = R.height() - c,
+                z = b.outerHeight();
+              z < h && (w -= Math.round((h - z) / 2));
+            }
+            return w;
+          }
+          function ft(b, s, c) {
+            if (S()) return 0;
+            var w = 1;
+            return (
+              C.add(b).each(function (h, z) {
+                var O = parseFloat(z.getAttribute("data-scroll-time"));
+                !isNaN(O) && O >= 0 && (w = O);
+              }),
+              (472.143 * Math.log(Math.abs(s - c) + 125) - 2e3) * w
+            );
+          }
+          function lt(b, s, c, w) {
+            return c > w ? s : b + (s - b) * Lt(c / w);
+          }
+          function Lt(b) {
+            return b < 0.5 ? 4 * b * b * b : (b - 1) * (2 * b - 2) * (2 * b - 2) + 1;
+          }
+          function mt() {
+            var { WF_CLICK_EMPTY: b, WF_CLICK_SCROLL: s } = E;
+            k.on(s, B, G),
+              k.on(b, nt, function (c) {
+                c.preventDefault();
+              }),
+              document.head.insertBefore(W, document.head.firstChild);
+          }
+          return { ready: mt };
+        })
+      );
+    });
+    var pe = bt((Ue, ve) => {
+      "use strict";
+      var Te = kt();
+      Te.define(
+        "touch",
+        (ve.exports = function (e) {
+          var E = {},
+            p = window.getSelection;
+          (e.event.special.tap = {
+            bindType: "click",
+            delegateType: "click",
+          }),
+            (E.init = function (k) {
+              return (k = typeof k == "string" ? e(k).get(0) : k), k ? new M(k) : null;
+            });
+          function M(k) {
+            var C = !1,
+              _ = !1,
+              U = Math.min(Math.round(window.innerWidth * 0.04), 40),
+              Q,
+              nt;
+            k.addEventListener("touchstart", B, !1),
+              k.addEventListener("touchmove", H, !1),
+              k.addEventListener("touchend", W, !1),
+              k.addEventListener("touchcancel", V, !1),
+              k.addEventListener("mousedown", B, !1),
+              k.addEventListener("mousemove", H, !1),
+              k.addEventListener("mouseup", W, !1),
+              k.addEventListener("mouseout", V, !1);
+            function B(X) {
+              var P = X.touches;
+              (P && P.length > 1) || ((C = !0), P ? ((_ = !0), (Q = P[0].clientX)) : (Q = X.clientX), (nt = Q));
+            }
+            function H(X) {
+              if (C) {
+                if (_ && X.type === "mousemove") {
+                  X.preventDefault(), X.stopPropagation();
+                  return;
+                }
+                var P = X.touches,
+                  S = P ? P[0].clientX : X.clientX,
+                  v = S - nt;
+                (nt = S),
+                  Math.abs(v) > U &&
+                    p &&
+                    String(p()) === "" &&
+                    (R("swipe", X, { direction: v > 0 ? "right" : "left" }), V());
+              }
+            }
+            function W(X) {
+              if (C && ((C = !1), _ && X.type === "mouseup")) {
+                X.preventDefault(), X.stopPropagation(), (_ = !1);
+                return;
+              }
+            }
+            function V() {
+              C = !1;
+            }
+            function Y() {
+              k.removeEventListener("touchstart", B, !1),
+                k.removeEventListener("touchmove", H, !1),
+                k.removeEventListener("touchend", W, !1),
+                k.removeEventListener("touchcancel", V, !1),
+                k.removeEventListener("mousedown", B, !1),
+                k.removeEventListener("mousemove", H, !1),
+                k.removeEventListener("mouseup", W, !1),
+                k.removeEventListener("mouseout", V, !1),
+                (k = null);
+            }
+            this.destroy = Y;
+          }
+          function R(k, C, _) {
+            var U = e.Event(k, { originalEvent: C });
+            e(C.target).trigger(U, _);
+          }
+          return (E.instance = E.init(document)), E;
+        })
+      );
+    });
+    var we = bt((Be, me) => {
+      "use strict";
+      var Xt = kt();
+      Xt.define(
+        "forms",
+        (me.exports = function (e, E) {
+          var p = {},
+            M = e(document),
+            R,
+            k = window.location,
+            C = window.XDomainRequest && !window.atob,
+            _ = ".w-form",
+            U,
+            Q = /e(-)?mail/i,
+            nt = /^\S+@\S+$/,
+            B = window.alert,
+            H = Xt.env(),
+            W,
+            V,
+            Y,
+            X = /list-manage[1-9]?.com/i,
+            P = E.debounce(function () {
+              B(
+                "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
+              );
+            }, 100);
+          p.ready =
+            p.design =
+            p.preview =
+              function () {
+                S(), !H && !W && G();
+              };
+          function S() {
+            (U = e("html").attr("data-wf-site")),
+              (V = "https://webflow.com/api/v1/form/" + U),
+              C &&
+                V.indexOf("https://webflow.com") >= 0 &&
+                (V = V.replace("https://webflow.com", "https://formdata.webflow.com")),
+              (Y = `${V}/signFile`),
+              (R = e(_ + " form")),
+              R.length && R.each(v);
+          }
+          function v(u, m) {
+            var y = e(m),
+              l = e.data(m, _);
+            l || (l = e.data(m, _, { form: y })), q(l);
+            var f = y.closest("div.w-form");
+            (l.done = f.find("> .w-form-done")),
+              (l.fail = f.find("> .w-form-fail")),
+              (l.fileUploads = f.find(".w-file-upload")),
+              l.fileUploads.each(function (N) {
+                h(N, l);
+              });
+            var A = l.form.attr("aria-label") || l.form.attr("data-name") || "Form";
+            l.done.attr("aria-label") || l.form.attr("aria-label", A),
+              l.done.attr("tabindex", "-1"),
+              l.done.attr("role", "region"),
+              l.done.attr("aria-label") || l.done.attr("aria-label", A + " success"),
+              l.fail.attr("tabindex", "-1"),
+              l.fail.attr("role", "region"),
+              l.fail.attr("aria-label") || l.fail.attr("aria-label", A + " failure");
+            var I = (l.action = y.attr("action"));
+            if (((l.handler = null), (l.redirect = y.attr("data-redirect")), X.test(I))) {
+              l.handler = s;
+              return;
+            }
+            if (!I) {
+              if (U) {
+                l.handler = b;
+                return;
+              }
+              P();
+            }
+          }
+          function G() {
+            (W = !0),
+              M.on("submit", _ + " form", function (N) {
+                var L = e.data(this, _);
+                L.handler && ((L.evt = N), L.handler(L));
+              });
+            let u = ".w-checkbox-input",
+              m = ".w-radio-input",
+              y = "w--redirected-checked",
+              l = "w--redirected-focus",
+              f = "w--redirected-focus-visible",
+              A = ":focus-visible, [data-wf-focus-visible]",
+              I = [
+                ["checkbox", u],
+                ["radio", m],
+              ];
+            M.on("change", _ + ' form input[type="checkbox"]:not(' + u + ")", (N) => {
+              e(N.target).siblings(u).toggleClass(y);
+            }),
+              M.on("change", _ + ' form input[type="radio"]', (N) => {
+                e(`input[name="${N.target.name}"]:not(${u})`).map((tt, St) => e(St).siblings(m).removeClass(y));
+                let L = e(N.target);
+                L.hasClass("w-radio-input") || L.siblings(m).addClass(y);
+              }),
+              I.forEach(([N, L]) => {
+                M.on("focus", _ + ` form input[type="${N}"]:not(` + L + ")", (tt) => {
+                  e(tt.target).siblings(L).addClass(l), e(tt.target).filter(A).siblings(L).addClass(f);
+                }),
+                  M.on("blur", _ + ` form input[type="${N}"]:not(` + L + ")", (tt) => {
+                    e(tt.target).siblings(L).removeClass(`${l} ${f}`);
+                  });
+              });
+          }
+          function q(u) {
+            var m = (u.btn = u.form.find(':input[type="submit"]'));
+            (u.wait = u.btn.attr("data-wait") || null),
+              (u.success = !1),
+              m.prop("disabled", !1),
+              u.label && m.val(u.label);
+          }
+          function K(u) {
+            var m = u.btn,
+              y = u.wait;
+            m.prop("disabled", !0), y && ((u.label = m.val()), m.val(y));
+          }
+          function at(u, m) {
+            var y = null;
+            return (
+              (m = m || {}),
+              u.find(':input:not([type="submit"]):not([type="file"])').each(function (l, f) {
+                var A = e(f),
+                  I = A.attr("type"),
+                  N = A.attr("data-name") || A.attr("name") || "Field " + (l + 1),
+                  L = A.val();
+                if (I === "checkbox") L = A.is(":checked");
+                else if (I === "radio") {
+                  if (m[N] === null || typeof m[N] == "string") return;
+                  L = u.find('input[name="' + A.attr("name") + '"]:checked').val() || null;
+                }
+                typeof L == "string" && (L = e.trim(L)), (m[N] = L), (y = y || mt(A, I, N, L));
+              }),
+              y
+            );
+          }
+          function ft(u) {
+            var m = {};
+            return (
+              u.find(':input[type="file"]').each(function (y, l) {
+                var f = e(l),
+                  A = f.attr("data-name") || f.attr("name") || "File " + (y + 1),
+                  I = f.attr("data-value");
+                typeof I == "string" && (I = e.trim(I)), (m[A] = I);
+              }),
+              m
+            );
+          }
+          let lt = { _mkto_trk: "marketo" };
+          function Lt() {
+            return document.cookie.split("; ").reduce(function (m, y) {
+              let l = y.split("="),
+                f = l[0];
+              if (f in lt) {
+                let A = lt[f],
+                  I = l.slice(1).join("=");
+                m[A] = I;
+              }
+              return m;
+            }, {});
+          }
+          function mt(u, m, y, l) {
+            var f = null;
+            return (
+              m === "password"
+                ? (f = "Passwords cannot be submitted.")
+                : u.attr("required")
+                ? l
+                  ? Q.test(u.attr("type")) && (nt.test(l) || (f = "Please enter a valid email address for: " + y))
+                  : (f = "Please fill out the required field: " + y)
+                : y === "g-recaptcha-response" && !l && (f = "Please confirm you\u2019re not a robot."),
+              f
+            );
+          }
+          function b(u) {
+            w(u), c(u);
+          }
+          function s(u) {
+            q(u);
+            var m = u.form,
+              y = {};
+            if (/^https/.test(k.href) && !/^https/.test(u.action)) {
+              m.attr("method", "post");
+              return;
+            }
+            w(u);
+            var l = at(m, y);
+            if (l) return B(l);
+            K(u);
+            var f;
+            E.each(y, function (L, tt) {
+              Q.test(tt) && (y.EMAIL = L),
+                /^((full[ _-]?)?name)$/i.test(tt) && (f = L),
+                /^(first[ _-]?name)$/i.test(tt) && (y.FNAME = L),
+                /^(last[ _-]?name)$/i.test(tt) && (y.LNAME = L);
+            }),
+              f && !y.FNAME && ((f = f.split(" ")), (y.FNAME = f[0]), (y.LNAME = y.LNAME || f[1]));
+            var A = u.action.replace("/post?", "/post-json?") + "&c=?",
+              I = A.indexOf("u=") + 2;
+            I = A.substring(I, A.indexOf("&", I));
+            var N = A.indexOf("id=") + 3;
+            (N = A.substring(N, A.indexOf("&", N))),
+              (y["b_" + I + "_" + N] = ""),
+              e
+                .ajax({ url: A, data: y, dataType: "jsonp" })
+                .done(function (L) {
+                  (u.success = L.result === "success" || /already/.test(L.msg)),
+                    u.success || console.info("MailChimp error: " + L.msg),
+                    c(u);
+                })
+                .fail(function () {
+                  c(u);
+                });
+          }
+          function c(u) {
+            var m = u.form,
+              y = u.redirect,
+              l = u.success;
+            if (l && y) {
+              Xt.location(y);
+              return;
+            }
+            u.done.toggle(l), u.fail.toggle(!l), l ? u.done.focus() : u.fail.focus(), m.toggle(!l), q(u);
+          }
+          function w(u) {
+            u.evt && u.evt.preventDefault(), (u.evt = null);
+          }
+          function h(u, m) {
+            if (!m.fileUploads || !m.fileUploads[u]) return;
+            var y,
+              l = e(m.fileUploads[u]),
+              f = l.find("> .w-file-upload-default"),
+              A = l.find("> .w-file-upload-uploading"),
+              I = l.find("> .w-file-upload-success"),
+              N = l.find("> .w-file-upload-error"),
+              L = f.find(".w-file-upload-input"),
+              tt = f.find(".w-file-upload-label"),
+              St = tt.children(),
+              it = N.find(".w-file-upload-error-msg"),
+              Et = I.find(".w-file-upload-file"),
+              Ot = I.find(".w-file-remove-link"),
+              Tt = Et.find(".w-file-upload-file-name"),
+              qt = it.attr("data-w-size-error"),
+              wt = it.attr("data-w-type-error"),
+              Rt = it.attr("data-w-generic-error");
+            if (
+              (H ||
+                tt.on("click keydown", function (i) {
+                  (i.type === "keydown" && i.which !== 13 && i.which !== 32) || (i.preventDefault(), L.click());
+                }),
+              tt.find(".w-icon-file-upload-icon").attr("aria-hidden", "true"),
+              Ot.find(".w-icon-file-upload-remove").attr("aria-hidden", "true"),
+              H)
+            )
+              L.on("click", function (i) {
+                i.preventDefault();
+              }),
+                tt.on("click", function (i) {
+                  i.preventDefault();
+                }),
+                St.on("click", function (i) {
+                  i.preventDefault();
+                });
+            else {
+              Ot.on("click keydown", function (i) {
+                if (i.type === "keydown") {
+                  if (i.which !== 13 && i.which !== 32) return;
+                  i.preventDefault();
+                }
+                L.removeAttr("data-value"), L.val(""), Tt.html(""), f.toggle(!0), I.toggle(!1), tt.focus();
+              }),
+                L.on("change", function (i) {
+                  (y = i.target && i.target.files && i.target.files[0]),
+                    y &&
+                      (f.toggle(!1),
+                      N.toggle(!1),
+                      A.toggle(!0),
+                      A.focus(),
+                      Tt.text(y.name),
+                      o() || K(m),
+                      (m.fileUploads[u].uploading = !0),
+                      z(y, n));
+                });
+              var Ct = tt.outerHeight();
+              L.height(Ct), L.width(1);
+            }
+            function t(i) {
+              var a = i.responseJSON && i.responseJSON.msg,
+                g = Rt;
+              typeof a == "string" && a.indexOf("InvalidFileTypeError") === 0
+                ? (g = wt)
+                : typeof a == "string" && a.indexOf("MaxFileSizeError") === 0 && (g = qt),
+                it.text(g),
+                L.removeAttr("data-value"),
+                L.val(""),
+                A.toggle(!1),
+                f.toggle(!0),
+                N.toggle(!0),
+                N.focus(),
+                (m.fileUploads[u].uploading = !1),
+                o() || q(m);
+            }
+            function n(i, a) {
+              if (i) return t(i);
+              var g = a.fileName,
+                F = a.postData,
+                j = a.fileId,
+                d = a.s3Url;
+              L.attr("data-value", j), O(d, F, y, g, r);
+            }
+            function r(i) {
+              if (i) return t(i);
+              A.toggle(!1), I.css("display", "inline-block"), I.focus(), (m.fileUploads[u].uploading = !1), o() || q(m);
+            }
+            function o() {
+              var i = (m.fileUploads && m.fileUploads.toArray()) || [];
+              return i.some(function (a) {
+                return a.uploading;
+              });
+            }
+          }
+          function z(u, m) {
+            var y = new URLSearchParams({ name: u.name, size: u.size });
+            e.ajax({ type: "GET", url: `${Y}?${y}`, crossDomain: !0 })
+              .done(function (l) {
+                m(null, l);
+              })
+              .fail(function (l) {
+                m(l);
+              });
+          }
+          function O(u, m, y, l, f) {
+            var A = new FormData();
+            for (var I in m) A.append(I, m[I]);
+            A.append("file", y, l),
+              e
+                .ajax({
+                  type: "POST",
+                  url: u,
+                  data: A,
+                  processData: !1,
+                  contentType: !1,
+                })
+                .done(function () {
+                  f(null);
+                })
+                .fail(function (N) {
+                  f(N);
+                });
+          }
+          return p;
+        })
+      );
+    });
+    re();
+    ae();
+    ce();
+    le();
+    he();
+    pe();
+    we();
+  })();
+</script>
+<script>
+  window.onload = function () {
+    const modals = document.querySelectorAll(".modal");
+    const modalBtns = document.querySelectorAll(".modal-btn-abrir");
+    const closeBtns = document.querySelectorAll(".close");
+
+    modalBtns.forEach((btn, index) => btn.addEventListener("click", () => openModal(index)));
+    closeBtns.forEach((btn) => btn.addEventListener("click", closeModal));
+    window.addEventListener("click", outsideClick);
+
+    function openModal(index) {
+      modals[index].style.display = "flex";
+      document.body.classList.add("modal-open"); // Lock body scroll
+    }
+
+    function closeModal() {
+      modals.forEach((modal) => (modal.style.display = "none"));
+      document.body.classList.remove("modal-open"); // Unlock body scroll
+    }
+
+    function outsideClick(e) {
+      if (e.target.classList.contains("modal")) {
+        closeModal();
+      }
+    }
+
+    // Adicionando evento de clique aos links de ancoragem dentro dos modais
+    const modalLinks = document.querySelectorAll(".modal a");
+    modalLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeModal(); // Fecha o modal ao clicar no link de ancoragem
+      });
+    });
+  };
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>

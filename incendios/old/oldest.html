@@ -1,0 +1,1292 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;800;900&display=swap");
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .title-second {
+    font-family: "Nunito" sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: 1000px) {
+    .title-second {
+      font-size: 24px !important;
+    }
+
+    .title-video {
+      font-size: 24px !important;
+    }
+  }
+
+  .button {
+    background: #00a335 !important;
+    border-radius: 50px !important;
+    border: none !important;
+    color: white !important;
+    text-decoration: none !important;
+    display: block;
+    padding: 10px;
+    margin: 0;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .button:hover {
+    background: linear-gradient(
+      180deg,
+      #035c20 -19%,
+      rgba(3, 130, 44, 0) 127.5%
+    );
+  }
+  @media (min-width: 1024px) {
+    .button {
+      font-size: 24px;
+      border-radius: 50px !important;
+    }
+
+    .button:hover {
+      background: linear-gradient(
+        180deg,
+        #035c20 -19%,
+        rgba(3, 130, 44, 0) 127.5%
+      );
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      padding: 36px;
+    }
+  }
+  @media (min-width: 1600px) {
+    .container {
+      padding: 50px 0 !important;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.3em;
+  }
+
+  p {
+    line-height: 1.24em;
+  }
+
+  section {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .card {
+    border: none !important;
+    overflow: initial;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: #1a1a1a;
+  }
+  .hero h1 {
+    color: #232323;
+    text-align: center;
+    font-size: 32px;
+  }
+  .hero p {
+    color: #232323;
+    text-align: center;
+    font-size: 18px;
+  }
+  .hero .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .hero .arrow {
+    width: 30px;
+  }
+  @media (min-width: 1024px) {
+    .hero {
+      height: auto;
+    }
+    .hero .container {
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 36px;
+      width: 80%;
+      max-width: 1000px;
+    }
+    .hero p {
+      font-size: 24px;
+    }
+  }
+  .video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #1a1a1a;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .video .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 0;
+  }
+  .video .container iframe {
+    width: 317px;
+    height: 178px;
+  }
+  @media (min-width: 414px) {
+    .video iframe {
+      width: 350px;
+      height: 196px;
+    }
+  }
+  @media (min-width: 768px) {
+    .video .container iframe {
+      width: 706px;
+      height: 394px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .video .container iframe {
+      width: 1000px;
+      height: 558px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .video .container iframe {
+      width: 1280px;
+      height: 714px;
+    }
+  }
+
+  .banners-wrapper {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/texture%20%281%29.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  @media (min-width: 1024px) {
+    .banners-wrapper {
+      max-width: 100%;
+    }
+  }
+
+  .banners {
+    background-color: transparent;
+  }
+  .banners .container {
+    padding: 70px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+  }
+  .banners .container .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    row-gap: 24px;
+  }
+  .banners .container .banner .banner-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .banners .container .banner .banner-info h2 {
+    text-align: center;
+    font-weight: 400;
+    color: white;
+  }
+  .banners .container .banner .banner-info p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .banners .container .banner .banner-info a {
+    color: #00a335;
+    text-decoration: none;
+  }
+  .banners .container .banner .banner-info .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    background: linear-gradient(
+      180deg,
+      #00a335 -19%,
+      rgba(0, 163, 53, 0) 127.5%
+    ) !important;
+  }
+  .banners .container .banner .banner-image img {
+    box-shadow: 0px 9px 33px rgba(94, 94, 94, 0.15);
+    border-radius: 16px;
+  }
+  @media (min-width: 1024px) {
+    .banners .container {
+      background: none;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100%;
+      padding: 48px 36px;
+    }
+    .banners .container .banner {
+      flex-direction: row;
+      column-gap: 60px;
+      padding: 24px 0;
+      align-items: center;
+    }
+    .banners .container .banner .banner-info {
+      width: 55%;
+      justify-content: center;
+      align-items: flex-start;
+      row-gap: 24px;
+    }
+    .banners .container .banner .banner-info h2 {
+      font-size: 32px;
+      width: 550px;
+      text-align: left;
+      font-weight: 600;
+    }
+    .banners .container .banner .banner-info p {
+      font-size: 22px;
+      text-align: left;
+    }
+    .banners .container .banner .banner-image {
+      width: 45%;
+    }
+    .banners .container .banner.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .necessidades .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .necessidades .container h2 {
+    font-size: 24px;
+    color: #232323;
+    text-align: center;
+  }
+  .necessidades .container h2 span {
+    color: #48a054;
+  }
+  .necessidades .container .necessidades-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    row-gap: 24px;
+    margin-top: 48px;
+  }
+  .necessidades .container .necessidades-wrapper .necessidades-col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 24px;
+    font-weight: 300;
+  }
+  .necessidades
+    .container
+    .necessidades-wrapper
+    .necessidades-col
+    .necessidades-tile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c4c4c4;
+    height: 90px;
+  }
+  .necessidades
+    .container
+    .necessidades-wrapper
+    .necessidades-col
+    .necessidades-tile
+    .icon {
+    height: 60px;
+  }
+  .necessidades
+    .container
+    .necessidades-wrapper
+    .necessidades-col
+    .necessidades-tile
+    p {
+    text-align: center;
+    max-width: 50%;
+    color: rgba(35, 35, 35, 0.6);
+  }
+  .necessidades
+    .container
+    .necessidades-wrapper
+    .necessidades-col
+    .necessidades-tile
+    .plus-icon {
+    padding-left: 53px;
+  }
+  @media (min-width: 1024px) {
+    .necessidades .container h2 {
+      font-size: 36px;
+    }
+    .necessidades .container .necessidades-wrapper {
+      flex-direction: row;
+      column-gap: 64px;
+    }
+    .necessidades .container .necessidades-wrapper .necessidades-col {
+      width: 50%;
+    }
+    .necessidades
+      .container
+      .necessidades-wrapper
+      .necessidades-col
+      .necessidades-tile
+      p {
+      width: 120px;
+      text-align: center;
+    }
+  }
+
+  .informacoes-background {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-12/informacoes-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  @media (min-width: 1024px) {
+    .informacoes-background {
+      max-width: 100%;
+    }
+  }
+
+  .funcionalidades {
+    padding: 24px 0;
+  }
+  .funcionalidades .container h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+  .funcionalidades .container .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 40px;
+  }
+  .funcionalidades .container .cards-wrapper .card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+  }
+  .funcionalidades .container .cards-wrapper .card .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(
+      263.41deg,
+      rgba(35, 35, 35, 0.2) 9.54%,
+      rgba(35, 35, 35, 0.2) 99.54%
+    );
+    backdrop-filter: blur(10.1696px);
+  }
+  .funcionalidades .container .cards-wrapper .card .info .info-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    text-decoration: none;
+  }
+  .funcionalidades .container .cards-wrapper .card .info .info-header p,
+  .funcionalidades .container .cards-wrapper .card .info .info-header a {
+    color: white !important;
+    font-size: 18px !important;
+    margin: 0 !important;
+  }
+  .funcionalidades .container .cards-wrapper .card .info .info-header .btn {
+    border: none;
+    border-radius: 50%;
+    background-color: #00a335;
+    display: block;
+    width: 28px;
+    height: 28px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .funcionalidades
+    .container
+    .cards-wrapper
+    .card
+    .info
+    .info-header
+    .btn
+    .vertical {
+    width: 14px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+  .funcionalidades
+    .container
+    .cards-wrapper
+    .card
+    .info
+    .info-header
+    .btn
+    .horizontal {
+    width: 14px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  .funcionalidades .container .cards-wrapper .card:nth-child(1) {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/image%2071.png");
+  }
+  .funcionalidades .container .cards-wrapper .card:nth-child(2) {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/bruce-mars-8YG31Xn4dSw-unsplash%201.png");
+  }
+  .funcionalidades .container .cards-wrapper .card:nth-child(3) {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/Component%2016.png");
+  }
+  .funcionalidades .container .cards-wrapper .card:nth-child(4) {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/politica-comercial.png");
+  }
+  @media (min-width: 1024px) {
+    .funcionalidades .container h2 {
+      text-align: center;
+      font-size: 36px;
+    }
+    .funcionalidades .container .cards-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 32px;
+      column-gap: 24px;
+    }
+    .funcionalidades .container .cards-wrapper .card {
+      height: 400px;
+    }
+    .funcionalidades .container .cards-wrapper .card .info {
+      height: 80px;
+    }
+    .funcionalidades .container .cards-wrapper .card .info .info-header p,
+    .funcionalidades .container .cards-wrapper .card .info .info-header a {
+      font-size: 22px;
+    }
+  }
+
+  .beneficios {
+    padding: 24px 0;
+  }
+  .beneficios .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .beneficios .container h2 {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    margin-bottom: 24px;
+  }
+  .beneficios .container p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.809);
+  }
+  .beneficios .container .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+  .beneficios .container .cards-wrapper .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+    background: white;
+    padding: 24px 55px;
+    border-radius: 15px;
+  }
+  .beneficios .container .cards-wrapper .card p {
+    width: 120px;
+    color: #232323;
+    font-size: 20px !important;
+  }
+  @media (min-width: 1024px) {
+    .beneficios {
+      padding: 48px 0;
+    }
+    .beneficios .container h2 {
+      font-size: 36px;
+    }
+    .beneficios .container p {
+      font-size: 20px;
+      width: 750px;
+    }
+    .beneficios .container .cards-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  .form {
+    background-color: #48a145;
+    padding: 24px 0;
+  }
+  .form .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .form .form-wrapper .form-img {
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-12/form-image-mob.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 24px;
+    row-gap: 12px;
+  }
+  .form .form-wrapper .form-img p {
+    color: white;
+  }
+  .form .form-wrapper .form-code {
+    background-color: white;
+    height: 500px;
+  }
+  @media (min-width: 1024px) {
+    .form .form-wrapper {
+      flex-direction: row;
+      height: 900px;
+    }
+    .form .form-wrapper .form-img {
+      width: 50%;
+      height: 100%;
+      background-image: url("https://backend.intelbras.com/sites/default/files/2023-12/form-image-desk_0.png");
+      background-position: 120 center;
+      row-gap: 24px;
+      justify-content: flex-end;
+      padding: 32px;
+    }
+    .form .form-wrapper .form-img p {
+      width: 300px;
+    }
+    .form .form-wrapper .form-code {
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  /*# sourceMappingURL=source.css.map */
+
+  .funcionalidades .container .cards-wrapper .card .info .info-header p,
+  .funcionalidades .container .cards-wrapper .card .info .info-header a {
+    font-size: 20px !important;
+  }
+
+  .title-video {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 100%;
+    /* identical to box height, or 40px */
+
+    text-align: center;
+
+    color: #ffffff;
+    margin-bottom: 44px;
+  }
+
+  @media (max-width: 1400px) {
+    .hero-container {
+      width: 100%;
+      height: 400px;
+    }
+  }
+  .button-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 24px;
+    gap: 16px;
+
+    width: 250px;
+    height: 40px;
+
+    color: #ffffff;
+    background: #449858;
+    border-radius: 150px;
+    text-decoration: none;
+    font-family: "nunito";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    transition: 1s;
+  }
+
+  .button-hero:hover {
+    background: #29743b;
+  }
+
+  .banners .container .banner .banner-info .button:hover {
+    background: linear-gradient(
+      180deg,
+      #007928 -19%,
+      rgba(0, 163, 54, 0) 127.5%
+    ) !important;
+  }
+
+  .hero-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/Banner%20header.png");
+    background-size: cover;
+    background-position: right;
+    height: auto;
+
+    width: 100%;
+  }
+  .hero-contain {
+    height: 597px;
+    display: flex;
+    justify-content: center;
+    row-gap: 32px;
+    flex-direction: column;
+    margin-left: 800px;
+    padding: 20px;
+  }
+
+  .image-mobi {
+    display: none;
+  }
+
+  @media (max-width: 1350px) {
+    .hero-contain {
+      margin-left: 0px !important;
+    }
+  }
+  @media (max-width: 599px) {
+    .hero-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://backend.intelbras.com/sites/default/files/2023-06/banner%20mobile%20incendios.png");
+      background-size: cover;
+      background-position: center;
+      height: auto;
+
+      width: 100%;
+    }
+    .hero-contain {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 28px;
+      flex-direction: column;
+      height: 671px;
+      margin-left: 0;
+      margin-bottom: 200px;
+    }
+
+    .primary-text {
+      font-family: "Open Sans", sans-serif !important;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px !important;
+      letter-spacing: 0.06em;
+      line-height: 55px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .span-primary-text {
+      font-family: "Open Sans", sans-serif !important;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px !important;
+      letter-spacing: 0.06em;
+      line-height: 49px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+  .primary-text {
+    font-family: "Open Sans", sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+
+  .span-primary-text {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-size: 54px;
+    line-height: 65px;
+    color: #00d86c;
+  }
+
+  .selo {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 150px;
+    height: 60px;
+    border: none;
+  }
+
+  @media (max-width: 599px) {
+    .selo {
+      display: none;
+    }
+  }
+</style>
+<section style="position: relative" class="hero-background">
+  <div class="hero-contain">
+    <img
+      class="selo"
+      src="https://backend.intelbras.com/sites/default/files/2023-06/nbr7240-2%20selo.png"
+      alt=""
+    />
+    <h1 class="primary-text">
+      O <span class="span-primary-text">CUIDADO</span> COMEÇA<br />
+      NA <span class="span-primary-text"> PREVENÇÃO</span>
+    </h1>
+    <a class="button-hero" href="#form"
+      ><span>Solicite um orçamento</span
+      ><span>
+        <svg
+          width="16"
+          height="12"
+          viewBox="0 0 21 17"
+          fill="none"
+          xmlns="https://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.545 1.84822L17.0858 7.38892H1.5C0.94771 7.38892 0.5 7.83672 0.5 8.38892C0.5 8.94122 0.94771 9.38892 1.5 9.38892H17.0858L11.545 14.9297C11.1545 15.3202 11.1545 15.9534 11.545 16.3439C11.9356 16.7344 12.5687 16.7344 12.9592 16.3439L20.2071 9.09612C20.5976 8.70552 20.5976 8.07242 20.2071 7.68182L12.9592 0.434007C12.7633 0.238067 12.5063 0.140437 12.2495 0.141117C12.1864 0.141287 12.1233 0.147387 12.0611 0.159417C11.872 0.196027 11.6915 0.287557 11.545 0.434007C11.1545 0.824527 11.1545 1.4577 11.545 1.84822Z"
+            fill="white"
+          ></path>
+        </svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section class="video">
+  <div class="container">
+    <h2 class="title-video">Conheça nossos produtos</h2>
+    <!-- -->
+    <iframe
+      src="https://www.youtube.com/embed/IDr9jC_Ebps"
+      title="YouTube video player"
+      frameborder="0"
+      allowfullscreen=""
+    ></iframe>
+    <!-- -->
+  </div>
+</section>
+
+<div class="banners-wrapper">
+  <section class="banners">
+    <div class="container">
+      <div class="banner reverse">
+        <div class="banner-info">
+          <h2 class="title-second">
+            Linha de detecção e alarme de incêndio endereçável
+          </h2>
+          <p>
+            O sistema endereçável fornece todas as informações necessárias para
+            uma detecção rápida e combate eficiente. A solução permite
+            identificação da zona, do local exato e qual dispositivo foi
+            acionado
+          </p>
+          <a
+            href="https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-enderecavel"
+            class="button"
+          >
+            <span>Acesse e conheça</span>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.545 1.84822L17.0858 7.38892H1.5C0.94771 7.38892 0.5 7.83672 0.5 8.38892C0.5 8.94122 0.94771 9.38892 1.5 9.38892H17.0858L11.545 14.9297C11.1545 15.3202 11.1545 15.9534 11.545 16.3439C11.9356 16.7344 12.5687 16.7344 12.9592 16.3439L20.2071 9.09612C20.5976 8.70552 20.5976 8.07242 20.2071 7.68182L12.9592 0.434007C12.7633 0.238067 12.5063 0.140437 12.2495 0.141117C12.1864 0.141287 12.1233 0.147387 12.0611 0.159417C11.872 0.196027 11.6915 0.287557 11.545 0.434007C11.1545 0.824527 11.1545 1.4577 11.545 1.84822Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="banner-image">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-12/banner-3-image_0.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banners">
+    <div class="container">
+      <div class="banner">
+        <div class="banner-info">
+          <h2 class="title-second">
+            Linha de detecção e alarme de incêndio convencional
+          </h2>
+          <p>
+            A <a href="">linha convencional</a> é composta por produtos de ótimo
+            custo-benefício. Ideal para projetos de pequenos e médios ambientes,
+            a solução identifica a zona/laço onde iniciou o princípio de
+            incêndio.
+          </p>
+          <a
+            href="https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-convencional"
+            class="button"
+          >
+            <span>Saiba mais</span>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.545 1.84822L17.0858 7.38892H1.5C0.94771 7.38892 0.5 7.83672 0.5 8.38892C0.5 8.94122 0.94771 9.38892 1.5 9.38892H17.0858L11.545 14.9297C11.1545 15.3202 11.1545 15.9534 11.545 16.3439C11.9356 16.7344 12.5687 16.7344 12.9592 16.3439L20.2071 9.09612C20.5976 8.70552 20.5976 8.07242 20.2071 7.68182L12.9592 0.434007C12.7633 0.238067 12.5063 0.140437 12.2495 0.141117C12.1864 0.141287 12.1233 0.147387 12.0611 0.159417C11.872 0.196027 11.6915 0.287557 11.545 0.434007C11.1545 0.824527 11.1545 1.4577 11.545 1.84822Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="banner-image">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-12/banner-2-image_0.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banners">
+    <div class="container">
+      <div class="banner reverse">
+        <div class="banner-info">
+          <h2 class="title-second">Linha de emergência autônoma</h2>
+          <p>
+            Os produtos dessa linha podem auxiliar em momentos de emergência,
+            como no caso de um incêndio ou em eventuais quedas de energia.
+            Quando necessário, eles auxiliam o abandono do ambiente, garantindo
+            segurança e tranquilidade.
+          </p>
+          <a
+            href=" https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/iluminacao-de-emergencia"
+            class="button"
+          >
+            <span>Saiba mais</span>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.545 1.84822L17.0858 7.38892H1.5C0.94771 7.38892 0.5 7.83672 0.5 8.38892C0.5 8.94122 0.94771 9.38892 1.5 9.38892H17.0858L11.545 14.9297C11.1545 15.3202 11.1545 15.9534 11.545 16.3439C11.9356 16.7344 12.5687 16.7344 12.9592 16.3439L20.2071 9.09612C20.5976 8.70552 20.5976 8.07242 20.2071 7.68182L12.9592 0.434007C12.7633 0.238067 12.5063 0.140437 12.2495 0.141117C12.1864 0.141287 12.1233 0.147387 12.0611 0.159417C11.872 0.196027 11.6915 0.287557 11.545 0.434007C11.1545 0.824527 11.1545 1.4577 11.545 1.84822Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="banner-image">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-12/banner-1-image_0.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banners">
+    <div class="container">
+      <div class="banner">
+        <div class="banner-info">
+          <h2 class="title-second">Linha Morley</h2>
+          <p>
+            Uma linha que possui certificações internacionais em conformidade
+            com a norma brasileira, entregando soluções de qualidade e segurança
+            de alto nível. Os produtos da Morley atendem projetos de grande
+            porte, com alta complexidade e necessidades específicas.
+          </p>
+          <a href="https://www.intelbras.com/pt-br/morley" class="button">
+            <span>Acesse e conheça</span>
+            <svg
+              width="21"
+              height="17"
+              viewBox="0 0 21 17"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.545 1.84822L17.0858 7.38892H1.5C0.94771 7.38892 0.5 7.83672 0.5 8.38892C0.5 8.94122 0.94771 9.38892 1.5 9.38892H17.0858L11.545 14.9297C11.1545 15.3202 11.1545 15.9534 11.545 16.3439C11.9356 16.7344 12.5687 16.7344 12.9592 16.3439L20.2071 9.09612C20.5976 8.70552 20.5976 8.07242 20.2071 7.68182L12.9592 0.434007C12.7633 0.238067 12.5063 0.140437 12.2495 0.141117C12.1864 0.141287 12.1233 0.147387 12.0611 0.159417C11.872 0.196027 11.6915 0.287557 11.545 0.434007C11.1545 0.824527 11.1545 1.4577 11.545 1.84822Z"
+                fill="white"
+              ></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="banner-image">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-12/banner-4-image.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="necessidades">
+  <div class="container">
+    <h2>Para cada necessidade, uma solução <span>Intelbras</span></h2>
+    <div class="necessidades-wrapper">
+      <div class="necessidades-col">
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/pequenos-comercios-icon.png"
+            alt=""
+          />
+          <p>Pequenos negócios</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/hospitais-icon.png"
+            alt=""
+          />
+          <p>Hospitais</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/condominios-residenciais-verticais-icon.png"
+            alt=""
+          />
+          <p>Condomínios residenciais verticais</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/condominios-residenciais-horizontais-icon.png"
+            alt=""
+          />
+          <p>Condomínios residenciais horizontais</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="necessidades-col">
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/industrias-icon.png"
+            alt=""
+          />
+          <p>Indústrias</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/shoppings.png"
+            alt=""
+          />
+          <p>Shoppings</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/hoteis-icon.png"
+            alt=""
+          />
+          <p>Hotéis</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+
+        <div class="necessidades-tile">
+          <img
+            class="icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/aeroportos.png"
+            alt=""
+          />
+          <p>Aeroportos</p>
+          <img
+            class="plus-icon"
+            src="https://backend.intelbras.com/sites/default/files/2023-12/plus-icon.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="informacoes-background">
+  <section class="funcionalidades">
+    <div class="container">
+      <h2>Informações importantes</h2>
+
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="info">
+            <a
+              href="https://www.intelbras.com/pt-br/sensor-de-movimento-infravermelho-passivo-com-camera-ivp-8000-pet-cam#beneficios"
+              class="info-header"
+            >
+              <p>Exigência legal</p>
+              <div class="btn">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="info" data-state="close">
+            <a
+              href="https://www.intelbras.com/pt-br/sensor-de-movimento-infravermelho-passivo-sem-fio-ivp-8000-pet#beneficios"
+              class="info-header"
+            >
+              <p>Responsabilidade do síndico</p>
+              <button class="btn">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div
+            style="padding-left: 24px; padding-right: 24px"
+            class="info"
+            data-state="close"
+          >
+            <a
+              href="https://www.intelbras.com/pt-br/sensor-de-movimento-infravermelho-passivo-sem-fio-ivp-8000-pet#beneficios"
+              class="info-header"
+            >
+              <p>Proteção da vida e do patrimônio</p>
+              <button class="btn">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="info" data-state="close">
+            <a
+              href="https://www.intelbras.com/pt-br/sensor-de-movimento-infravermelho-passivo-sem-fio-ivp-8000-pet#beneficios"
+              class="info-header"
+            >
+              <p>Política comercial definida</p>
+              <button class="btn">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <div class="container">
+      <h2>Segurança e qualidade que só a Intelbras oferece</h2>
+
+      <div class="cards-wrapper">
+        <div class="card">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-06/Group%2020.png"
+            width="73px"
+            height="73px"
+            alt=""
+          />
+          <p>Treinamentos qualificados e certificação</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-06/Group%2019.png"
+            width="73px"
+            height="73px"
+            alt=""
+          />
+          <p>Suporte técnico em todo o Brasil</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-06/Group%2018.png"
+            width="73px"
+            height="73px"
+            alt=""
+          />
+          <p>Respeito aos parceiros e clientes</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://backend.intelbras.com/sites/default/files/2023-06/Group%2021.png"
+            width="73px"
+            height="73px"
+            alt=""
+          />
+          <p>Produtos de qualidade reconhecida</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="form" class="form">
+  <div class="container">
+    <div class="form-wrapper">
+      <div class="form-img">
+        <img
+          src="https://backend.intelbras.com/sites/default/files/2023-12/intebras-logo-white.png"
+          alt=""
+        />
+        <p>Preencha o formulário e receba um orçamento personalizado.</p>
+      </div>
+
+      <div class="form-code"></div>
+    </div>
+  </div>
+</section>

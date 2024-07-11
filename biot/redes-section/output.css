@@ -1,0 +1,153 @@
+.net-btnRedes:hover {
+    background: #008650;
+  }
+  .net-boxForm,
+  .net-boxFormPrimary,
+  .net-boxImgForm,
+  .net-containerInput {
+    width: 100%;
+    display: flex;
+  }
+  .net-containerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00b26b;
+    padding: 60px 12px;
+  }
+  .net-boxImgForm {
+    background-image: url("https://u.cubeupload.com/willlendemayer/imageform.png");
+    height: 624px;
+    max-width: 628px;
+    border-radius: 16px 0 0 16px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 100px;
+    padding-left: 70px;
+  }
+  .net-boxForm {
+    max-width: 1256px;
+  }
+  .net-boxImgForm p {
+    color: #fff;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  input:focus, select:focus {
+      outline: none;
+    }
+  
+  .net-containerInput select {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for Chrome and Safari */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M233.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200l192-192c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L256%20338.7%2086.6%20169.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l192%20192z%22%20fill%3D%22%238b979f%22%2F%3E%3C%2Fsvg%3E")
+      no-repeat 95% center; /* Adjust the position of the arrow */
+    background-size: 15px; /* Adjust the size of the arrow */
+    padding: 0 30px; /* Add some padding to prevent text from overlapping with arrow and sides */
+    width: 100%; /* Make the select occupy the full width of its parent */
+    height: 100%; /* Make the select occupy the full height of its parent */
+    border: none; /* Remove border */
+    color: #5c5c5c;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .net-btnRedes {
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .net-boxFormPrimary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 628px;
+    background-color: #fff;
+    border-radius: 0 16px 16px 0;
+  }
+  .net-containerInput {
+    border-radius: 6px;
+    border: 1px solid #8b979f;
+    background: #fff;
+    align-items: center;
+    max-width: 400px;
+    height: 56px;
+  }
+  .net-iconInput {
+    padding: 0 12px;
+  }
+  input {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 40px !important;
+    box-shadow: none !important;
+  }
+  input:focus {
+    box-shadow: 0 0;
+    outline: 0;
+  }
+  .net-formInitial {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .net-Containercheck {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 400px;
+  }
+  .net-Containercheck label {
+    color: #5c5c5c;
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .net-btnRedes {
+    display: flex;
+    padding: 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: #00b26b;
+    color: #fff;
+    line-height: 120%;
+    border: none;
+  }
+  @media (max-width: 960px) {
+    .net-boxImgForm {
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+    .net-boxForm {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 628px;
+    }
+    .net-boxFormPrimary {
+      padding: 60px 10px;
+      border-radius: 0 0 16px 16px;
+    }
+    .net-boxImgForm {
+      border-radius: 16px 16px 0 0;
+      height: 300px;
+    }
+  }
+  

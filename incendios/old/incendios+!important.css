@@ -1,0 +1,1067 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
+* {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.hero {
+  background-image: url("https://u.cubeupload.com/willlendemayer/BannerHero1.png") !important;
+  max-width: 1900px !important;
+  width: 100% !important;
+  height: 708px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.containerhero h1 {
+  font-family: nunito !important;
+  font-size: 48px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+}
+
+.containerhero {
+  max-width: 636px !important;
+  padding: 24px !important;
+}
+
+.containerhero h2 {
+  margin-top: 24px !important;
+  margin-bottom: 60px !important;
+  font-family: nunito !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+}
+
+.containerhero a {
+  color: #fff !important;
+  background-color: #008d55 !important;
+  padding: 20px 40px !important;
+  text-decoration: none !important;
+  margin-top: 24px !important;
+  font-family: nunito !important;
+  font-size: 20px !important;
+  border-radius: 60px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  transition: 1s linear !important;
+}
+
+.containerhero a:hover {
+  background-color: #00643c !important;
+}
+
+@media (max-width: 1034px) {
+  .containerhero h2 {
+    font-size: 18px !important;
+  }
+  .containerhero h1 {
+    font-size: 34px !important;
+  }
+
+  .imghero {
+    width: 450px !important;
+    height: auto !important;
+  }
+
+  hero {
+    background-position: right !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .containerhero a {
+    font-size: 16px !important;
+  }
+  .containerhero {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  hero {
+    flex-wrap: wrap !important;
+    background-position: center !important;
+  }
+
+  .containerhero h2 {
+    margin: 0px !important;
+    text-align: center !important;
+  }
+  .containerhero h1 {
+    margin-top: 48px !important;
+    text-align: center !important;
+    font-size: 34px !important;
+  }
+
+  .containerhero {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .imghero {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .imghero {
+    width: 350px !important;
+    height: auto !important;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.containerProductsOverlay {
+  display: flex !important;
+  position: relative !important;
+  flex-direction: column !important;
+  /* background-color: rgba(0, 0, 0, 0.70) !important; */
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.boxProducts {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #fff !important;
+}
+
+.boxProduct {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  max-width: 1205px !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+
+.containerProductsFour {
+  background-image: url("https://u.cubeupload.com/willlendemayer/image4.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerProductsThree {
+  background-image: url("https://u.cubeupload.com/willlendemayer/image3.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerProductsOne {
+  background-image: url("https://u.cubeupload.com/willlendemayer/iamge1.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerProductsTwo {
+  background-image: url("https://u.cubeupload.com/willlendemayer/iamge2.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.product h3 {
+  color: #fff !important;
+  font-family: Nunito !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  max-width: 334px !important;
+}
+
+.iconPlus {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 5px !important;
+  background: #00a335 !important;
+}
+
+.product {
+  position: absolute !important;
+  padding: 38px 30px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: -webkit-fill-available !important;
+}
+
+@media (max-width: 470px) {
+  .product h3 {
+    font-size: 20px !important;
+    max-width: 250px !important;
+  }
+}
+
+.ContainerTextProduct {
+  opacity: 0 !important;
+  background-color: rgba(22, 49, 52, 0.7) !important;
+  max-width: 590px !important;
+  transition: 0.1s !important;
+  height: 458px !important;
+  padding: 38px 30px !important;
+  border-radius: 30px !important;
+}
+
+.ContainerTextProduct:hover {
+  opacity: 1 !important;
+}
+
+.ContainerTextProduct p {
+  color: #fff !important;
+  font-family: "nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 120% !important; /* 24px */
+  margin-bottom: 58px !important;
+  max-width: 480px !important;
+  margin-top: 100px !important;
+}
+
+@media (max-width: 550px) {
+  .ContainerTextProduct p {
+    font-size: 16px !important;
+    margin-bottom: 38px !important;
+  }
+
+  .ContainerTextProduct a {
+    font-size: 16px !important;
+  }
+}
+
+.ContainerTextProduct a {
+  display: flex !important;
+  width: 263px !important;
+  height: 67px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+  border-radius: 60px !important;
+  background: #00b26b !important;
+  color: #fff !important;
+  font-family: "Nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+.containerVideo {
+  padding: 40px 12px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #e1efe9 !important;
+}
+
+.video {
+  border-radius: 30px !important;
+  max-width: 951px !important;
+  width: 100% !important;
+  height: 534.94px !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.containerProductsOverlay {
+  display: flex !important;
+  position: relative !important;
+  flex-direction: column !important;
+  /* background-color: rgba(0, 0, 0, 0.70) !important; */
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.boxProducts {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: #e1efe9 !important;
+}
+
+.boxProduct {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  max-width: 1205px !important;
+  flex-wrap: wrap !important;
+  gap: 24px !important;
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+
+.containerInformationsOne {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info1.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerInformationsTwo {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info2.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerInformationsThree {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info3.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.containerInformationsFour {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info4.png") !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  max-width: 590px !important;
+  width: 100% !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+}
+
+.product h3 {
+  color: #fff !important;
+  font-family: Nunito !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  max-width: 334px !important;
+}
+
+.iconPlus {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 5px !important;
+  background: #00a335 !important;
+}
+
+.product {
+  position: absolute !important;
+  padding: 38px 30px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: -webkit-fill-available !important;
+}
+
+@media (max-width: 470px) {
+  .product h3 {
+    font-size: 20px !important;
+    max-width: 250px !important;
+  }
+}
+
+.ContainerTextProduct {
+  opacity: 0 !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  max-width: 530px !important;
+  transition: 0.2s !important;
+  height: 458px !important;
+  border-radius: 30px !important;
+  padding: 38px 30px !important;
+}
+
+.ContainerTextProduct:hover {
+  opacity: 1 !important;
+}
+
+.ContainerTextProduct p {
+  color: #fff !important;
+  font-family: "nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 120% !important; /* 24px */
+  margin-bottom: 58px !important;
+  max-width: 480px !important;
+  margin-top: 100px !important;
+}
+
+@media (max-width: 550px) {
+  .ContainerTextProduct p {
+    font-size: 16px !important;
+    margin-bottom: 38px !important;
+  }
+
+  .ContainerTextProduct a {
+    font-size: 16px !important;
+  }
+}
+
+.ContainerTextProduct a {
+  display: flex !important;
+  width: 300px !important;
+  height: 67px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+  border-radius: 60px !important;
+  background: #00b26b !important;
+  color: #fff !important;
+  font-family: "Nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+.containerSolutions {
+  padding: 140px 12px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 100px !important;
+  background: #e1efe9 !important;
+}
+
+.primaryContent {
+  display: flex !important;
+  flex-direction: column !important;
+  max-width: 315.28px !important;
+  gap: 24px !important;
+}
+
+.primaryContent h2 {
+  color: #00b26b !important;
+  font-family: "Nunito" !important;
+  font-size: 45.5px !important;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  line-height: 49.5px !important; /* 108.791% */
+  letter-spacing: -0.99px !important;
+}
+
+.primaryContent p {
+  color: #163134 !important;
+  font-family: "nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 23.4px !important; /* 146.25% */
+}
+
+.primaryContent a {
+  display: flex !important;
+  height: 55px !important;
+  width: 300px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  color: #fff !important;
+  font-family: "Nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  letter-spacing: 1.6px !important;
+  text-transform: uppercase !important;
+  border-radius: 60px !important;
+  background: #00b26b !important;
+  text-decoration: none !important;
+}
+
+.solutions {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+  height: auto !important;
+}
+
+.solution {
+  display: flex !important;
+  gap: 24px !important;
+  padding: 0px !important;
+}
+
+.solution p {
+  color: #163134 !important;
+  font-family: Nunito !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 42px !important; /* 175% */
+}
+
+.iconsSolutions {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 10px !important;
+  background: #163134 !important;
+}
+
+* {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.container-necessidade {
+  padding: 200px 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important
+
+;
+  align-items: center !important;
+  background: #163134 !important;
+}
+
+.container-necessidade h2 {
+  color: #cdcdcd !important;
+  text-align: center !important;
+  font-family: "Nunito" !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin-bottom: 50px !important;
+}
+
+.container-necessidade h2 span {
+  color: #48a054 !important;
+  font-family: "Nunito" !important;
+  font-size: 32px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.conteudo-necessidade {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 100px !important;
+  max-width: 1005px !important;
+}
+
+.necessidades {
+  display: flex !important;
+  align-items: center !important;
+  gap: 63px !important;
+}
+
+@media (max-width: 1040px) {
+  .necessidades {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .necessidades {
+    gap: 8px !important;
+  }
+
+  .container-necessidade h2 {
+    font-size: 24px !important;
+  }
+
+  .container-necessidade h2 span {
+    font-size: 24px !important;
+  }
+
+  .necessidades h3 {
+    font-size: 20px !important;
+    max-width: 150px !important;
+    min-width: 150px !important;
+  }
+}
+
+.iconNecessidade {
+  display: inline-flex !important;
+  padding: 1px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 10px !important;
+  background: #00b26b !important;
+}
+
+.necessidades img {
+  display: inline-flex !important;
+  padding: 12px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 10px !important;
+  background: linear-gradient(
+    180deg,
+    rgba(96, 228, 165, 0.3) 0% !important,
+    rgba(96, 228, 165, 0.09) 100% !important
+  ) !important;
+}
+
+.necessidades h3 {
+  color: #ededed !important;
+  text-align: center !important;
+  font-family: "Nunito" !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 120% !important; /* 28.8px */
+  max-width: 220px !important;
+  min-width: 220px !important;
+}
+
+.modal-btn {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.modal {
+  display: none !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: fixed !important;
+  z-index: 1 !important;
+  left: 0 !important;
+  top: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  overflow: auto !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.pic-modal-one {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner1.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-two {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner2.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-three {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner3.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-four {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner4.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-five {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner5.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-six {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner6.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-seven {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner7.png") !important;
+  background-size: cover !important;
+}
+
+.pic-modal-eight {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner8.png") !important;
+  background-size: cover !important;
+}
+
+@media (max-width: 750px) {
+  .pic-modal-one {
+    display: none !important;
+  }
+
+  .pic-modal-two {
+    display: none !important;
+  }
+
+  .pic-modal-three {
+    display: none !important;
+  }
+
+  .pic-modal-four {
+    display: none !important;
+  }
+
+  .pic-modal-five {
+    display: none !important;
+  }
+
+  .pic-modal-six {
+    display: none !important;
+  }
+
+  .pic-modal-seven {
+    display: none !important;
+  }
+
+  .pic-modal-eight {
+    display: none !important;
+  }
+}
+
+.pic-modal {
+  max-width: 472px !important;
+  width: 100% !important;
+  height: 502px !important;
+  border-radius: 10px !important;
+}
+
+.container-modal {
+  padding: 34px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 24px !important;
+  flex-direction: row !important;
+  background-color: #163134 !important;
+  max-width: 1030px !important;
+  width: 100% !important;
+  height: 500px !important;
+  border-radius: 8px !important;
+}
+
+@media (max-width: 1100px) {
+  .container-modal {
+    max-width: 500px !important;
+    height: 1000px !important;
+  }
+
+  .pic-modal {
+    height: 250px !important;
+  }
+}
+
+.produto {
+  max-width: 516px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.produtos {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.title-closed {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.close {
+  display: flex !important;
+  padding: 12.363px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12.363px !important;
+  border-radius: 4.945px !important;
+  background: #f8e3e3 !important;
+  border: none !important;
+}
+
+.fix-modal {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+}
+
+.title-closed h2 {
+  color: #e8e8e8 !important;
+  font-family: "nunito" !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 120% !important; /* 28.8px */
+}
+
+.img-produto {
+  max-width: 65px !important;
+  height: 65px !important;
+  margin-right: 16px !important;
+}
+
+.img-produto img {
+  width: 100% !important;
+}
+
+.description h3 {
+  color: #a8a8a8 !important;
+  font-family: "nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 100% !important; /* 20px */
+}
+
+.description p {
+  color: #8b979f !important;
+  font-family: "nunito" !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+}
+
+.description a {
+  color: #00a335 !important;
+  font-family: "nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 120% !important; /* 19.2px */
+  text-decoration-line: underline !important;
+}
+
+.link-orca {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  font-family: "nunito" !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: 120% !important; /* 24px */
+  text-decoration: none !important;
+  width: 100% !important;
+  height: 52px !important;
+  background-color: #00a335 !important;
+  margin-top: 32px !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.containerForm {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 0px 12px !important;
+}
+
+.overlayVideo {
+  position: absolute !important;
+  z-index: 7 !important;
+  background: linear-gradient(
+    rgb(22, 49, 52, 1),
+    rgb(22, 49, 52, 0.9)
+  ) !important;
+  width: 100% !important;
+  height: 1000px !important;
+}
+
+.boxForm {
+  padding: 0 12px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+.videoIncendios {
+  z-index: 5 !important;
+  position: absolute !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  width: 100% !important;
+  height: 900 !important;
+}
+
+.boxForm h3 {
+  color: #fff !important;
+  text-align: center !important;
+  font-family: Nunito !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  max-width: 440px !important;
+  margin-top: 25px !important;
+  margin-bottom: 50px !important;
+}
+
+.boxForm form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important;
+  max-width: 350px !important;
+}
+
+.boxInput {
+  display: flex !important;
+  gap: 20px !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid #8b979f !important;
+  background: #202020 !important;
+  max-width: 350px !important;
+}
+
+.boxInput input {
+  border: none !important;
+  background: #202020 !important;
+  color: #8b979f !important;
+  font-family: "nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  outline: 0px !important;
+}
+
+.boxInput input::placeholder {
+  color: #8b979f !important;
+  font-family: "nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.boxInput select {
+  border: none !important;
+  background: #202020 !important;
+  color: #8b979f !important;
+  font-family: "nunito" !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+}
+
+.boxCheck {
+  display: flex !important;
+  gap: 12px !important;
+  padding-left: 16px !important;
+}
+
+.boxCheck label {
+  color: #7d7d7d !important;
+  font-family: "nunito" !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  max-width: 300px !important;
+}
+
+.btnFormIncendios {
+  display: flex !important;
+  max-width: 489px !important;
+  padding: 15px 40px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 60px !important;
+  background: linear-gradient(60deg, #045324 13.4%, #09ab2c 86.6%) !important;
+  border: none !important;
+  color: #fff !important;
+  font-family: Nunito !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+}
+
+@media print, screen and (min-width: 40em) {
+  .solution img {
+    height: auto !important;
+  }
+}

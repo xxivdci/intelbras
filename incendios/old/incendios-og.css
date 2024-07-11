@@ -1,0 +1,1084 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero {
+  background-image: url("https://u.cubeupload.com/willlendemayer/BannerHero1.png");
+  max-width: 1900px;
+  width: 100%;
+  height: 708px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerhero h1 {
+  font-family: nunito;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.containerhero {
+  max-width: 636px;
+  padding: 24px;
+}
+
+.containerhero h2 {
+  margin-top: 24px;
+  margin-bottom: 60px;
+  font-family: nunito;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.containerhero a {
+  color: #fff;
+  background-color: #008d55;
+  padding: 20px 40px;
+  text-decoration: none;
+  margin-top: 24px;
+  font-family: nunito;
+  font-size: 20px;
+  border-radius: 60px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 1s linear;
+}
+
+.containerhero a:hover {
+  background-color: #00643c;
+}
+
+@media (max-width: 1034px) {
+  .containerhero h2 {
+    font-size: 18px;
+  }
+  .containerhero h1 {
+    font-size: 34px;
+  }
+
+  .imghero {
+    width: 450px;
+    height: auto;
+  }
+
+  hero {
+    background-position: right;
+  }
+}
+
+@media (max-width: 790px) {
+  .containerhero a {
+    font-size: 16px;
+  }
+  .containerhero {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  hero {
+    flex-wrap: wrap;
+    background-position: center;
+  }
+
+  .containerhero h2 {
+    margin: 0px;
+    text-align: center;
+  }
+  .containerhero h1 {
+    margin-top: 48px;
+    text-align: center;
+    font-size: 34px;
+  }
+
+  .containerhero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imghero {
+    height: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .imghero {
+    width: 350px;
+    height: auto;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.containerProductsOverlay {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  /* background-color: rgba(0, 0, 0, 0.70); */
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.boxProducts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.boxProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1205px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.containerProductsFour {
+  background-image: url("https://u.cubeupload.com/willlendemayer/image4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerProductsThree {
+  background-image: url("https://u.cubeupload.com/willlendemayer/image3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerProductsOne {
+  background-image: url("https://u.cubeupload.com/willlendemayer/iamge1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerProductsTwo {
+  background-image: url("https://u.cubeupload.com/willlendemayer/iamge2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.product h3 {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 334px;
+}
+
+.iconPlus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 5px;
+  background: #00a335;
+}
+
+.product {
+  position: absolute;
+  padding: 38px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 470px) {
+  .product h3 {
+    font-size: 20px;
+    max-width: 250px !important;
+  }
+}
+
+.ContainerTextProduct {
+  opacity: 0;
+  background-color: rgba(22, 49, 52, 0.7);
+  max-width: 590px !important;
+  transition: 0.1s;
+  height: 458px;
+  padding: 38px 30px;
+  border-radius: 30px;
+}
+
+.ContainerTextProduct:hover {
+  opacity: 1;
+}
+
+.ContainerTextProduct p {
+  color: #fff;
+  font-family: "nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin-bottom: 58px;
+  max-width: 480px;
+  margin-top: 100px;
+}
+
+@media (max-width: 550px) {
+  .ContainerTextProduct p {
+    font-size: 16px !important;
+    margin-bottom: 38px;
+  }
+
+  .ContainerTextProduct a {
+    font-size: 16px !important;
+  }
+}
+
+.ContainerTextProduct a {
+  display: flex;
+  width: 263px;
+  height: 67px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #00b26b;
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.containerVideo {
+  padding: 40px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e1efe9;
+}
+
+.video {
+  border-radius: 30px;
+  max-width: 951px;
+  width: 100%;
+  height: 534.94px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.containerProductsOverlay {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  /* background-color: rgba(0, 0, 0, 0.70); */
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.boxProducts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e1efe9;
+}
+
+.boxProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1205px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.containerInformationsOne {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerInformationsTwo {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerInformationsThree {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.containerInformationsFour {
+  background-image: url("https://u.cubeupload.com/willlendemayer/info4.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 590px;
+  width: 100%;
+  height: 458px;
+  border-radius: 30px;
+}
+
+.product h3 {
+  color: #fff;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 334px;
+}
+
+.iconPlus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 5px;
+  background: #00a335;
+}
+
+.product {
+  position: absolute;
+  padding: 38px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 470px) {
+  .product h3 {
+    font-size: 20px;
+    max-width: 250px !important;
+  }
+}
+
+.ContainerTextProduct {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 530px;
+  transition: 0.2s;
+  height: 458px;
+  border-radius: 30px;
+  padding: 38px 30px;
+}
+
+.ContainerTextProduct:hover {
+  opacity: 1;
+}
+
+.ContainerTextProduct p {
+  color: #fff;
+  font-family: "nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin-bottom: 58px;
+  max-width: 480px;
+  margin-top: 100px;
+}
+
+@media (max-width: 550px) {
+  .ContainerTextProduct p {
+    font-size: 16px !important;
+    margin-bottom: 38px;
+  }
+
+  .ContainerTextProduct a {
+    font-size: 16px !important;
+  }
+}
+
+.ContainerTextProduct a {
+  display: flex;
+  width: 300px;
+  height: 67px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #00b26b;
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.containerSolutions {
+  padding: 140px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  background: #e1efe9;
+}
+
+.primaryContent {
+  display: flex;
+  flex-direction: column;
+  max-width: 315.28px;
+  gap: 24px;
+}
+
+.primaryContent h2 {
+  color: #00b26b;
+  font-family: "Nunito";
+  font-size: 45.5px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 49.5px; /* 108.791% */
+  letter-spacing: -0.99px;
+}
+
+.primaryContent p {
+  color: #163134;
+  font-family: "nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; /* 146.25% */
+}
+
+.primaryContent a {
+  display: flex;
+  height: 55px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  border-radius: 60px;
+  background: #00b26b;
+  text-decoration: none;
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.solution {
+  display: flex;
+  gap: 24px;
+}
+
+.solution p {
+  color: #163134;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 175% */
+}
+
+.iconsSolutions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: #163134;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-necessidade {
+  padding: 200px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #163134;
+}
+
+.container-necessidade h2 {
+  color: #cdcdcd;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+.container-necessidade h2 span {
+  color: #48a054;
+  font-family: "Nunito";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.conteudo-necessidade {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1005px;
+}
+
+.necessidades {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+
+@media (max-width: 1040px) {
+  .necessidades {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .necessidades {
+    gap: 8px;
+  }
+
+  .container-necessidade h2 {
+    font-size: 24px;
+  }
+
+  .container-necessidade h2 span {
+    font-size: 24px;
+  }
+
+  .necessidades h3 {
+    font-size: 20px;
+    max-width: 150px;
+    min-width: 150px;
+  }
+}
+
+.iconNecessidade {
+  display: inline-flex;
+  padding: 1px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #00b26b;
+}
+
+.necessidades img {
+  display: inline-flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(96, 228, 165, 0.3) 0%,
+    rgba(96, 228, 165, 0.09) 100%
+  );
+}
+
+.necessidades h3 {
+  color: #ededed;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+  max-width: 220px;
+  min-width: 220px;
+}
+
+.modal-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-modal-one {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner1.png");
+  background-size: cover;
+}
+
+.pic-modal-two {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner2.png");
+  background-size: cover;
+}
+
+.pic-modal-three {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner3.png");
+  background-size: cover;
+}
+
+.pic-modal-four {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner4.png");
+  background-size: cover;
+}
+
+.pic-modal-five {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner5.png");
+  background-size: cover;
+}
+
+.pic-modal-six {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner6.png");
+  background-size: cover;
+}
+
+.pic-modal-seven {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner7.png");
+  background-size: cover;
+}
+
+.pic-modal-eight {
+  background-image: url("https://u.cubeupload.com/willlendemayer/banner8.png");
+  background-size: cover;
+}
+
+@media (max-width: 750px) {
+  .pic-modal-one {
+    display: none;
+  }
+
+  .pic-modal-two {
+    display: none;
+  }
+
+  .pic-modal-three {
+    display: none;
+  }
+
+  .pic-modal-four {
+    display: none;
+  }
+
+  .pic-modal-five {
+    display: none;
+  }
+
+  .pic-modal-six {
+    display: none;
+  }
+
+  .pic-modal-seven {
+    display: none;
+  }
+
+  .pic-modal-eight {
+    display: none;
+  }
+}
+
+.pic-modal {
+  max-width: 472px;
+  width: 100%;
+  height: 502px;
+  border-radius: 10px;
+}
+
+.container-modal {
+  padding: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: row;
+  background-color: #163134;
+  max-width: 1030px;
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1100px) {
+  .container-modal {
+    max-width: 500px;
+    height: 1000px;
+  }
+
+  .pic-modal {
+    height: 250px;
+  }
+}
+
+.produto {
+  max-width: 516px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title-closed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  display: flex;
+  padding: 12.363px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.363px;
+  border-radius: 4.945px;
+  background: #f8e3e3;
+  border: none;
+}
+
+.fix-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title-closed h2 {
+  color: #e8e8e8;
+  font-family: "nunito";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+
+.img-produto {
+  max-width: 65px;
+  height: 65px;
+  margin-right: 16px;
+}
+
+.img-produto img {
+  width: 100%;
+}
+
+.description h3 {
+  color: #a8a8a8;
+  font-family: "nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+}
+
+.description p {
+  color: #8b979f;
+  font-family: "nunito";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description a {
+  color: #00a335;
+  font-family: "nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  text-decoration-line: underline;
+}
+
+.link-orca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "nunito";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  text-decoration: none;
+  width: 100%;
+  height: 52px;
+  background-color: #00a335;
+  margin-top: 32px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+}
+
+.overlayVideo {
+  position: absolute;
+  z-index: 7;
+  background: linear-gradient(rgb(22, 49, 52, 1), rgb(22, 49, 52, 0.9));
+  width: 100%;
+  height: 1000px;
+}
+
+.boxForm {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.videoIncendios {
+  z-index: 5;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 900;
+}
+
+/* @media (min-aspect-ratio:16/9) {
+.videoIncendios {
+  width: 100%;
+  height: auto;
+}
+}
+
+@media (max-aspect-ratio:16/9) {
+.videoIncendios {
+  width: auto;
+  height: 100%;
+}
+} */
+
+.boxForm h3 {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 440px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.boxForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 350px;
+}
+
+.boxInput {
+  display: flex;
+  gap: 20px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #8b979f;
+  background: #202020;
+  max-width: 350px;
+}
+
+.boxInput input {
+  border: none;
+  background: #202020;
+  color: #8b979f;
+  font-family: "nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: 0px;
+}
+
+.boxInput input::placeholder {
+  color: #8b979f;
+  font-family: "nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.boxInput select {
+  border: none;
+  background: #202020;
+  color: #8b979f;
+  font-family: "nunito";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.boxCheck {
+  display: flex;
+  gap: 12px;
+  padding-left: 16px;
+}
+
+.boxCheck label {
+  color: #7d7d7d;
+  font-family: "nunito";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 300px;
+}
+
+.btnFormIncendios {
+  display: flex;
+  max-width: 489px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: linear-gradient(60deg, #045324 13.4%, #09ab2c 86.6%);
+  border: none;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media print, screen and (min-width: 40em) {
+  .solution img {
+    height: auto !important;
+  }
+}

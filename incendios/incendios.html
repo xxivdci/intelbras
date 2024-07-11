@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>incendios</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .hero {
+        background-image: url("https://u.cubeupload.com/willlendemayer/BannerHero1.png") !important;
+        max-width: 1900px !important;
+        width: 100% !important;
+        height: 708px !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      @media (max-width: 750px) {
+        .hero {
+          flex-wrap: wrap !important;
+        }
+      }
+      .containerhero h1 {
+        font-family: nunito !important;
+        font-size: 48px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        color: #fff !important;
+      }
+
+      .containerhero {
+        max-width: 636px !important;
+        padding: 24px !important;
+      }
+
+      .containerhero h2 {
+        margin-top: 24px !important;
+        margin-bottom: 60px !important;
+        font-family: nunito !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        color: #fff !important;
+      }
+
+      .containerhero a {
+        color: #fff !important;
+        background-color: #008d55 !important;
+        padding: 20px 40px !important;
+        text-decoration: none !important;
+        margin-top: 24px !important;
+        font-family: nunito !important;
+        font-size: 20px !important;
+        border-radius: 60px !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+        transition: 1s linear !important;
+      }
+
+      .containerhero a:hover {
+        background-color: #00643c !important;
+      }
+
+      @media (max-width: 1034px) {
+        .containerhero h2 {
+          font-size: 18px !important;
+        }
+        .containerhero h1 {
+          font-size: 34px !important;
+        }
+
+        .imghero {
+          width: 450px !important;
+          height: auto !important;
+        }
+
+        hero {
+          background-position: right !important;
+        }
+      }
+
+      @media (max-width: 790px) {
+        .containerhero a {
+          font-size: 16px !important;
+        }
+        .containerhero {
+          padding: 0px !important;
+        }
+      }
+
+      @media (max-width: 750px) {
+        hero {
+          flex-wrap: wrap !important;
+          background-position: center !important;
+        }
+
+        .containerhero h2 {
+          margin: 0px !important;
+          text-align: center !important;
+        }
+        .containerhero h1 {
+          margin-top: 48px !important;
+          text-align: center !important;
+          font-size: 34px !important;
+        }
+
+        .containerhero {
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+
+        .imghero {
+          height: auto !important;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .imghero {
+          width: 350px !important;
+          height: auto !important;
+        }
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .containerProductsOverlay {
+        display: flex !important;
+        position: relative !important;
+        flex-direction: column !important;
+        /* background-color: rgba(0, 0, 0, 0.70) !important; */
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .boxProducts {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #fff !important;
+      }
+
+      .boxProduct {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 1205px !important;
+        flex-wrap: wrap !important;
+        gap: 24px !important;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+      }
+
+      .containerProductsFour {
+        background-image: url("https://u.cubeupload.com/willlendemayer/image4.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerProductsThree {
+        background-image: url("https://u.cubeupload.com/willlendemayer/image3.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerProductsOne {
+        background-image: url("https://u.cubeupload.com/willlendemayer/iamge1.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerProductsTwo {
+        background-image: url("https://u.cubeupload.com/willlendemayer/iamge2.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .product h3 {
+        color: #fff !important;
+        font-family: Nunito !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: normal !important;
+        max-width: 334px !important;
+      }
+
+      .iconPlus {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+        border-radius: 5px !important;
+        background: #00b26b !important;
+      }
+
+      .product {
+        position: absolute !important;
+        padding: 38px 30px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: -webkit-fill-available !important;
+      }
+
+      @media (max-width: 470px) {
+        .product h3 {
+          font-size: 20px !important;
+          max-width: 250px !important;
+        }
+      }
+
+      .ContainerTextProduct p {
+        color: #fff !important;
+        font-family: "nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 120% !important; /* 24px */
+        margin-bottom: 58px !important;
+        max-width: 480px !important;
+        margin-top: 100px !important;
+      }
+
+      @media (max-width: 550px) {
+        .ContainerTextProduct p {
+          font-size: 16px !important;
+          margin-bottom: 38px !important;
+        }
+
+        .ContainerTextProduct a {
+          font-size: 16px !important;
+        }
+      }
+
+      .ContainerTextProduct a {
+        display: flex !important;
+        width: 263px !important;
+        height: 67px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        flex-shrink: 0 !important;
+        border-radius: 60px !important;
+        background: #00b26b !important;
+        color: #fff !important;
+        font-family: "Nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+      }
+
+      .containerVideo {
+        padding: 40px 12px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #e1efe9 !important;
+      }
+
+      .video {
+        border-radius: 30px !important;
+        max-width: 951px !important;
+        width: 100% !important;
+        height: 534.94px !important;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .containerProductsOverlay {
+        display: flex !important;
+        position: relative !important;
+        flex-direction: column !important;
+        /* background-color: rgba(0, 0, 0, 0.70) !important; */
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .boxProducts {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: #e1efe9 !important;
+      }
+
+      .boxProduct {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        max-width: 1205px !important;
+        flex-wrap: wrap !important;
+        gap: 24px !important;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+      }
+
+      .containerInformationsOne {
+        background-image: url("https://u.cubeupload.com/willlendemayer/info1.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerInformationsTwo {
+        background-image: url("https://u.cubeupload.com/willlendemayer/info2.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerInformationsThree {
+        background-image: url("https://u.cubeupload.com/willlendemayer/info3.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .containerInformationsFour {
+        background-image: url("https://u.cubeupload.com/willlendemayer/info4.png") !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        max-width: 590px !important;
+        width: 100% !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+      }
+
+      .product h3 {
+        color: #fff !important;
+        font-family: Nunito !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: normal !important;
+        max-width: 334px !important;
+      }
+
+      .iconPlus {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+        border-radius: 5px !important;
+        background: #00b26b !important;
+      }
+
+      .product {
+        position: absolute !important;
+        padding: 38px 30px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: -webkit-fill-available !important;
+      }
+
+      @media (max-width: 470px) {
+        .product h3 {
+          font-size: 20px !important;
+          max-width: 250px !important;
+        }
+      }
+
+      .ContainerTextProduct {
+        opacity: 0 !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        max-width: 590px !important;
+        transition: 0.5s !important;
+        height: 458px !important;
+        border-radius: 30px !important;
+        padding: 38px 30px !important;
+        position: relative;
+        z-index: 1; /* This will place .ContainerTextProduct above .product */
+      }
+
+      .product h3 {
+        position: relative;
+        z-index: 2; /* This will place .product below .ContainerTextProduct */
+      }
+
+      .containerProductsOverlay:hover .ContainerTextProduct,
+      .containerProductsOverlay:hover .product {
+        opacity: 1 !important;
+      }
+
+      .ContainerTextProduct p {
+        color: #fff !important;
+        font-family: "nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 120% !important; /* 24px */
+        margin-bottom: 58px !important;
+        max-width: 480px !important;
+        margin-top: 100px !important;
+        opacity: 0;
+        transition: 0.5s !important;
+      }
+
+      .containerProductsOverlay:hover .ContainerTextProduct p {
+        opacity: 1 !important;
+      }
+
+      @media (max-width: 550px) {
+        .ContainerTextProduct p {
+          font-size: 16px !important;
+          margin-bottom: 38px !important;
+        }
+
+        .ContainerTextProduct a {
+          font-size: 16px !important;
+        }
+      }
+
+      .ContainerTextProduct a {
+        display: flex !important;
+        width: 300px !important;
+        height: 67px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        flex-shrink: 0 !important;
+        border-radius: 60px !important;
+        background: #00b26b !important;
+        color: #fff !important;
+        font-family: "Nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+      }
+
+      .containerSolutions {
+        padding: 100px 12px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        gap: 100px !important;
+        background: #e1efe9 !important;
+      }
+
+      .primaryContent {
+        display: flex !important;
+        flex-direction: column !important;
+        max-width: 315.28px !important;
+        gap: 24px !important;
+      }
+
+      .primaryContent h2 {
+        color: #00b26b !important;
+        font-family: "Nunito" !important;
+        font-size: 45.5px !important;
+        font-style: normal !important;
+        font-weight: 200 !important;
+        line-height: 49.5px !important; /* 108.791% */
+        letter-spacing: -0.99px !important;
+      }
+
+      .primaryContent p {
+        color: #163134 !important;
+        font-family: "nunito" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 23.4px !important; /* 146.25% */
+      }
+
+      .primaryContent a {
+        display: flex !important;
+        height: 55px !important;
+        width: 300px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        color: #fff !important;
+        font-family: "Nunito" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        letter-spacing: 1.6px !important;
+        text-transform: uppercase !important;
+        border-radius: 60px !important;
+        background: #00b26b !important;
+        text-decoration: none !important;
+      }
+
+      .solutions {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+        height: auto !important;
+      }
+
+      .solution {
+        display: flex !important;
+        gap: 24px !important;
+        padding: 0px !important;
+      }
+
+      .solution p {
+        color: #163134 !important;
+        font-family: Nunito !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 42px !important; /* 175% */
+      }
+
+      .iconsSolutions {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        display: flex !important;
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 10px !important;
+        background: #163134 !important;
+      }
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .boxInput input:focus {
+        box-shadow: none !important;
+      }
+
+      .boxInput select:focus {
+        box-shadow: none !important;
+      }
+
+      .container-necessidade {
+        padding: 100px 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important
+        
+        ;
+        align-items: center !important;
+        background: #163134 !important;
+      }
+
+      .container-necessidade h2 {
+        color: #cdcdcd !important;
+        text-align: center !important;
+        font-family: "Nunito" !important;
+        font-size: 32px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        margin-bottom: 50px !important;
+      }
+
+      .container-necessidade h2 span {
+        color: #48a054 !important;
+        font-family: "Nunito" !important;
+        font-size: 32px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: normal !important;
+      }
+
+      .conteudo-necessidade {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 100px !important;
+        max-width: 1005px !important;
+      }
+
+      .necessidades {
+        display: flex !important;
+        align-items: center !important;
+        gap: 63px !important;
+      }
+
+      .necessidades:hover {
+        cursor: pointer !important;
+      }
+      .modal-btn:hover {
+        cursor: pointer !important;
+      }
+
+      @media (max-width: 1040px) {
+        .necessidades {
+          display: flex !important;
+          align-items: center !important;
+          gap: 20px !important;
+        }
+      }
+
+      @media (max-width: 450px) {
+        .necessidades {
+          gap: 8px !important;
+        }
+
+        .container-necessidade h2 {
+          font-size: 24px !important;
+        }
+
+        .container-necessidade h2 span {
+          font-size: 24px !important;
+        }
+
+        .necessidades h3 {
+          font-size: 20px !important;
+          max-width: 150px !important;
+          min-width: 150px !important;
+        }
+      }
+
+      .iconNecessidade {
+        display: inline-flex !important;
+        padding: 1px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        border-radius: 10px !important;
+        background: #00b26b !important;
+      }
+
+      .necessidades img {
+        display: inline-flex !important;
+        padding: 12px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        border-radius: 10px !important;
+        background: linear-gradient(
+          180deg,
+          rgba(96, 228, 165, 0.3) 0%,
+          rgba(96, 228, 165, 0.09) 100%
+        ) !important;
+      }
+
+      .necessidades h3 {
+        color: #ededed !important;
+        text-align: center !important;
+        font-family: "Nunito" !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: 120% !important; /* 28.8px */
+        max-width: 220px !important;
+        min-width: 220px !important;
+      }
+
+      .modal-btn {
+        border: none !important;
+        background-color: transparent !important;
+      }
+
+      .modal {
+        display: none;
+        justify-content: center !important;
+        align-items: center !important;
+        position: fixed !important;
+        z-index: 11 !important;
+        left: 0 !important;
+        top: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        overflow: auto !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+      }
+
+      .pic-modal-one {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner1.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-two {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner2.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-three {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner3.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-four {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner4.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-five {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner5.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-six {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner6.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-seven {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner7.png") !important;
+        background-size: cover !important;
+      }
+
+      .pic-modal-eight {
+        background-image: url("https://u.cubeupload.com/willlendemayer/banner8.png") !important;
+        background-size: cover !important;
+      }
+
+      @media (max-width: 750px) {
+        .pic-modal-one {
+          display: none !important;
+        }
+
+        .pic-modal-two {
+          display: none !important;
+        }
+
+        .pic-modal-three {
+          display: none !important;
+        }
+
+        .pic-modal-four {
+          display: none !important;
+        }
+
+        .pic-modal-five {
+          display: none !important;
+        }
+
+        .pic-modal-six {
+          display: none !important;
+        }
+
+        .pic-modal-seven {
+          display: none !important;
+        }
+
+        .pic-modal-eight {
+          display: none !important;
+        }
+      }
+
+      .pic-modal {
+        max-width: 472px !important;
+        width: 100% !important;
+        height: 502px !important;
+        border-radius: 10px !important;
+      }
+
+      .container-modal {
+        padding: 34px !important;
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 24px !important;
+        flex-direction: row !important;
+        background-color: #163134 !important;
+        max-width: 1030px !important;
+        width: 100% !important;
+        height: 500px !important;
+        border-radius: 8px !important;
+        box-sizing: content-box !important;
+      }
+
+      @media (max-width: 1100px) {
+        .container-modal {
+          max-width: 500px !important;
+          height: 1000px !important;
+        }
+
+        .pic-modal {
+          height: 250px !important;
+        }
+      }
+
+      .produto {
+        max-width: 516px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .produtos {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+
+      .title-closed {
+        display: flex !important;
+        justify-content: space-between !important;
+      }
+
+      .close {
+        display: flex !important;
+        padding: 12.363px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 12.363px !important;
+        border-radius: 4.945px !important;
+        background: #f8e3e3 !important;
+        border: none !important;
+      }
+
+      .fix-modal {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+
+      .title-closed h2 {
+        color: #e8e8e8 !important;
+        font-family: "nunito" !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: 120% !important; /* 28.8px */
+      }
+
+      .img-produto {
+        max-width: 65px !important;
+        height: 65px !important;
+        margin-right: 16px !important;
+      }
+
+      .img-produto img {
+        width: 100% !important;
+      }
+
+      .description h3 {
+        color: #a8a8a8 !important;
+        font-family: "nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: 100% !important; /* 20px */
+      }
+
+      .description p {
+        color: #8b979f !important;
+        font-family: "nunito" !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+      }
+
+      .description a {
+        color: #00b26b !important;
+        font-family: "nunito" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: 120% !important; /* 19.2px */
+        text-decoration-line: underline !important;
+      }
+
+      .link-orca {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: 8px !important;
+        color: #fff !important;
+        font-family: "nunito" !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        line-height: 120% !important; /* 24px */
+        text-decoration: none !important;
+        width: 100% !important;
+        height: 52px !important;
+        background-color: #00b26b !important;
+        margin-top: 32px !important;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .containerForm {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0px 12px !important;
+        height: 999px !important;
+      }
+
+      .overlayVideo {
+        position: absolute !important;
+        z-index: 7 !important;
+        background: linear-gradient(
+          rgb(22, 49, 52, 1),
+          rgb(22, 49, 52, 0.9)
+        ) !important;
+        width: 100% !important;
+        height: 1000px !important;
+      }
+
+      .boxForm {
+        padding: 0 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        position: relative !important;
+        z-index: 10 !important;
+      }
+
+      .videoIncendios {
+        z-index: 5 !important;
+        position: absolute !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        width: 100% !important;
+        height: 999px !important;
+      }
+
+      .boxForm h3 {
+        color: #fff !important;
+        text-align: center !important;
+        font-family: Nunito !important;
+        font-size: 24px !important;
+        font-style: normal !important;
+        font-weight: 300 !important;
+        line-height: normal !important;
+        max-width: 440px !important;
+        margin-top: 25px !important;
+        margin-bottom: 50px !important;
+      }
+
+      .boxForm form {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 24px !important;
+        max-width: 350px !important;
+      }
+
+      .boxInput {
+        display: flex !important;
+        gap: 20px !important;
+        padding: 12px !important;
+        border-radius: 6px !important;
+        border: 1px solid #8b979f !important;
+        background: #202020 !important;
+        max-width: 350px !important;
+      }
+
+      .boxInput [type="text"] {
+        max-height: 28px !important;
+      }
+
+      .boxInput [type="email"] {
+        max-height: 28px !important;
+      }
+
+      .boxInput [type="tel"] {
+        max-height: 28px !important;
+      }
+
+      .boxInput [type="checkbox"] {
+        margin-left: 0px !important;
+        margin-left: 0px !important;
+      }
+
+      .boxInput input {
+        border: none !important;
+        background: #202020 !important;
+        color: #8b979f !important;
+        font-family: "nunito" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        outline: 0px !important;
+        margin-bottom: 0px !important;
+        padding: 0px !important;
+      }
+
+      .boxInput input::placeholder {
+        color: #8b979f !important;
+        font-family: "nunito" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        padding: 0px !important;
+        max-height: 28px !important;
+      }
+
+      .boxInput select {
+        background-color: #202020;
+        border: none;
+        color: #8b979f;
+        font-family: "nunito";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0px;
+        max-height: 28px;
+        margin-bottom: 0px;
+      }
+
+      .boxInput.selectContainer {
+        display: flex;
+      }
+
+      .boxInputSelect {
+        flex-grow: 1;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M233.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200l192-192c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L256%20338.7%2086.6%20169.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l192%20192z%22%20fill%3D%22%238b979f%22%2F%3E%3C%2Fsvg%3E")
+          no-repeat right center;
+        background-size: 12px 20px;
+        background-color: #202020;
+        border: none;
+        color: #8b979f;
+        font-family: "nunito";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding: 0px;
+        max-height: 28px;
+        margin-bottom: 0px;
+      }
+
+      .iconForm {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      .boxCheck {
+        display: flex !important;
+        gap: 12px !important;
+        padding-left: 16px !important;
+      }
+
+      .boxCheck label {
+        color: #7d7d7d !important;
+        font-family: "nunito" !important;
+        font-size: 14px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+        max-width: 300px !important;
+      }
+
+      .btnFormIncendios {
+        display: flex !important;
+        max-width: 489px !important;
+        padding: 15px 40px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        border-radius: 60px !important;
+        background: #00b26b !important;
+        border: none !important;
+        color: #fff !important;
+        font-family: Nunito !important;
+        font-size: 20px !important;
+        font-style: normal !important;
+        font-weight: 500 !important;
+        line-height: normal !important;
+        text-transform: uppercase !important;
+        cursor: pointer !important;
+      }
+
+      @media print, screen and (min-width: 40em) {
+        .solution img {
+          height: auto !important;
+        }
+      }
+
+      .custom-checkbox {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px #00b26b solid;
+        cursor: pointer;
+        align-self: center !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+
+      .custom-checkbox::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #00b26b;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      #checkbox:checked + .custom-checkbox::before {
+        opacity: 1;
+      }
+
+      .custom-checkbox-2 {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px #00b26b solid;
+        cursor: pointer;
+        align-self: center !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+
+      .custom-checkbox-2::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #00b26b;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      #checkbox-2:checked + .custom-checkbox-2::before {
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="containerhero">
+        <h1>
+          Sistemas de detecção <br />
+          e alarme de incêndio
+        </h1>
+        <h2>
+          Detecte o incêndio a tempo de colocar o seu plano de emergência em
+          ação sem falhas.
+        </h2>
+        <a href="#boxForm">Solicite um orçamento</a>
+      </div>
+      <img
+        class="imghero"
+        src="https://u.cubeupload.com/willlendemayer/pack1.png"
+        alt="" />
+    </div>
+
+    <div class="boxProducts">
+      <div class="boxProduct">
+        <div class="containerProducts containerProductsOne">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Sistema de detecção e alarme de incêndio endereçável</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                O sistema endereçável identifica o local exato do dispositivo
+                acionado, permitindo que o seu plano de emergência seja
+                direcionado e eficiente.
+              </p>
+              <a
+                href="https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-enderecavel"
+                >Conheça a linha</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerProductsTwo">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Sistema de detecção e alarme de incêndio convencional</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                O sistema convencional identifica a zona/laço onde houve o
+                disparo, sendo indicado para projetos pequenos e médios. O
+                sistema convencional se destaca pelo seu custo-benefício.
+              </p>
+              <a
+                href="https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/sistema-convencional"
+                >Conheça a linha</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerProductsThree">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Sistema de emergência autônomo</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                O sistema de emergência autônoma te auxilia em cenários de
+                emergência, como em caso de incêndio ou queda de energia,
+                iluminando o prédio e indicando as rotas de evacuação.
+              </p>
+              <a
+                href="https://www.intelbras.com/pt-br/seguranca-eletronica/incendio/iluminacao-de-emergencia"
+                >Conheça a linha</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerProductsFour">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Linha Morley</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                Os produtos Morley possuem certificações internacionais em
+                conformidade com a norma brasileira, entregando soluções de
+                qualidade e segurança de alto nível. A linha atende a projetos
+                de grande porte, com alta complexidade e necessidades
+                específicas.
+              </p>
+              <a href="https://www.intelbras.com/pt-br/morley"
+                >Conheça a linha</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containerVideo">
+      <iframe
+        class="video"
+        src="https://www.youtube.com/embed/IDr9jC_Ebps?si=nqaE-7WbtjbSwDwN"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="boxProducts">
+      <div class="boxProduct">
+        <div class="containerProducts containerInformationsOne">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Exigência legal</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                A Legislação Brasileira torna obrigatória a instalação de
+                sistemas de detecção e alarme de incêndio com base no tamanho da
+                área construída, tipo de material e tipo de ocupação.
+              </p>
+              <a href="#boxForm">FAÇA SEU ORÇAMENTO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerInformationsTwo">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Responsabilidade do síndico</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                No caso de prédios doméstico a responsabilidade legal das áreas
+                comuns é do síndico e cabe ao profissional adequar o prédio às
+                normas da NBR 17240, que trata do projeto, instalação,
+                manutenção e testes em sistemas de detecção de incêndio.
+              </p>
+              <a href="#boxForm">FAÇA SEU ORÇAMENTO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerInformationsThree">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Suporte técnico especializado</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                Para a Intelbras é primordial garantir a sua segurança e o bom
+                funcionamento dos sistemas preventivos, por isso, oferecemos
+                suporte técnico especializado para te ajudar a solucionar
+                qualquer problema com o sistema de detecção de incêndio.
+              </p>
+              <a href="#boxForm">FAÇA SEU ORÇAMENTO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerProducts containerInformationsFour">
+          <div class="containerProductsOverlay">
+            <div class="product">
+              <h3>Proteção da vida e do patrimônio</h3>
+              <div class="iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="ContainerTextProduct">
+              <p>
+                A Legislação Brasileira torna obrigatória a instalação de
+                sistemas de detecção e alarme de incêndio com base no tamanho da
+                área construída, tipo de material e tipo de ocupação.
+              </p>
+              <a href="#boxForm">FAÇA SEU ORÇAMENTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containerSolutions">
+      <div class="primaryContent">
+        <div>
+          <h2>MAIOR SEGURANÇA COM NOSSAS SOLUÇÕES</h2>
+          <p>
+            Preserve a vida e o patrimônio com os sistemas de detecção de
+            incêndio Intelbras
+          </p>
+        </div>
+        <a href="#boxForm"> SOLICITE UM ORÇAMENTO </a>
+      </div>
+
+      <div class="secondContent">
+        <div class="solutions">
+          <div class="solution">
+            <div class="iconsSolutions">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/emoji1.png"
+                alt="" />
+            </div>
+            <p>Treinamentos qualificados e certificação</p>
+          </div>
+
+          <div class="solution">
+            <div class="iconsSolutions">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/emoji2.png"
+                alt="" />
+            </div>
+            <p>Suporte técnico em todo o Brasil</p>
+          </div>
+          <div class="solution">
+            <div class="iconsSolutions">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/emoji3.png"
+                alt="" />
+            </div>
+            <p>Respeito aos parceiros e clientes</p>
+          </div>
+          <div class="solution">
+            <div class="iconsSolutions">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Emoji4.png"
+                alt="" />
+            </div>
+            <p>Produtos de qualidade reconhecida</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="necessidade">
+      <div class="container-necessidade">
+        <h2>Para cada necessidade, uma solução <span>Intelbras</span></h2>
+        <div class="conteudo-necessidade">
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Pequenoscomrcios.png"
+                alt="" />
+            </div>
+
+            <h3>Pequenos comércios</h3>
+            <button class="modal-btn" data-model="modal-btn-one">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Hospitais.png"
+                alt="" />
+            </div>
+            <h3>Hospitais</h3>
+            <button class="modal-btn" data-model="modal-btn-two">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/685Condomniosresidencia.png"
+                alt="" />
+            </div>
+            <h3>Condomínios residenciais verticais</h3>
+            <button class="modal-btn" data-model="modal-btn-three">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Condomniosresidencia.png"
+                alt="" />
+            </div>
+            <h3>Condomínios residenciais horizontais</h3>
+            <button class="modal-btn" data-model="modal-btn-four">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Indstrias.png"
+                alt="" />
+            </div>
+            <h3>Indústrias</h3>
+            <button class="modal-btn" data-model="modal-btn-five">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Shoppings.png"
+                alt="" />
+            </div>
+            <h3>Shoppings</h3>
+            <button class="modal-btn" data-model="modal-btn-six">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Hotis.png"
+                alt="" />
+            </div>
+            <h3>Hotéis</h3>
+            <button class="modal-btn" data-model="modal-btn-seven">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+          <div class="necessidades">
+            <div class="iconNecessidade">
+              <img
+                src="https://u.cubeupload.com/willlendemayer/Aeroportos.png"
+                alt="" />
+            </div>
+            <h3>Aeroportos</h3>
+            <button class="modal-btn" data-model="modal-btn-eight">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none">
+                <path
+                  d="M18.5452 26.2727H15.4543V18.5455H7.72705V15.4546H15.4543V7.72729H18.5452V15.4546H26.2725V18.5455H18.5452V26.2727Z"
+                  fill="#48A054" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-one" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-one"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para pequenos comércios</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIC 06L com bateria</h3>
+                  <p>
+                    Ambiente protegido com detecção e alarme de incêndio.
+                    Solução completa e integrada com 2 opções de saída para
+                    trazer mais praticidade ao usuário
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-convencional-com-bateria-cic-06l-com-bateria">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AMC 421</h3>
+                  <p>
+                    Acionador manual convencional sem sirene: Ao ser acionado em
+                    uma emergência, envia um sinal para a central de alarme de
+                    incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-convencional-sem-sirene-amc-421">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/ac2e/45af/1824e254cef57145cf6934d56fea03f9?Expires=1698624000&Signature=E6SnyGONpY006Yf8IVKD2xSu~4frXIBkVkzTydK0FD3yk8UPJRv8AB~01oC9Nax3CRrYmTJQ6lH2lx1a47Hh~bQ5pYyzV19igdnGLK0pc5ka~-HQaBlt6fMaoaFyHNkcfkMOr9kCCIOLc71FTctpIv4ixtmQA4fuZ2Pguil6iTvdfzOlq6fBw5kIx3~BEvwl-bNHzPPkmPtks7t-TjFkI2poC5DWNUsWXV9Pxs~PqZysC9ztMc5u-297dtuZDWGr2aFvJGJea~QrxRpyOoi5lk~2nIeY89Udv7QYfxM3X7DlEDVxY7G92CAwoIWObuELwdSV1vLUhXN6Nd7qMuC12w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFC 421 UN</h3>
+                  <p>
+                    Detector de fumaça convencional: Ele dispara em caso de
+                    fumaça e envia um sinal para a central de alarme de
+                    incêndio. É mais segurança para seus ambientes
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-convencional-dfc-421-un">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-two" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-two"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Hospitais</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 2500</h3>
+                  <p>
+                    Comporta até 125 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/baf5/7b30/76dfd8d7e1879dddecd1c95f6a1e3e52?Expires=1698624000&Signature=IXE3noC4bUevjk49h6MlVMwGwrnBGgA0n-f~gz3F-D77AtqDyParpSpOiAOLv0OFFMuo5Nq7qKLrk0AVLnaCRPgG2XM16kN3AzUzc46ZZelo-kXJ4NHeaHtzl3QYWIOPNwoAcGX55E3pySrqJH5WwozxN59RwLimtPqJF0ocd8kD0CA0yCyGx8W5iIV7mRhfZ6g98ibFhUcpuMKIix9Fs1TwNSqmnkqo3pdhnPQYgpEeND3p8XGyzvpTlV1KhanLkV1UDYi8fI1OoAVKNtmkaFWEwK0htNbrwtHFF43e4Ofqle4lmsk9DS7xUADNxuiGaxhYNLn8y4o1C9~fxwL5-A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFE 521</h3>
+                  <p>
+                    O detector DFE 521 é projetado para disparar em caso de
+                    detecção de fumaça no ambiente onde está instalado.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-three" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-three"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Condomínios verticais</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 1125</h3>
+                  <p>
+                    Comporta até 125 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1125">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/b8d5/9511/f13a0d5bc351f7a9c90bb81b5ae4ae34?Expires=1698624000&Signature=mUNTiLW0Sg4vlbIuTK92PbpLujsH04LOOjtaUR7-La9UsZRi~tYeGcbkwJN2n0DPsMIXbVd44kUliXMN2EElrM9i-GVZYOoczbL30gkjjNDLDblZ9LIx9fT3D6U1tDvYLmv2xCzCvQbEqPerOOUX6CoASzOuZjZXxPnJwv36wfoFfee2QuxOSC7dBaRuqfUb8QQEGGN5le5~~SdFiuQMxvF2IZYerrzscrdRqs7rxbEmrrfjj~s06XX6hOAJqEAXyvwNtBSpljElLhUNAHL2ZwvRv-3OwRXpct9AKC5z~LrByrnIlaMu2TiGMxwgME90f-pl1Z2aM16uWW6hQdYLmQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>GW 521</h3>
+                  <p>
+                    O Módulo Gateway GW 521 permite a integração das centrais de
+                    incêndio endereçáveis modelos CIE 1125, CIE 1250 e CIE 2500
+                    em softwares de mercado.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/modulo-gateway-gw-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-four" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-four"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Condomínios Horizontais</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/0cd7/136b/e7782f53b120739229357c62103d1767?Expires=1698624000&Signature=H9JqJ-ouxxBDxHLr5ew~W9-uGOaHKNPh-SxsfXoW5QaZNz05zz9WW3IA9G152-QVdx24qwR1~g1gBTVLb5T-rgfTnHBLxnxwuNd7JIOAW5mcdfl7vT5NGj8VUgh9KD1vdvSdwJ-w2~6Qfct1MfgRs9UPzYQKwMpzbqVIAKeT67HgZHNa77aTEP30aJE-9HVEXotr9W3gZSk4Q7GT7dHYEc~FvRZplyObKGgVQSyAULsdEjUiQS8hhgneBvnCW1XhRVHswlPBv9TokzlSJiKL~yxKhcIqRcfw824I5GP7CSIT48bn602sJd4JGFUnuSEkBbQrmtQ5bsjvj-EUXimrCA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFL 3100</h3>
+                  <p>
+                    Detecta partículas de fumaça de uma ampla gama de fontes de
+                    combustão e é ideal para espaços de 8 a 100 m de
+                    comprimento.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/fea9/d6a6/e157d8196fe3e6586c94396b66f54a7f?Expires=1698624000&Signature=ohdbAbLSUJNn8tjbH7GdjQ9Jf76-qVeXxWGFLPR8WxY2lTsGaXbawDMc4eEMBDvz~qzbDZdmy40bVNoTUgbMebQ7RvycUgzeGXpUlYu2uqO2N-73FjDZ~lyeuvZlUDdbmVoxquvQ~w32KSkpqvLFHU6Lyt9Bekde3erIbPQwzDRs3Mm4N6YUr5ijnWNVJke7CrXkn9~RiGpx0Oj~Ur8aSMggINQMQPh9ItLxJAPO6jf9y3VIi1jluQ86J1PrEA5TX75cwGm31QCmbnpGaFLG3NaWwMxENUK8weN5jYL7tyISnZqdWu-sznoeiatAaZjP6oDuLMexANUuRse0vsNAYg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 1060</h3>
+                  <p>
+                    Eficiência para gerenciar o sistema de detecção e alarme de
+                    incêndio, com capacidade para ate 60 dispositivos
+                    endereçáveis e configuração pelo aplicativo...
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1060">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-five" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-five"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Indústrias</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/0cd7/136b/e7782f53b120739229357c62103d1767?Expires=1698624000&Signature=H9JqJ-ouxxBDxHLr5ew~W9-uGOaHKNPh-SxsfXoW5QaZNz05zz9WW3IA9G152-QVdx24qwR1~g1gBTVLb5T-rgfTnHBLxnxwuNd7JIOAW5mcdfl7vT5NGj8VUgh9KD1vdvSdwJ-w2~6Qfct1MfgRs9UPzYQKwMpzbqVIAKeT67HgZHNa77aTEP30aJE-9HVEXotr9W3gZSk4Q7GT7dHYEc~FvRZplyObKGgVQSyAULsdEjUiQS8hhgneBvnCW1XhRVHswlPBv9TokzlSJiKL~yxKhcIqRcfw824I5GP7CSIT48bn602sJd4JGFUnuSEkBbQrmtQ5bsjvj-EUXimrCA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFL 3100</h3>
+                  <p>
+                    Detecta partículas de fumaça de uma ampla gama de fontes de
+                    combustão e é ideal para espaços de 8 a 100 m de
+                    comprimento.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 2500</h3>
+                  <p>
+                    Comporta até 500 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-six" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-six"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Shoppings</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/baf5/7b30/76dfd8d7e1879dddecd1c95f6a1e3e52?Expires=1698624000&Signature=IXE3noC4bUevjk49h6MlVMwGwrnBGgA0n-f~gz3F-D77AtqDyParpSpOiAOLv0OFFMuo5Nq7qKLrk0AVLnaCRPgG2XM16kN3AzUzc46ZZelo-kXJ4NHeaHtzl3QYWIOPNwoAcGX55E3pySrqJH5WwozxN59RwLimtPqJF0ocd8kD0CA0yCyGx8W5iIV7mRhfZ6g98ibFhUcpuMKIix9Fs1TwNSqmnkqo3pdhnPQYgpEeND3p8XGyzvpTlV1KhanLkV1UDYi8fI1OoAVKNtmkaFWEwK0htNbrwtHFF43e4Ofqle4lmsk9DS7xUADNxuiGaxhYNLn8y4o1C9~fxwL5-A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFE 521</h3>
+                  <p>
+                    O detector DFE 521 é projetado para disparar em caso de
+                    detecção de fumaça no ambiente onde está instalado.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 2500</h3>
+                  <p>
+                    Comporta até 500 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-seven" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-seven"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para Hotéis</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/baf5/7b30/76dfd8d7e1879dddecd1c95f6a1e3e52?Expires=1698624000&Signature=IXE3noC4bUevjk49h6MlVMwGwrnBGgA0n-f~gz3F-D77AtqDyParpSpOiAOLv0OFFMuo5Nq7qKLrk0AVLnaCRPgG2XM16kN3AzUzc46ZZelo-kXJ4NHeaHtzl3QYWIOPNwoAcGX55E3pySrqJH5WwozxN59RwLimtPqJF0ocd8kD0CA0yCyGx8W5iIV7mRhfZ6g98ibFhUcpuMKIix9Fs1TwNSqmnkqo3pdhnPQYgpEeND3p8XGyzvpTlV1KhanLkV1UDYi8fI1OoAVKNtmkaFWEwK0htNbrwtHFF43e4Ofqle4lmsk9DS7xUADNxuiGaxhYNLn8y4o1C9~fxwL5-A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>DFE 521</h3>
+                  <p>
+                    O detector DFE 521 é projetado para disparar em caso de
+                    detecção de fumaça no ambiente onde está instalado.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-enderecavel-dfe-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 1125</h3>
+                  <p>
+                    Comporta até 125 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-1125">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-eight" class="modal">
+      <div class="container-modal">
+        <div class="pic-modal pic-modal-eight"></div>
+        <div class="conteudo-modal">
+          <div class="fix-modal">
+            <div class="title-closed">
+              <h2>Produtos para aeroportos</h2>
+              <button class="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14">
+                  <g
+                    fill="none"
+                    stroke="rgba(218,105,105)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2">
+                    <path d="M1 1l12 12M13 1L1 13"></path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="produtos">
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6462/8b4c/ec5f632d0a6a68140ebbb2d56de901c7?Expires=1698624000&Signature=X5JtYVTVi4b5zDVq9LHJoue9~tIBxiuav5rs~9lthrs9K6LKsljYz~fTs3Oj-~3EQWlD4W1fC1QrVkP8nwqzmKdVPlpi9SWX47b6~LfBL2AXgxF7-n5U0PFbFkZxKuv~qjZ0yKZ0cjF7TgA7sWRV5gpVjdp1PtBShgISs9BCkppkiG-gn47rhgNHU7LF-YmRdB8kJ-H-G2c6Ij0Q2GkwpGws2GaeBZAWIeoDWRtED1jZEmTWyejPzq10SQkVGt1y29hXBoWB5HCDpTE7bWn2uQrkseE6CuzIkx1oRKuoujM~HgVwUCcKUo6l68f6XAmSkQhOVPmWmxJENxcWX47piQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt=""
+                    width="14px" />
+                </div>
+                <div class="description">
+                  <h3>DFL 3100</h3>
+                  <p>
+                    Detecta partículas de fumaça de uma ampla gama de fontes de
+                    combustão e é ideal para espaços de 8 a 100 m de
+                    comprimento.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/detector-de-fumaca-linear-dfl-3100">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6b5b/66d1/1a30d18f0f87ae49c662da2180ca8826?Expires=1698624000&Signature=ewz8oBcHi~NKyaJDrnJSNS-g4g2v9vN25mJXrzyab-XZp7DlH-E7nx9GBu1KseLoX89m7iOXjHRTRjLWaHAuDQfv8QyXPgJ40P3nrYBbsRM1aCGMkmfa0qE4lDd6tNOhNtMakCaC~kDehtzXiNDZfq-pxaFjJdMAx7jA5~jXcEuCiEDpGsssxK~sMTxQI6xzsmjH~ULAUf4-DuG4nZlXSNH6QWRtUv6HLVauc9kZzUU~cWYMRLQhLaRY-vrG9e3Vs3rPno2XWOffUoYljFBHRtFIkpAFquzWE34N5XzN0A0O5latQwbDA9Mmdp17Jd6v0qauepOJcXP0qwi0nssAVw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>AME 521</h3>
+                  <p>
+                    Ao ser acionado em uma emergência, envia um sinal para a
+                    central de alarme de incêndio, indicando o ponto exato do
+                    ocorrido através do seu endereço definido.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="hhttps://www.intelbras.com/pt-br/acionador-manual-enderecavel-sem-sirene-ame-521">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+
+              <div class="produto">
+                <div class="img-produto">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/b8d5/9511/f13a0d5bc351f7a9c90bb81b5ae4ae34?Expires=1698624000&Signature=mUNTiLW0Sg4vlbIuTK92PbpLujsH04LOOjtaUR7-La9UsZRi~tYeGcbkwJN2n0DPsMIXbVd44kUliXMN2EElrM9i-GVZYOoczbL30gkjjNDLDblZ9LIx9fT3D6U1tDvYLmv2xCzCvQbEqPerOOUX6CoASzOuZjZXxPnJwv36wfoFfee2QuxOSC7dBaRuqfUb8QQEGGN5le5~~SdFiuQMxvF2IZYerrzscrdRqs7rxbEmrrfjj~s06XX6hOAJqEAXyvwNtBSpljElLhUNAHL2ZwvRv-3OwRXpct9AKC5z~LrByrnIlaMu2TiGMxwgME90f-pl1Z2aM16uWW6hQdYLmQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                    alt="" />
+                </div>
+                <div class="description">
+                  <h3>CIE 2500</h3>
+                  <p>
+                    Comporta até 500 dispositivos endereçáveis em seu laço e é
+                    responsável por gerenciar todo o sistema de detecção e
+                    alarme de incêndio.
+                  </p>
+                  <a
+                    class="link-product"
+                    href="https://www.intelbras.com/pt-br/central-de-alarme-de-incendio-cie-2500">
+                    Ver produto
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="link-orca" href="#boxForm">Peça um orçamento agora</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="containerForm">
+      <div class="overlayVideo"></div>
+
+      <video
+        class="videoIncendios"
+        src="https://res.cloudinary.com/df16gewgp/video/upload/v1718382872/incendiosfundowebm_hmkp6b.webm"
+        autoplay
+        loop
+        muted></video>
+
+      <div id="boxForm" class="boxForm">
+        <h3>
+          Preencha o formulário e receba um orçamento totalmente pensado em você
+        </h3>
+        <form action="">
+          <div class="boxInput">
+            <div class="iconForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M5.49219 19.6672V18.6672C5.49219 16.8107 6.22969 15.0302 7.54244 13.7175C8.85519 12.4047 10.6357 11.6672 12.4922 11.6672V11.6672C14.3487 11.6672 16.1292 12.4047 17.4419 13.7175C18.7547 15.0302 19.4922 16.8107 19.4922 18.6672V19.6672M12.4922 11.6672C13.5531 11.6672 14.5705 11.2458 15.3206 10.4957C16.0708 9.74552 16.4922 8.7281 16.4922 7.66724C16.4922 6.60637 16.0708 5.58895 15.3206 4.83881C14.5705 4.08866 13.5531 3.66724 12.4922 3.66724C11.4313 3.66724 10.4139 4.08866 9.66376 4.83881C8.91361 5.58895 8.49219 6.60637 8.49219 7.66724C8.49219 8.7281 8.91361 9.74552 9.66376 10.4957C10.4139 11.2458 11.4313 11.6672 12.4922 11.6672V11.6672Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <input type="text" placeholder="Nome" />
+          </div>
+
+          <div class="boxInput">
+            <div class="iconForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23"
+                height="17"
+                viewBox="0 0 23 17"
+                fill="none">
+                <path
+                  d="M2.20021 2.87402L11.4924 9.16726L20.3893 2.87402"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M1.49219 13.6672V3.66724C1.49219 3.1368 1.7029 2.6281 2.07797 2.25302C2.45305 1.87795 2.96175 1.66724 3.49219 1.66724H19.4922C20.0226 1.66724 20.5313 1.87795 20.9064 2.25302C21.2815 2.6281 21.4922 3.1368 21.4922 3.66724V13.6672C21.4922 14.1977 21.2815 14.7064 20.9064 15.0814C20.5313 15.4565 20.0226 15.6672 19.4922 15.6672H3.49219C2.96175 15.6672 2.45305 15.4565 2.07797 15.0814C1.7029 14.7064 1.49219 14.1977 1.49219 13.6672Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+              </svg>
+            </div>
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="boxInput">
+            <div class="iconForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M18.6102 14.3692L14.4922 15.1672C11.7102 13.7712 9.99218 12.1672 8.99218 9.66724L9.76218 5.53724L8.30718 1.66724H4.55618C3.42818 1.66724 2.54018 2.59924 2.70918 3.71424C3.12918 6.49724 4.36918 11.5442 7.99218 15.1672C11.7972 18.9722 17.2782 20.6232 20.2942 21.2802C21.4592 21.5332 22.4922 20.6252 22.4922 19.4322V15.8482L18.6102 14.3692V14.3692Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <input type="tel" placeholder="Telefone/Whatsapp" />
+          </div>
+
+          <div class="boxInput">
+            <div class="iconForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="16"
+                viewBox="0 0 21 16"
+                fill="none">
+                <path
+                  d="M18.6172 1.41724C18.7829 1.41724 18.9419 1.48308 19.0591 1.60029C19.1763 1.7175 19.2422 1.87648 19.2422 2.04224V13.2922C19.2422 13.458 19.1763 13.617 19.0591 13.7342C18.9419 13.8514 18.7829 13.9172 18.6172 13.9172H2.36719C2.20143 13.9172 2.04246 13.8514 1.92525 13.7342C1.80804 13.617 1.74219 13.458 1.74219 13.2922V2.04224C1.74219 1.87648 1.80804 1.7175 1.92525 1.60029C2.04246 1.48308 2.20143 1.41724 2.36719 1.41724H18.6172ZM2.36719 0.167236C1.86991 0.167236 1.39299 0.36478 1.04136 0.716411C0.689732 1.06804 0.492188 1.54496 0.492188 2.04224L0.492188 13.2922C0.492188 13.7895 0.689732 14.2664 1.04136 14.6181C1.39299 14.9697 1.86991 15.1672 2.36719 15.1672H18.6172C19.1145 15.1672 19.5914 14.9697 19.943 14.6181C20.2946 14.2664 20.4922 13.7895 20.4922 13.2922V2.04224C20.4922 1.54496 20.2946 1.06804 19.943 0.716411C19.5914 0.36478 19.1145 0.167236 18.6172 0.167236H2.36719Z"
+                  fill="#8B979F" />
+                <path
+                  d="M4.24219 4.54224C4.24219 4.37648 4.30804 4.2175 4.42525 4.10029C4.54246 3.98308 4.70143 3.91724 4.86719 3.91724H16.1172C16.2829 3.91724 16.4419 3.98308 16.5591 4.10029C16.6763 4.2175 16.7422 4.37648 16.7422 4.54224C16.7422 4.708 16.6763 4.86697 16.5591 4.98418C16.4419 5.10139 16.2829 5.16724 16.1172 5.16724H4.86719C4.70143 5.16724 4.54246 5.10139 4.42525 4.98418C4.30804 4.86697 4.24219 4.708 4.24219 4.54224ZM4.24219 7.66724C4.24219 7.50148 4.30804 7.3425 4.42525 7.22529C4.54246 7.10808 4.70143 7.04224 4.86719 7.04224H16.1172C16.2829 7.04224 16.4419 7.10808 16.5591 7.22529C16.6763 7.3425 16.7422 7.50148 16.7422 7.66724C16.7422 7.833 16.6763 7.99197 16.5591 8.10918C16.4419 8.22639 16.2829 8.29224 16.1172 8.29224H4.86719C4.70143 8.29224 4.54246 8.22639 4.42525 8.10918C4.30804 7.99197 4.24219 7.833 4.24219 7.66724ZM4.24219 10.7922C4.24219 10.6265 4.30804 10.4675 4.42525 10.3503C4.54246 10.2331 4.70143 10.1672 4.86719 10.1672H12.3672C12.5329 10.1672 12.6919 10.2331 12.8091 10.3503C12.9263 10.4675 12.9922 10.6265 12.9922 10.7922C12.9922 10.958 12.9263 11.117 12.8091 11.2342C12.6919 11.3514 12.5329 11.4172 12.3672 11.4172H4.86719C4.70143 11.4172 4.54246 11.3514 4.42525 11.2342C4.30804 11.117 4.24219 10.958 4.24219 10.7922Z"
+                  fill="#8B979F" />
+              </svg>
+            </div>
+            <input type="text" placeholder="CNPJ" />
+          </div>
+
+          <div class="boxInput">
+            <div class="iconForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="19"
+                height="23"
+                viewBox="0 0 19 23"
+                fill="none">
+                <path
+                  d="M17.4922 9.66724C17.4922 14.0852 9.49219 21.6672 9.49219 21.6672C9.49219 21.6672 1.49219 14.0852 1.49219 9.66724C1.49219 7.5455 2.33504 5.51067 3.83533 4.01038C5.33562 2.51009 7.37046 1.66724 9.49219 1.66724C11.6139 1.66724 13.6488 2.51009 15.149 4.01038C16.6493 5.51067 17.4922 7.5455 17.4922 9.66724V9.66724Z"
+                  stroke="#8B979F"
+                  stroke-width="1.5" />
+                <path
+                  d="M9.49219 10.6672C9.7574 10.6672 10.0118 10.5619 10.1993 10.3743C10.3868 10.1868 10.4922 9.93245 10.4922 9.66724C10.4922 9.40202 10.3868 9.14767 10.1993 8.96013C10.0118 8.77259 9.7574 8.66724 9.49219 8.66724C9.22697 8.66724 8.97262 8.77259 8.78508 8.96013C8.59754 9.14767 8.49219 9.40202 8.49219 9.66724C8.49219 9.93245 8.59754 10.1868 8.78508 10.3743C8.97262 10.5619 9.22697 10.6672 9.49219 10.6672Z"
+                  fill="black"
+                  stroke="#8B979F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <input type="text" placeholder="Cidade" />
+          </div>
+
+          <div class="boxInput selectContainer">
+            <select class="boxInputSelect" name="" id="">
+              <option value="">Como você prefere falar conosco?</option>
+              <option value="">WhatsApp</option>
+              <option value="">Telefone</option>
+              <option value="">E-mail</option>
+            </select>
+          </div>
+
+          <div class="boxInput selectContainer">
+            <select class="boxInputSelect" name="" id="">
+              <option value="">Qual é o perfil do seu negócio?</option>
+              <option value="">Revenda</option>
+              <option value="">Distribuidor</option>
+              <option value="">Instalador</option>
+              <option value="">Pessoa física ou jurídica</option>
+            </select>
+          </div>
+
+          <div class="boxInput selectContainer">
+            <select class="boxInputSelect" name="" id="">
+              <option value="">Qual é o objetivo do seu contato?</option>
+              <option value="">Orçamento</option>
+              <option value="">Informações de produto</option>
+              <option value="">Dúvidas de instalação</option>
+            </select>
+          </div>
+
+          <div class="boxCheck">
+            <input type="checkbox" id="checkbox" style="display: none" />
+            <label for="checkbox" class="custom-checkbox"></label>
+            <label for="checkbox"
+              >Tenho interesse em receber notícias, novidades e promoções da
+              Intelbras.</label
+            >
+          </div>
+
+          <div class="boxCheck">
+            <input type="checkbox" id="checkbox-2" style="display: none" />
+            <label for="checkbox-2" class="custom-checkbox-2"></label>
+            <label for="checkbox-2"
+              >Concordo com a <a href="https://www.intelbras.com/pt-br/politica-de-privacidade">Política de Privacidade</a> e <a href="https://www.intelbras.com/pt-br/politica-de-privacidade/termos">Termos de uso.</a></label
+            >
+          </div>
+
+          <button class="btnFormIncendios">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        const modalBtns = document.querySelectorAll(".necessidades");
+        const modals = document.querySelectorAll(".modal");
+        const closeBtns = document.querySelectorAll(".close");
+        const orcamentoBtns = document.querySelectorAll(".link-orca");
+
+        console.log(modalBtns, modals, closeBtns, orcamentoBtns); // Log the selected elements
+
+        modalBtns.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            console.log("Modal button clicked event fired"); // Log when the event fires
+            console.log(`Modal button ${index + 1} clicked`);
+            modals[index].style.display = "flex";
+            console.log(`Modal ${index + 1} displayed`);
+
+            // Lock the page scroll
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+        closeBtns.forEach((btn, index) => {
+          btn.addEventListener("click", () => {
+            console.log("Close button clicked event fired"); // Log when the event fires
+            console.log(`Close button ${index + 1} clicked`);
+            modals[index].style.display = "none";
+            console.log(`Modal ${index + 1} hidden`);
+
+            // Unlock the page scroll
+            document.body.style.overflow = "auto";
+          });
+        });
+
+        orcamentoBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            console.log("Orçamento button clicked event fired"); // Log when the event fires
+
+            // Hide all modals
+            modals.forEach((modal, index) => {
+              modal.style.display = "none";
+              console.log(`Modal ${index + 1} hidden`);
+            });
+
+            // Unlock the page scroll
+            document.body.style.overflow = "auto";
+          });
+        });
+
+        window.addEventListener("click", (e) => {
+          if (e.target.classList.contains("modal")) {
+            console.log("Window click event fired"); // Log when the event fires
+            console.log("Click outside modal detected");
+            modals.forEach((modal, index) => {
+              modal.style.display = "none";
+              console.log(`Modal ${index + 1} hidden`);
+
+              // Unlock the page scroll
+              document.body.style.overflow = "auto";
+            });
+          }
+        });
+      };
+    </script>
+  </body>
+</html>

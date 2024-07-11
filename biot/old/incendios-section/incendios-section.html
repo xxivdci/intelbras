@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .fire-containerProductsOverlay {
+      display: flex !important;
+      position: relative !important;
+      flex-direction: column !important;
+      /* background-color: rgba(0, 0, 0, 0.70) !important; */
+      max-width: 590px !important;
+      width: 100% !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+    }
+
+    .fire-boxProducts {
+      padding-top: 100px !important;
+      padding-bottom: 100px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      background: #fff !important;
+    }
+
+    .fire-boxProduct {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      max-width: 1205px !important;
+      flex-wrap: wrap !important;
+      gap: 24px !important;
+      margin-left: 12px !important;
+      margin-right: 12px !important;
+    }
+
+    .fire-product h3 {
+      color: #fff !important;
+      font-family: Nunito !important;
+      font-size: 24px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: normal !important;
+      max-width: 334px !important;
+    }
+
+    .fire-iconPlus {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      min-width: 44px !important;
+      min-height: 44px !important;
+      border-radius: 5px !important;
+      background: #00b26b !important;
+    }
+
+    .fire-product {
+      position: absolute !important;
+      padding: 3px 30px !important;
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: -webkit-fill-available !important;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 30px 30px 0px 0px;
+    }
+
+    @media (max-width: 470px) {
+      .fire-product h3 {
+        font-size: 20px !important;
+        max-width: 250px !important;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .fire-ContainerTextProduct p {
+        font-size: 16px !important;
+        margin-bottom: 38px !important;
+      }
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .fire-containerProductsOverlay {
+      display: flex !important;
+      position: relative !important;
+      flex-direction: column !important;
+      /* background-color: rgba(0, 0, 0, 0.70) !important; */
+      max-width: 590px !important;
+      width: 100% !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+    }
+
+    .fire-boxProducts {
+      padding-top: 100px !important;
+      padding-bottom: 100px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      background: #00b26b !important;
+    }
+
+    .fire-boxProduct {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      max-width: 1205px !important;
+      flex-wrap: wrap !important;
+      gap: 24px !important;
+      margin-left: 12px !important;
+      margin-right: 12px !important;
+    }
+
+    .fire-containerInformationsOne {
+      background-image: url("https://u.cubeupload.com/willlendemayer/info1.png") !important;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      max-width: 590px !important;
+      width: 100% !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+    }
+
+    .fire-containerInformationsTwo {
+      background-image: url("https://u.cubeupload.com/willlendemayer/info2.png") !important;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      max-width: 590px !important;
+      width: 100% !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+    }
+
+    .fire-containerInformationsThree {
+      background-image: url("https://u.cubeupload.com/willlendemayer/info3.png") !important;
+      background-position: center !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      max-width: 590px !important;
+      width: 100% !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+    }
+
+    .fire-product h3 {
+      color: #fff !important;
+      font-family: Nunito !important;
+      font-size: 24px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: normal !important;
+      max-width: 334px !important;
+    }
+
+    .fire-iconPlus {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      min-width: 44px !important;
+      min-height: 44px !important;
+      border-radius: 5px !important;
+      background: #00b26b !important;
+    }
+
+    @media (max-width: 470px) {
+      .fire-product h3 {
+        font-size: 20px !important;
+        max-width: 250px !important;
+      }
+    }
+
+    .fire-ContainerTextProduct {
+      opacity: 0 !important;
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      max-width: 590px !important;
+      transition: 0.5s !important;
+      height: 458px !important;
+      border-radius: 30px !important;
+      padding: 38px 30px !important;
+      position: relative;
+      z-index: 1; /* This will place .ContainerTextProduct above .product */
+    }
+
+    .fire-product h3 {
+      position: relative;
+      z-index: 2; /* This will place .product below .ContainerTextProduct */
+    }
+
+    .fire-containerProductsOverlay:hover .fire-ContainerTextProduct,
+    .fire-containerProductsOverlay:hover .fire-product {
+      opacity: 1 !important;
+    }
+
+    .fire-ContainerTextProduct p {
+      color: #fff !important;
+      font-family: "nunito" !important;
+      font-size: 20px !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      line-height: 120% !important; /* 24px */
+      margin-bottom: 58px !important;
+      max-width: 480px !important;
+      margin-top: 100px !important;
+      opacity: 0;
+      transition: 0.5s !important;
+      min-width: 300px;
+    }
+
+    .fire-containerProductsOverlay:hover .fire-ContainerTextProduct p {
+      opacity: 1 !important;
+    }
+
+    @media (max-width: 550px) {
+      .fire-ContainerTextProduct p {
+        font-size: 16px !important;
+        margin-bottom: 38px !important;
+      }
+    }
+
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600&display=swap");
+  </style>
+  <div class="container-large">
+    <div class="fire-boxProducts">
+      <div class="fire-boxProduct">
+        <div class="fire-containerProducts fire-containerInformationsOne">
+          <div class="fire-containerProductsOverlay">
+            <div class="fire-product">
+              <h3>Controladores de acesso</h3>
+              <div class="fire-iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="fire-ContainerTextProduct">
+              <p>Clique para ver mais</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fire-containerProducts fire-containerInformationsTwo">
+          <div class="fire-containerProductsOverlay">
+            <div class="fire-product">
+              <h3>Reconhecimento facial</h3>
+              <div class="fire-iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="fire-ContainerTextProduct">
+              <p>Clique para ver mais</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fire-containerProducts fire-containerInformationsThree">
+          <div class="fire-containerProductsOverlay">
+            <div class="fire-product">
+              <h3>Leitores</h3>
+              <div class="fire-iconPlus">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none">
+                  <path
+                    d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+                    fill="#09070D" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="fire-ContainerTextProduct">
+              <p>Clique para ver mais</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
